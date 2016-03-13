@@ -1,7 +1,8 @@
-import { bootstrap }    from 'angular2/platform/browser';
-import { AppComponent } from './app.component';
+export interface Hero {
+  id: number;
+  name: string;
+}
 
-bootstrap(AppComponent);
 
 /*
 Copyright 2016 Google Inc. All Rights Reserved.
