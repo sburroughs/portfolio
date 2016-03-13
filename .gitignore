@@ -3,3 +3,10 @@
 *.iml
 
 node_modules
+
+/app/*.js
+/app/*.js.map
+/app/controllers/*.js
+/app/controllers/*.js.map
+/app/services/*.js
+/app/services/*.js.map
