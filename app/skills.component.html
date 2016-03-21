@@ -7,8 +7,6 @@
     </li>
 </ul>
 <div *ngIf="selectedSkill">
-    <h2>
-        {{selectedSkill.name | uppercase}} is my hero
-    </h2>
+    <h2>{{selectedSkill.name | uppercase}}</h2>
     <button (click)="gotoDetail()">View Details</button>
 </div>

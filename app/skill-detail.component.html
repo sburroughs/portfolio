@@ -1,11 +1,11 @@
 <div *ngIf="skill">
-    <h2>{{skill.name}} details!</h2>
+    <h2>{{skill.name}} Overview</h2>
     <div>
-        <label>id: </label>{{skill.experience}}
+        <ul class="skills">
+            <li *ngFor="#focus of skill.focus">
+                <label>{{focus.name}}</label>
+                <p>Experience: {{focus.experience}}</p>
+            </li>
+        </ul>
     </div>
-    <div>
-        <label>name: </label>
-        <input [(ngModel)]="skill.name" placeholder="name"/>
-    </div>
-    <button (click)="goBack()">Back</button>
 </div>
