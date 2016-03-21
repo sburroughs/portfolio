@@ -1,0 +1,14 @@
+<h2>Skills</h2>
+<ul class="skills">
+    <li *ngFor="#skill of skills"
+        [class.selected]="skill === selectedSkill"
+        (click)="onSelect(skill)">
+        <span class="badge">{{skill.experience}}</span> {{skill.name}}
+    </li>
+</ul>
+<div *ngIf="selectedSkill">
+    <h2>
+        {{selectedSkill.name | uppercase}} is my hero
+    </h2>
+    <button (click)="gotoDetail()">View Details</button>
+</div>

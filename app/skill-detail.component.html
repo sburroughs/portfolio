@@ -1,0 +1,11 @@
+<div *ngIf="skill">
+    <h2>{{skill.name}} details!</h2>
+    <div>
+        <label>id: </label>{{skill.experience}}
+    </div>
+    <div>
+        <label>name: </label>
+        <input [(ngModel)]="skill.name" placeholder="name"/>
+    </div>
+    <button (click)="goBack()">Back</button>
+</div>

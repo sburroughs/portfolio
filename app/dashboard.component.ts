@@ -1,36 +1,29 @@
-import { Component, OnInit } from 'angular2/core';
-import { Router } from 'angular2/router';
+import {Component, OnInit} from 'angular2/core';
+import {Router} from 'angular2/router';
 
-import { Hero } from './hero';
-import { HeroService } from './hero.service';
+import {Skill} from './skill';
+import {SkillService} from './skill.service';
 
 @Component({
-  selector: 'my-dashboard',
-  templateUrl: 'app/dashboard.component.html',
-  styleUrls: ['styles/dashboard.component.css']
+    selector: 'my-dashboard',
+    templateUrl: 'app/dashboard.component.html',
+    styleUrls: ['styles/dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
 
-  heroes: Hero[] = [];
+    skills:Skill[] = [];
 
-  constructor(
-    private _router: Router,
-    private _heroService: HeroService) {
-  }
+    constructor(private _router:Router,
+                private _skillService:SkillService) {
+    }
 
-  ngOnInit() {
-    this._heroService.getHeroes()
-      .then(heroes => this.heroes = heroes.slice(1,5));
-  }
+    ngOnInit() {
+        this._skillService.getSkills()
+            .then(skills => this.skills = skills.slice(0, 4));
+    }
 
-  gotoDetail(hero: Hero) {
-    let link = ['HeroDetail', { id: hero.id }];
-    this._router.navigate(link);
-  }
+    gotoDetail(skill:Skill) {
+        let link = ['SkillDetail', {name: skill.name}];
+        this._router.navigate(link);
+    }
 }
-
-/*
-Copyright 2016 Google Inc. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/
