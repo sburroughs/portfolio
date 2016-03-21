@@ -1,14 +1,14 @@
-import { Component, OnInit } from 'angular2/core';
-import { Router } from 'angular2/router';
+import {Component, OnInit} from 'angular2/core';
+import {Router} from 'angular2/router';
 
-import { Skill } from './skill';
-import { SkillDetailComponent } from './skill-detail.component';
-import { SkillService } from './skill.service';
+import {Skill} from './skill';
+import {SkillDetailComponent} from './skill-detail.component.ts';
+import {SkillService} from './skill.service.ts';
 
 @Component({
     selector: 'my-skills',
-    templateUrl: 'app/skills.component.html',
-    styleUrls: ['styles/skills.component.css'],
+    templateUrl: 'app/components/skills/skills.component.html',
+    styleUrls: ['assets/css/skills.component.css'],
     directives: [SkillDetailComponent]
 })
 export class SkillsComponent implements OnInit {

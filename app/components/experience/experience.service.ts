@@ -1,4 +1,4 @@
-import {POSITIONS, EDUCATION, TRAINING} from './mock-data';
+import {POSITIONS, EDUCATION, TRAINING} from './../../mock-data';
 import {Injectable} from 'angular2/core';
 
 @Injectable()

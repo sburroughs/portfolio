@@ -1,36 +1,42 @@
-import {Skill} from './skill';
-import {Experience} from './experience';
+import {Skill} from './components/skills/skill';
+import {Experience} from './components/experience/experience';
 
 export var SKILLS:Skill[] = [
     {
-        "name": "Java", "rating": 10,
+        "name": "Backend", "rating": 10,
         "focus": [
-            {"name": "Base Java", "experience": 10},
+            {"name": "Java", "experience": 10},
             {"name": "JUnit", "experience": 10},
         ]
     },
     {
-        "name": "JavaScript", "rating": 10,
+        "name": "Frontend", "rating": 10,
         "focus": [
+            {"name": "Javascript", "experience": 10},
             {"name": "AngularJS", "experience": 10},
+            {"name": "PHP", "experience": 10},
+            {"name": "TypeScript", "experience": 10},
             {"name": "JQuery", "experience": 10},
             {"name": "Karma Testing", "experience": 10},
         ]
     },
     {
-        "name": "Data Storage", "rating": 7,
-        "focus": []
-    },
-    {
-        "name": "Developer Tools", "rating": 7,
+        "name": "Data", "rating": 7,
         "focus": [
-            {"name": "GIT ", "experience": 10},
-            {"name": "IntelliJ IDEA ", "experience": 10},
-            {"name": "Karma Testing", "experience": 10},
+            {"name": "SOLR", "experience": 10},
+            {"name": "MongoDB", "experience": 10}
         ]
     },
     {
-        "name": "Development Operations", "rating": 7,
+        "name": "Tools", "rating": 7,
+        "focus": [
+            {"name": "GIT ", "experience": 10},
+            {"name": "IntelliJ IDEA ", "experience": 10},
+            {"name": "SVN", "experience": 10},
+        ]
+    },
+    {
+        "name": "DevOps", "rating": 7,
         "focus": []
     },
     {
@@ -41,6 +47,8 @@ export var SKILLS:Skill[] = [
         "name": "Other", "rating": 7,
         "focus": []
     }
+
+
 ];
 
 export var POSITIONS:Experience[] = [
@@ -51,7 +59,11 @@ export var POSITIONS:Experience[] = [
 ];
 
 export var EDUCATION:Experience[] = [
-    {"organization": "University of Maryland University College", "title": "B.S. Computer Science, Minor in Computing", "experience": 2}
+    {
+        "organization": "University of Maryland University College",
+        "title": "B.S. Computer Science, Minor in Computing",
+        "experience": 2
+    }
 ];
 
 export var TRAINING:Experience[] = [

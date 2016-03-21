@@ -1,14 +1,14 @@
 import {Component, OnInit} from 'angular2/core';
 
 import {Experience} from './experience';
-import {ExperienceService} from './experience.service';
+import {ExperienceService} from './experience.service.ts';
 
 @Component({
     selector: 'my-positions',
-    templateUrl: 'app/experience.component.html',
-    styleUrls: ['styles/skills.component.css'],
+    templateUrl: 'app/components/experience/experience.component.html',
+    styleUrls: ['assets/css/skills.component.css']
 })
-export class PositionsComponent implements OnInit {
+export class ExperienceComponent implements OnInit {
     experiences:Experience[];
 
     constructor(private _experienceService:ExperienceService) {

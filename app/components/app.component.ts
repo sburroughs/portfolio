@@ -1,16 +1,14 @@
 import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
 
-import {DashboardComponent} from './dashboard.component';
+import {DashboardComponent} from './dashboard/dashboard.component.ts';
+import {SkillsComponent} from './skills/skills.component.ts';
+import {SkillDetailComponent} from './skills/skill-detail.component.ts';
+import {ExperienceComponent} from './experience/experience.component.ts';
+import {PersonalComponent} from './personal/personal.component.ts';
 
-import {SkillService} from './skill.service';
-import {SkillsComponent} from './skills.component';
-import {SkillDetailComponent} from './skill-detail.component';
-
-import {PositionsComponent} from './positions.component';
-
-import {ExperienceService} from './experience.service';
-
+import {SkillService} from './skills/skill.service.ts';
+import {ExperienceService} from './experience/experience.service.ts';
 
 @Component({
     selector: 'my-app',
@@ -23,10 +21,11 @@ import {ExperienceService} from './experience.service';
       <a [routerLink]="['Dashboard']">Highlights</a>
       <a [routerLink]="['Skills']">Skills</a>
       <a [routerLink]="['Experience']">Experience</a>
+      <a [routerLink]="['Personal']">Personal</a>
     </nav>
     <router-outlet></router-outlet>
   `,
-    styleUrls: ['styles/app.component.css'],
+    styleUrls: ['assets/css/app.component.css'],
     directives: [ROUTER_DIRECTIVES],
     providers: [
         ROUTER_PROVIDERS,
@@ -54,8 +53,13 @@ import {ExperienceService} from './experience.service';
     {
         path: '/experience',
         name: 'Experience',
-        component: PositionsComponent
-    }
+        component: ExperienceComponent
+    },
+    {
+        path: '/personal',
+        name: 'Personal',
+        component: PersonalComponent
+    },
 
 ])
 export class AppComponent {
