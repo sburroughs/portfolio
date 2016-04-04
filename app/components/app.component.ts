@@ -14,11 +14,9 @@ import {ExperienceService} from './experience/experience.service.ts';
     selector: 'my-app',
     template: `
     <h1>{{name}}</h1>
-    <h2>{{email}}</h2>
-    <a href="/"><md-icon md-svg-src="" aria-label="LinkedIn"></md-icon></a>
-    <a href="/"><md-icon md-svg-src="" aria-label="GitHub"></md-icon></a>
+    <h1>{{email}}</h1>
     <nav>
-      <a [routerLink]="['Dashboard']">Highlights</a>
+      <a [routerLink]="['Dashboard']">Overview</a>
       <a [routerLink]="['Skills']">Skills</a>
       <a [routerLink]="['Experience']">Experience</a>
       <a [routerLink]="['Personal']">Personal</a>
@@ -67,6 +65,4 @@ export class AppComponent {
     email = 'Shane.Burroughs@gmail.com';
     github = '';
     linkdin = '';
-
-
 }

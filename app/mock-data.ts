@@ -7,6 +7,9 @@ export var SKILLS:Skill[] = [
         "focus": [
             {"name": "Java", "experience": 10},
             {"name": "JUnit", "experience": 10},
+            {"name": "EasyMock", "experience": 10},
+            {"name": "Selenium", "experience": 10},
+            {"name": "JUnit", "experience": 10},
         ]
     },
     {
@@ -24,7 +27,12 @@ export var SKILLS:Skill[] = [
         "name": "Data", "rating": 7,
         "focus": [
             {"name": "SOLR", "experience": 10},
-            {"name": "MongoDB", "experience": 10}
+            {"name": "MongoDB", "experience": 10},
+            {"name": "MySQL", "experience": 10},
+            {"name": "REST", "experience": 10},
+            {"name": "Oracle SQL", "experience": 10},
+            {"name": "JMS", "experience": 10},
+            {"name": "XMPP", "experience": 10}
         ]
     },
     {
@@ -33,15 +41,33 @@ export var SKILLS:Skill[] = [
             {"name": "GIT ", "experience": 10},
             {"name": "IntelliJ IDEA ", "experience": 10},
             {"name": "SVN", "experience": 10},
+            {"name": "Jira", "experience": 10},
+            {"name": "Redmine", "experience": 10},
         ]
     },
     {
         "name": "DevOps", "rating": 7,
-        "focus": []
+        "focus": [
+            {"name": "MicroServices", "experience": 10},
+            {"name": "AWS", "experience": 10},
+            {"name": "Docker", "experience": 10},
+            {"name": "Jenkins", "experience": 10},
+            {"name": "Tomcat", "experience": 10},
+        ]
     },
     {
         "name": "Practices", "rating": 7,
-        "focus": []
+        "focus": [
+            {"name": "Agile", "experience": 10},
+            {"name": "Scrum", "experience": 10},
+        ]
+    },
+    {
+        "name": "IT", "rating": 7,
+        "focus": [
+            {"name": "Windows", "experience": 10},
+            {"name": "Linux", "experience": 10},
+        ]
     },
     {
         "name": "Other", "rating": 7,
@@ -52,22 +78,67 @@ export var SKILLS:Skill[] = [
 ];
 
 export var POSITIONS:Experience[] = [
-    {"organization": "Navy Department of Defense", "title": "Software", "experience": 2},
-    {"organization": "Fermion Government Services", "title": "Software", "experience": 2},
-    {"organization": "Proquest LLC", "title": "Software", "experience": 2},
-    {"organization": "Personal Development", "title": "Software", "experience": 2}
+    {
+        "organization": "Proquest LLC",
+        "title": "Software Engineer",
+        "experience": 2,
+        "description": "Full stack software engineer working on an in company content editing tool named ECMS.",
+        "startDate": "",
+        "endDate": ""
+    },
+    {
+        "organization": "Fermion Government Services",
+        "title": "Software Engineer",
+        "experience": 2,
+        "description": "Lead developer and Project manager for a Navy unmanned control station service.",
+        "startDate": "",
+        "endDate": ""
+    },
+    {
+        "organization": "Navy Department of Defense",
+        "title": "Software Development Technician",
+        "experience": 2,
+        "description": "",
+        "startDate": "",
+        "endDate": ""
+    },
+    {
+        "organization": "Personal Development",
+        "title": "CTO",
+        "experience": 2,
+        "description": "",
+        "startDate": "",
+        "endDate": ""
+    }
 ];
 
 export var EDUCATION:Experience[] = [
     {
         "organization": "University of Maryland University College",
         "title": "B.S. Computer Science, Minor in Computing",
-        "experience": 2
+        "experience": 2,
+        "description": "",
+        "startDate": "",
+        "endDate": ""
     }
 ];
 
 export var TRAINING:Experience[] = [
-    {"organization": "DevOps Days", "title": "Attendee", "experience": 1},
-    {"organization": "Random Hacks of Kindness", "title": "Engineering Mentor", "experience": 1}
+    {
+        "organization": "DevOps Days",
+        "title": "Attendee",
+        "experience": 1,
+        "description": "",
+        "startDate": "",
+        "endDate": ""
+    },
+    {
+        "organization": "Random Hacks of Kindness",
+        "title": "Engineering Mentor",
+        "experience": 1,
+        "description": "",
+        "startDate": "",
+        "endDate": ""
+    }
 ];
 

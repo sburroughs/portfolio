@@ -2,17 +2,10 @@ import {Component, OnInit} from 'angular2/core';
 
 @Component({
     selector: 'my-personal',
-    template: `
-    <h2>Personal Data</h2>
-    `,
+    templateUrl: '',
     styleUrls: ['assets/css/skills.component.css']
 })
-export class PersonalComponent implements OnInit {
+export class PersonalComponent {
 
-    constructor() {
-    }
-
-    ngOnInit() {
-    }
 
 }

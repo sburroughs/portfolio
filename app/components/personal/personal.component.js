@@ -21,12 +21,10 @@ System.register(['angular2/core'], function(exports_1, context_1) {
             PersonalComponent = (function () {
                 function PersonalComponent() {
                 }
-                PersonalComponent.prototype.ngOnInit = function () {
-                };
                 PersonalComponent = __decorate([
                     core_1.Component({
                         selector: 'my-personal',
-                        template: "\n    <h2>Personal Data</h2>\n    ",
+                        templateUrl: '',
                         styleUrls: ['assets/css/skills.component.css']
                     }), 
                     __metadata('design:paramtypes', [])

@@ -52,7 +52,7 @@ System.register(['angular2/core', 'angular2/router', './dashboard/dashboard.comp
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n    <h1>{{name}}</h1>\n    <h2>{{email}}</h2>\n    <a href=\"/\"><md-icon md-svg-src=\"\" aria-label=\"LinkedIn\"></md-icon></a>\n    <a href=\"/\"><md-icon md-svg-src=\"\" aria-label=\"GitHub\"></md-icon></a>\n    <nav>\n      <a [routerLink]=\"['Dashboard']\">Highlights</a>\n      <a [routerLink]=\"['Skills']\">Skills</a>\n      <a [routerLink]=\"['Experience']\">Experience</a>\n      <a [routerLink]=\"['Personal']\">Personal</a>\n    </nav>\n    <router-outlet></router-outlet>\n  ",
+                        template: "\n    <h1>{{name}}</h1>\n    <h1>{{email}}</h1>\n    <nav>\n      <a [routerLink]=\"['Dashboard']\">Overview</a>\n      <a [routerLink]=\"['Skills']\">Skills</a>\n      <a [routerLink]=\"['Experience']\">Experience</a>\n      <a [routerLink]=\"['Personal']\">Personal</a>\n    </nav>\n    <router-outlet></router-outlet>\n  ",
                         styleUrls: ['assets/css/app.component.css'],
                         directives: [router_1.ROUTER_DIRECTIVES],
                         providers: [
