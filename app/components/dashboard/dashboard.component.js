@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', './../skills/skill.service.ts'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', './../skills/skill.service.ts', '../experience/experience.component.ts'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', './../skills/skill.service.
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, skill_service_ts_1;
+    var core_1, router_1, skill_service_ts_1, experience_component_ts_1;
     var DashboardComponent;
     return {
         setters:[
@@ -22,6 +22,9 @@ System.register(['angular2/core', 'angular2/router', './../skills/skill.service.
             },
             function (skill_service_ts_1_1) {
                 skill_service_ts_1 = skill_service_ts_1_1;
+            },
+            function (experience_component_ts_1_1) {
+                experience_component_ts_1 = experience_component_ts_1_1;
             }],
         execute: function() {
             DashboardComponent = (function () {
@@ -43,7 +46,8 @@ System.register(['angular2/core', 'angular2/router', './../skills/skill.service.
                     core_1.Component({
                         selector: 'my-dashboard',
                         templateUrl: 'app/components/dashboard/dashboard.component.html',
-                        styleUrls: ['assets/css/dashboard.component.css']
+                        styleUrls: ['assets/css/dashboard.component.css'],
+                        directives: [experience_component_ts_1.ExperienceComponent]
                     }), 
                     __metadata('design:paramtypes', [router_1.Router, skill_service_ts_1.SkillService])
                 ], DashboardComponent);

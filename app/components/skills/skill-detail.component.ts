@@ -1,4 +1,4 @@
-import { Component, OnInit } from 'angular2/core';
+import { Component, OnInit , Input} from 'angular2/core';
 import {RouteParams} from 'angular2/router';
 
 import { Skill } from './skill';
@@ -8,10 +8,9 @@ import { SkillService } from './skill.service.ts';
     selector: 'my-skill-detail',
     templateUrl: 'app/components/skills/skill-detail.component.html',
     styleUrls: ['assets/css/skill-detail.component.css'],
-    inputs: ['skill'],
 })
 export class SkillDetailComponent implements OnInit {
-    skill:Skill;
+    @Input() skill:Skill;
 
     constructor(private _skillService:SkillService,
                 private _routeParams:RouteParams) {

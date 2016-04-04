@@ -24,7 +24,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 PersonalComponent = __decorate([
                     core_1.Component({
                         selector: 'my-personal',
-                        templateUrl: '',
+                        templateUrl: 'app/components/personal/personal.component.html',
                         styleUrls: ['assets/css/skills.component.css']
                     }), 
                     __metadata('design:paramtypes', [])

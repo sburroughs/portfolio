@@ -6,7 +6,4 @@
         <span class="badge">{{skill.experience}}</span> {{skill.name}}
     </li>
 </ul>
-<div *ngIf="selectedSkill">
-    <h3>{{selectedSkill.name}}</h3>
-    <my-skill-detail></my-skill-detail>
-</div>
+<my-skill-detail [skill]="selectedSkill"></my-skill-detail>

@@ -1,5 +1,4 @@
 import {Component, OnInit} from 'angular2/core';
-import {Router} from 'angular2/router';
 
 import {Skill} from './skill';
 import {SkillDetailComponent} from './skill-detail.component.ts';
@@ -15,8 +14,7 @@ export class SkillsComponent implements OnInit {
     skills:Skill[];
     selectedSkill:Skill;
 
-    constructor(private _router:Router,
-                private _skillService:SkillService) {
+    constructor(private _skillService:SkillService) {
     }
 
     getSkills() {
@@ -30,8 +28,5 @@ export class SkillsComponent implements OnInit {
     onSelect(skill:Skill) {
         this.selectedSkill = skill;
     }
-
-    gotoDetail() {
-        this._router.navigate(['SkillDetail', {name: this.selectedSkill.name}]);
-    }
+    
 }

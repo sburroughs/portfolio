@@ -38,12 +38,15 @@ System.register(['angular2/core', 'angular2/router', './skill.service.ts'], func
                 SkillDetailComponent.prototype.goBack = function () {
                     window.history.back();
                 };
+                __decorate([
+                    core_1.Input(), 
+                    __metadata('design:type', Object)
+                ], SkillDetailComponent.prototype, "skill", void 0);
                 SkillDetailComponent = __decorate([
                     core_1.Component({
                         selector: 'my-skill-detail',
                         templateUrl: 'app/components/skills/skill-detail.component.html',
                         styleUrls: ['assets/css/skill-detail.component.css'],
-                        inputs: ['skill'],
                     }), 
                     __metadata('design:paramtypes', [skill_service_ts_1.SkillService, router_1.RouteParams])
                 ], SkillDetailComponent);

@@ -4,10 +4,13 @@ import {Router} from 'angular2/router';
 import {Skill} from './../skills/skill';
 import {SkillService} from './../skills/skill.service.ts';
 
+import {ExperienceComponent} from '../experience/experience.component.ts';
+
 @Component({
     selector: 'my-dashboard',
     templateUrl: 'app/components/dashboard/dashboard.component.html',
-    styleUrls: ['assets/css/dashboard.component.css']
+    styleUrls: ['assets/css/dashboard.component.css'],
+    directives: [ExperienceComponent]
 })
 export class DashboardComponent implements OnInit {
 

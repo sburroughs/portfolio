@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', './skill-detail.component.ts', './skill.service.ts'], function(exports_1, context_1) {
+System.register(['angular2/core', './skill-detail.component.ts', './skill.service.ts'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,15 +10,12 @@ System.register(['angular2/core', 'angular2/router', './skill-detail.component.t
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, skill_detail_component_ts_1, skill_service_ts_1;
+    var core_1, skill_detail_component_ts_1, skill_service_ts_1;
     var SkillsComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (router_1_1) {
-                router_1 = router_1_1;
             },
             function (skill_detail_component_ts_1_1) {
                 skill_detail_component_ts_1 = skill_detail_component_ts_1_1;
@@ -28,8 +25,7 @@ System.register(['angular2/core', 'angular2/router', './skill-detail.component.t
             }],
         execute: function() {
             SkillsComponent = (function () {
-                function SkillsComponent(_router, _skillService) {
-                    this._router = _router;
+                function SkillsComponent(_skillService) {
                     this._skillService = _skillService;
                 }
                 SkillsComponent.prototype.getSkills = function () {
@@ -42,9 +38,6 @@ System.register(['angular2/core', 'angular2/router', './skill-detail.component.t
                 SkillsComponent.prototype.onSelect = function (skill) {
                     this.selectedSkill = skill;
                 };
-                SkillsComponent.prototype.gotoDetail = function () {
-                    this._router.navigate(['SkillDetail', { name: this.selectedSkill.name }]);
-                };
                 SkillsComponent = __decorate([
                     core_1.Component({
                         selector: 'my-skills',
@@ -52,7 +45,7 @@ System.register(['angular2/core', 'angular2/router', './skill-detail.component.t
                         styleUrls: ['assets/css/skills.component.css'],
                         directives: [skill_detail_component_ts_1.SkillDetailComponent]
                     }), 
-                    __metadata('design:paramtypes', [router_1.Router, skill_service_ts_1.SkillService])
+                    __metadata('design:paramtypes', [skill_service_ts_1.SkillService])
                 ], SkillsComponent);
                 return SkillsComponent;
             }());
