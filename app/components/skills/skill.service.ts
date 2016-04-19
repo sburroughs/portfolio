@@ -1,4 +1,4 @@
-import { SKILLS } from './../../mock-data';
+import { SKILLS } from '../util/mock-data';
 import { Injectable } from 'angular2/core';
 
 @Injectable()

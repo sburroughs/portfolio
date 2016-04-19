@@ -1,8 +1,8 @@
-import {POSITIONS, EDUCATION, TRAINING} from './../../mock-data';
+import {POSITIONS, EDUCATION,  CONFERENCES} from './mock-data';
 import {Injectable} from 'angular2/core';
 
 @Injectable()
-export class ExperienceService {
+export class DataProviderService {
 
     getPositions() {
         return Promise.resolve(POSITIONS);
@@ -12,8 +12,8 @@ export class ExperienceService {
         return Promise.resolve(EDUCATION);
     }
 
-    getTraining() {
-        return Promise.resolve(TRAINING);
+    getConferences() {
+        return Promise.resolve(CONFERENCES);
     }
-
+    
 }

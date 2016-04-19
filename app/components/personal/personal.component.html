@@ -1,6 +1,10 @@
 <h2>Personal</h2>
-<p>Name: David Shane Burroughs</p>
-<p>Email: Shane.Burroughs@gmail.com</p>
+<div>
+    <p>Name: {{name}}</p>
+    <p>Email: {{email}}</p>
+    <p>Github: {{github}}</p>
+    <p>LinkedIn: {{linkedin}}</p>
+</div>
 <ul>
     <li *ngFor="#hobby of hobbies">
         <p>{{hobby.name}}</p>

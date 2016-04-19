@@ -23,7 +23,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 }
                 PersonalComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-personal',
+                        selector: 'personal',
                         templateUrl: 'app/components/personal/personal.component.html',
                         styleUrls: ['assets/css/skills.component.css']
                     }), 

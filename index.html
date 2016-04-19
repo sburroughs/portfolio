@@ -17,13 +17,16 @@
     <script src="https://code.angularjs.org/2.0.0-beta.9/Rx.js"></script>
     <script src="https://code.angularjs.org/2.0.0-beta.9/angular2.dev.js"></script>
     <script src="https://code.angularjs.org/2.0.0-beta.9/router.dev.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
 
     <script>
         System.config({
             transpiler: 'typescript',
             typescriptOptions: {emitDecoratorMetadata: true},
-            packages: {'app': {defaultExtension: 'ts'}}
+            packages: {
+                'app': {defaultExtension: 'ts'},
+            }
         });
         System.import('app/main')
                 .then(null, console.error.bind(console));
@@ -31,6 +34,6 @@
 </head>
 
 <body>
-<my-app>Loading...</my-app>
+<portfolio>Loading...</portfolio>
 </body>
 </html>

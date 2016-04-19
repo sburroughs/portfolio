@@ -1,5 +1,5 @@
-import {Skill} from './components/skills/skill';
-import {Experience} from './components/experience/experience';
+import {Skill} from './../skills/skill.ts';
+import {Experience} from './../experience/experience.ts';
 
 export var SKILLS:Skill[] = [
     {
@@ -123,7 +123,7 @@ export var EDUCATION:Experience[] = [
     }
 ];
 
-export var TRAINING:Experience[] = [
+export var CONFERENCES:Experience[] = [
     {
         "organization": "DevOps Days",
         "title": "Attendee",

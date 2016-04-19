@@ -5,7 +5,7 @@ import {SkillDetailComponent} from './skill-detail.component.ts';
 import {SkillService} from './skill.service.ts';
 
 @Component({
-    selector: 'my-skills',
+    selector: 'skills',
     templateUrl: 'app/components/skills/skills.component.html',
     styleUrls: ['assets/css/skills.component.css'],
     directives: [SkillDetailComponent]

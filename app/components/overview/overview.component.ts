@@ -7,12 +7,12 @@ import {SkillService} from './../skills/skill.service.ts';
 import {ExperienceComponent} from '../experience/experience.component.ts';
 
 @Component({
-    selector: 'my-dashboard',
-    templateUrl: 'app/components/dashboard/dashboard.component.html',
+    selector: 'overview',
+    templateUrl: 'app/components/overview/overview.component.html',
     styleUrls: ['assets/css/dashboard.component.css'],
     directives: [ExperienceComponent]
 })
-export class DashboardComponent implements OnInit {
+export class OverviewComponent implements OnInit {
 
     skills:Skill[] = [];
 

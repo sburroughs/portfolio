@@ -40,7 +40,7 @@ System.register(['angular2/core', './skill-detail.component.ts', './skill.servic
                 };
                 SkillsComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-skills',
+                        selector: 'skills',
                         templateUrl: 'app/components/skills/skills.component.html',
                         styleUrls: ['assets/css/skills.component.css'],
                         directives: [skill_detail_component_ts_1.SkillDetailComponent]

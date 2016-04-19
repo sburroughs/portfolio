@@ -44,7 +44,7 @@ System.register(['angular2/core', 'angular2/router', './skill.service.ts'], func
                 ], SkillDetailComponent.prototype, "skill", void 0);
                 SkillDetailComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-skill-detail',
+                        selector: 'skill-detail',
                         templateUrl: 'app/components/skills/skill-detail.component.html',
                         styleUrls: ['assets/css/skill-detail.component.css'],
                     }), 

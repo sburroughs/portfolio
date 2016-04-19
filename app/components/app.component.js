@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', './dashboard/dashboard.component.ts', './skills/skills.component.ts', './skills/skill-detail.component.ts', './experience/experience.component.ts', './personal/personal.component.ts', './skills/skill.service.ts', './experience/experience.service.ts'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', './overview/overview.component.ts', './skills/skills.component.ts', './skills/skill-detail.component.ts', './experience/experience.component.ts', './personal/personal.component.ts', './skills/skill.service.ts', './util/data-provider.service.ts'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', './dashboard/dashboard.comp
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, dashboard_component_ts_1, skills_component_ts_1, skill_detail_component_ts_1, experience_component_ts_1, personal_component_ts_1, skill_service_ts_1, experience_service_ts_1;
+    var core_1, router_1, overview_component_ts_1, skills_component_ts_1, skill_detail_component_ts_1, experience_component_ts_1, personal_component_ts_1, skill_service_ts_1, data_provider_service_ts_1;
     var AppComponent;
     return {
         setters:[
@@ -20,8 +20,8 @@ System.register(['angular2/core', 'angular2/router', './dashboard/dashboard.comp
             function (router_1_1) {
                 router_1 = router_1_1;
             },
-            function (dashboard_component_ts_1_1) {
-                dashboard_component_ts_1 = dashboard_component_ts_1_1;
+            function (overview_component_ts_1_1) {
+                overview_component_ts_1 = overview_component_ts_1_1;
             },
             function (skills_component_ts_1_1) {
                 skills_component_ts_1 = skills_component_ts_1_1;
@@ -38,34 +38,32 @@ System.register(['angular2/core', 'angular2/router', './dashboard/dashboard.comp
             function (skill_service_ts_1_1) {
                 skill_service_ts_1 = skill_service_ts_1_1;
             },
-            function (experience_service_ts_1_1) {
-                experience_service_ts_1 = experience_service_ts_1_1;
+            function (data_provider_service_ts_1_1) {
+                data_provider_service_ts_1 = data_provider_service_ts_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
                     this.name = 'Shane Burroughs';
                     this.email = 'Shane.Burroughs@gmail.com';
-                    this.github = '';
-                    this.linkdin = '';
                 }
                 AppComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-app',
-                        template: "\n    <h1>{{name}}</h1>\n    <h1>{{email}}</h1>\n    <nav>\n      <a [routerLink]=\"['Dashboard']\">Overview</a>\n      <a [routerLink]=\"['Skills']\">Skills</a>\n      <a [routerLink]=\"['Experience']\">Experience</a>\n      <a [routerLink]=\"['Personal']\">Personal</a>\n    </nav>\n    <router-outlet></router-outlet>\n  ",
+                        selector: 'portfolio',
+                        template: "\n    <nav>\n      <a [routerLink]=\"['Overview']\">Overview</a>\n      <a [routerLink]=\"['Skills']\">Skills</a>\n      <a [routerLink]=\"['Experience']\">Experience</a>\n      <a [routerLink]=\"['Personal']\">Personal</a>\n    </nav>\n    <router-outlet></router-outlet>\n  ",
                         styleUrls: ['assets/css/app.component.css'],
                         directives: [router_1.ROUTER_DIRECTIVES],
                         providers: [
                             router_1.ROUTER_PROVIDERS,
                             skill_service_ts_1.SkillService,
-                            experience_service_ts_1.ExperienceService
+                            data_provider_service_ts_1.DataProviderService
                         ]
                     }),
                     router_1.RouteConfig([
                         {
-                            path: '/dashboard',
-                            name: 'Dashboard',
-                            component: dashboard_component_ts_1.DashboardComponent,
+                            path: '/overview',
+                            name: 'Overview',
+                            component: overview_component_ts_1.OverviewComponent,
                             useAsDefault: true
                         },
                         {
