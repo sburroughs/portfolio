@@ -24,6 +24,7 @@ System.register(['angular2/core', '../util/data-provider.service.ts'], function(
             ExperienceComponent = (function () {
                 function ExperienceComponent(_experienceService) {
                     this._experienceService = _experienceService;
+                    // NO-OP
                 }
                 ExperienceComponent.prototype.get = function () {
                     var _this = this;

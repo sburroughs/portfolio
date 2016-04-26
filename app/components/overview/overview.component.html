@@ -1,12 +1,14 @@
 <personal></personal>
+
+<div>
+    <h2>Current Position</h2>
+    <positions [experiences]="latestPositions"></positions>
+</div>
+
 <div class="grid grid-pad">
     <div *ngFor="#skill of skillSummary" (click)="gotoDetail(skill)" class="col-1-4">
         <div class="module skill">
             <h4>{{skill.name}}</h4>
         </div>
     </div>
-</div>
-<div>
-    <h2>Current Position</h2>
-    <positions [experiences]="latestPositions"></positions>
 </div>

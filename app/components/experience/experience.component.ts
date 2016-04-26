@@ -13,6 +13,7 @@ export class ExperienceComponent implements OnInit {
     experiences:Experience[];
 
     constructor(private _experienceService:DataProviderService) {
+        // NO-OP
     }
 
     get() {

@@ -82,33 +82,25 @@ export var POSITIONS:Experience[] = [
         "organization": "Proquest LLC",
         "title": "Software Engineer",
         "experience": 2,
-        "description": "Full stack software engineer working on an in company content editing tool named ECMS.",
-        "startDate": "",
-        "endDate": ""
+        "description": "Full stack java software engineer working on a cloud based content editing system named ECMS.",
+        "startDate": "02/01/2014",
+        "endDate": "PRESENT"
     },
     {
         "organization": "Fermion Government Services",
         "title": "Software Engineer",
         "experience": 2,
-        "description": "Lead developer and Project manager for a Navy unmanned control station service.",
-        "startDate": "",
-        "endDate": ""
+        "description": "Lead software engineer developing services and providing general software support for the Navy's Common Unmanned Controls Station..",
+        "startDate": "11/01/2012",
+        "endDate": "10/01/2014"
     },
     {
         "organization": "Navy Department of Defense",
         "title": "Software Development Technician",
         "experience": 2,
-        "description": "",
-        "startDate": "",
-        "endDate": ""
-    },
-    {
-        "organization": "Personal Development",
-        "title": "CTO",
-        "experience": 2,
-        "description": "",
-        "startDate": "",
-        "endDate": ""
+        "description": "Software development intern supporting the Navy P-3 and Navy EP-3 platform",
+        "startDate": "06/01/2010",
+        "endDate": "11/01/2012"
     }
 ];
 
@@ -117,9 +109,9 @@ export var EDUCATION:Experience[] = [
         "organization": "University of Maryland University College",
         "title": "B.S. Computer Science, Minor in Computing",
         "experience": 2,
-        "description": "",
-        "startDate": "",
-        "endDate": ""
+        "description": "Graduated w/degree",
+        "startDate": "08/01/2009",
+        "endDate": "12/01/2012"
     }
 ];
 
@@ -139,6 +131,15 @@ export var CONFERENCES:Experience[] = [
         "description": "",
         "startDate": "",
         "endDate": ""
+    },
+    {
+        "organization": "AWS Summit",
+        "title": "Attendee",
+        "experience": 1,
+        "description": "",
+        "startDate": "",
+        "endDate": ""
     }
+
 ];
 
