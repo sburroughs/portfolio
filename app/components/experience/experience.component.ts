@@ -1,4 +1,4 @@
-import {Component, OnInit} from 'angular2/core';
+import {Component, OnInit, Input} from 'angular2/core';
 
 import {Experience} from './experience';
 import {DataProviderService} from '../util/data-provider.service.ts';
@@ -9,6 +9,7 @@ import {DataProviderService} from '../util/data-provider.service.ts';
     styleUrls: ['assets/css/skills.component.css']
 })
 export class ExperienceComponent implements OnInit {
+    @Input()
     experiences:Experience[];
 
     constructor(private _experienceService:DataProviderService) {

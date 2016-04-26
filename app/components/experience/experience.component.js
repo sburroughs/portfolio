@@ -32,6 +32,10 @@ System.register(['angular2/core', '../util/data-provider.service.ts'], function(
                 ExperienceComponent.prototype.ngOnInit = function () {
                     this.get();
                 };
+                __decorate([
+                    core_1.Input(), 
+                    __metadata('design:type', Array)
+                ], ExperienceComponent.prototype, "experiences", void 0);
                 ExperienceComponent = __decorate([
                     core_1.Component({
                         selector: 'positions',
