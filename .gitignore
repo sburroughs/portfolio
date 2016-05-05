@@ -2,7 +2,7 @@
 .idea
 *.iml
 
-node_modules
+node_modulesd
 
 /app/*.js
 /app/*.js.map

@@ -1,4 +1,4 @@
-import {POSITIONS, EDUCATION,  CONFERENCES} from './mock-data';
+import {POSITIONS, EDUCATION,  CONFERENCES, PERSONAL} from './mock-data';
 import {Injectable} from 'angular2/core';
 
 @Injectable()
@@ -14,6 +14,10 @@ export class DataProviderService {
 
     getConferences() {
         return Promise.resolve(CONFERENCES);
+    }
+
+    getPersonal() {
+        return Promise.resolve(PERSONAL);
     }
     
 }

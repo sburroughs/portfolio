@@ -1,5 +1,6 @@
 import {Skill} from './../skills/skill.ts';
 import {Experience} from './../experience/experience.ts';
+import {Personal, Hobby} from './../personal/personal.ts';
 
 export var SKILLS:Skill[] = [
     {
@@ -142,4 +143,51 @@ export var CONFERENCES:Experience[] = [
     }
 
 ];
+
+export var PERSONAL:Personal = {
+    name: "Shane Burroughs",
+    email: "Shane.Burroughs@gmail.com",
+    phone: "(240) 925-5055",
+    links: [
+        {
+            display: "Facebook",
+            icon: "",
+            hyperlink: ""
+        },
+        {
+            display: "Github",
+            icon: "",
+            hyperlink: ""
+        },
+        {
+            display: "Twitter",
+            icon: "",
+            hyperlink: ""
+        },
+        {
+            display: "Linkedin",
+            icon: "",
+            hyperlink: ""
+        }
+    ],
+    summary: "",
+    hobbies: [
+        {
+            name: "Fantasy Football Champion",
+            description: ""
+        },
+        {
+            name: "Washington Redskins Fan",
+            description: ""
+        },
+        {
+            name: "Culinary Wizard",
+            description: ""
+        },
+        {
+            name: "Musician",
+            description: ""
+        }
+    ]
+};
 

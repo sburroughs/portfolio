@@ -1,9 +1,8 @@
-<h2>Experience</h2>
 <ul>
     <li *ngFor="#experience of experiences">
-        <p>{{experience.organization}}</p>
-        <p>{{experience.title}}</p>
+        <h2>{{experience.title}}</h2>
+        <h3>{{experience.organization}}</h3>
+        <h4>{{experience.startDate}} - {{experience.endDate}}</h4>
         <p>{{experience.description}}</p>
-        <p>{{experience.experience}}</p>
     </li>
 </ul>

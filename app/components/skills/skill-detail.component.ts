@@ -12,7 +12,7 @@ import {SkillService} from './skill.service.ts';
 export class SkillDetailComponent implements OnInit {
     @Input()
     skill:Skill;
-
+    
     constructor(private _skillService:SkillService,
                 private _routeParams:RouteParams) {
     }

@@ -1,4 +1,4 @@
-System.register(['angular2/core'], function(exports_1, context_1) {
+System.register(['angular2/core', '../util/data-provider.service.ts'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,24 +10,36 @@ System.register(['angular2/core'], function(exports_1, context_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
+    var core_1, data_provider_service_ts_1;
     var PersonalComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (data_provider_service_ts_1_1) {
+                data_provider_service_ts_1 = data_provider_service_ts_1_1;
             }],
         execute: function() {
             PersonalComponent = (function () {
-                function PersonalComponent() {
+                function PersonalComponent(_dataProvider) {
+                    this._dataProvider = _dataProvider;
+                    // NO-OP
                 }
+                PersonalComponent.prototype.get = function () {
+                    var _this = this;
+                    this._dataProvider.getPersonal().then(function (about) { return _this.about = about; });
+                };
+                PersonalComponent.prototype.ngOnInit = function () {
+                    this.get();
+                };
                 PersonalComponent = __decorate([
                     core_1.Component({
                         selector: 'personal',
                         templateUrl: 'app/components/personal/personal.component.html',
                         styleUrls: ['assets/css/skills.component.css']
                     }), 
-                    __metadata('design:paramtypes', [])
+                    __metadata('design:paramtypes', [data_provider_service_ts_1.DataProviderService])
                 ], PersonalComponent);
                 return PersonalComponent;
             }());
