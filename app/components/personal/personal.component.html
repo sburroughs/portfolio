@@ -1,13 +1,20 @@
-<h2>Personal</h2>
-<div>
-    <p>Name: {{name}}</p>
-    <p>Email: {{email}}</p>
-    <p>Github: {{links}}</p>
-    <p>LinkedIn: {{linkedin}}</p>
+<div *ngIf="about">
+    <p>Name: {{about.name}}</p>
+    <p>Email: {{about.email}}</p>
+    <div class="social">
+        <ul>
+            <li *ngFor="#link of about.links">
+                <p><a href="{{link.hyperlink}}">{{link.display}}</a></p>
+            </li>
+        </ul>
+    </div>
+    <div class="hobbies">
+        <h3>Hobbies</h3>
+        <ul>
+            <li *ngFor="#hobby of about.hobbies">
+                <p>{{hobby.name}}</p>
+                <p>{{hobby.description}}</p>
+            </li>
+        </ul>
+    </div>
 </div>
-<ul>
-    <li *ngFor="#hobby of hobbies">
-        <p>{{hobby.name}}</p>
-        <p>{{hobby.description}}</p>
-    </li>
-</ul>

@@ -44,13 +44,11 @@ System.register(['angular2/core', 'angular2/router', './overview/overview.compon
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
-                    this.name = 'Shane Burroughs';
-                    this.email = 'Shane.Burroughs@gmail.com';
                 }
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'portfolio',
-                        template: "\n    <nav>\n      <a [routerLink]=\"['Overview']\">Overview</a>\n      <a [routerLink]=\"['Skills']\">Skills</a>\n      <a [routerLink]=\"['Experience']\">Experience</a>\n      <a [routerLink]=\"['Personal']\">Personal</a>\n    </nav>\n    <router-outlet></router-outlet>\n  ",
+                        template: "\n    <nav>\n      <a [routerLink]=\"['Overview']\">Overview</a>\n      <a [routerLink]=\"['Skills']\">Skills</a>\n      <a [routerLink]=\"['Experience']\">Experience</a>\n      <a [routerLink]=\"['Personal']\">Personal</a>\n    </nav>\n    <router-outlet></router-outlet>\n    <footer>\n        <div>\n            <p>This site outlines my professional and personal experiences in an interactive way.</p>\n        </div>\n    </footer>\n  ",
                         styleUrls: ['assets/css/app.component.css'],
                         directives: [router_1.ROUTER_DIRECTIVES],
                         providers: [

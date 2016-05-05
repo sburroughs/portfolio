@@ -29,6 +29,8 @@ System.register(['angular2/core', '../util/data-provider.service.ts'], function(
                 ExperienceComponent.prototype.get = function () {
                     var _this = this;
                     this._experienceService.getPositions().then(function (experiences) { return _this.experiences = experiences; });
+                    this._experienceService.getConferences().then(function (conferences) { return _this.conferences = conferences; });
+                    this._experienceService.getEducation().then(function (educations) { return _this.educations = educations; });
                 };
                 ExperienceComponent.prototype.ngOnInit = function () {
                     this.get();

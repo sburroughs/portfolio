@@ -11,6 +11,10 @@ import {DataProviderService} from '../util/data-provider.service.ts';
 export class ExperienceComponent implements OnInit {
     @Input()
     experiences:Experience[];
+    conferences:Experience[];
+    educations:Experience[];
+
+
 
     constructor(private _experienceService:DataProviderService) {
         // NO-OP
@@ -18,6 +22,8 @@ export class ExperienceComponent implements OnInit {
 
     get() {
         this._experienceService.getPositions().then(experiences => this.experiences = experiences);
+        this._experienceService.getConferences().then(conferences => this.conferences = conferences);
+        this._experienceService.getEducation().then(educations => this.educations = educations);
     }
 
     ngOnInit() {

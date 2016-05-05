@@ -1,6 +1,6 @@
 import {Skill} from './../skills/skill.ts';
 import {Experience} from './../experience/experience.ts';
-import {Personal, Hobby} from './../personal/personal.ts';
+import {Personal} from './../personal/personal.ts';
 
 export var SKILLS:Skill[] = [
     {
@@ -152,41 +152,45 @@ export var PERSONAL:Personal = {
         {
             display: "Facebook",
             icon: "",
-            hyperlink: ""
+            hyperlink: "http://www.google.com"
         },
         {
             display: "Github",
             icon: "",
-            hyperlink: ""
+            hyperlink: "http://www.google.com"
         },
         {
             display: "Twitter",
             icon: "",
-            hyperlink: ""
+            hyperlink: "http://www.google.com"
         },
         {
             display: "Linkedin",
             icon: "",
-            hyperlink: ""
+            hyperlink: "http://www.google.com"
         }
     ],
     summary: "",
     hobbies: [
         {
-            name: "Fantasy Football Champion",
-            description: ""
+            name: "Pup Dad",
+            description: "Provider and enabler of a mildly spoiled Goldendoodle name \"Hoder\""
         },
         {
-            name: "Washington Redskins Fan",
-            description: ""
+            name: "Fantasy Football Champion",
+            description: "Long time fantasy football player and league manager"
         },
         {
             name: "Culinary Wizard",
-            description: ""
+            description: "Cooking, fine dining, fast casual cuisine, whatever the circumstance, I want it."
         },
         {
             name: "Musician",
-            description: ""
+            description: "Guitar and the occasional piano, always enjoyable."
+        },
+        {
+            name: "Washington Redskins Fan",
+            description: "#HTTR"
         }
     ]
 };

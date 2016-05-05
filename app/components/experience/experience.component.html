@@ -1,8 +1,34 @@
-<ul>
-    <li *ngFor="#experience of experiences">
-        <h2>{{experience.title}}</h2>
-        <h3>{{experience.organization}}</h3>
-        <h4>{{experience.startDate}} - {{experience.endDate}}</h4>
-        <p>{{experience.description}}</p>
-    </li>
-</ul>
+<div>
+    <div>
+        <h2>Professional Experience</h2>
+        <ul>
+            <li *ngFor="#experience of experiences">
+                <h3>{{experience.title}}</h3>
+                <h4>{{experience.organization}}</h4>
+                <h5>{{experience.startDate}} - {{experience.endDate}}</h5>
+                <p>{{experience.description}}</p>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h2>Education</h2>
+        <ul>
+            <li *ngFor="#education of educations">
+                <h4>{{education.organization}}</h4>
+                <h4>{{education.title}}</h4>
+                <h5>{{education.endDate}}</h5>
+                <p>{{education.description}}</p>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h2>Conferences</h2>
+        <ul>
+            <li *ngFor="#conferences of conferences">
+                <h4>{{conferences.organization}}</h4>
+                <h5>{{conferences.startDate}}</h5>
+                <p>{{conferences.description}}</p>
+            </li>
+        </ul>
+    </div>
+</div>

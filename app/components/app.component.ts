@@ -20,6 +20,11 @@ import {DataProviderService} from './util/data-provider.service.ts';
       <a [routerLink]="['Personal']">Personal</a>
     </nav>
     <router-outlet></router-outlet>
+    <footer>
+        <div>
+            <p>This site outlines my professional and personal experiences in an interactive way.</p>
+        </div>
+    </footer>
   `,
     styleUrls: ['assets/css/app.component.css'],
     directives: [ROUTER_DIRECTIVES],
@@ -59,6 +64,5 @@ import {DataProviderService} from './util/data-provider.service.ts';
 
 ])
 export class AppComponent {
-    name = 'Shane Burroughs';
-    email = 'Shane.Burroughs@gmail.com';
+
 }
