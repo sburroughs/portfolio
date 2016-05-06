@@ -1,9 +1,9 @@
 <h2>Skills</h2>
-<ul class="skills">
+<ul>
     <li *ngFor="#skill of skills"
         [class.selected]="skill === selectedSkill"
         (click)="onSelect(skill)">
-        <span class="badge">{{skill.experience}}</span> {{skill.name}}
+        <span>{{skill.experience}}</span> {{skill.name}}
     </li>
 </ul>
 <skill-detail [skill]="selectedSkill"></skill-detail>

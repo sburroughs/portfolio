@@ -12,21 +12,7 @@ import {DataProviderService} from './util/data-provider.service.ts';
 
 @Component({
     selector: 'portfolio',
-    template: `
-    <nav>
-      <a [routerLink]="['Overview']">Overview</a>
-      <a [routerLink]="['Skills']">Skills</a>
-      <a [routerLink]="['Experience']">Experience</a>
-      <a [routerLink]="['Personal']">Personal</a>
-    </nav>
-    <router-outlet></router-outlet>
-    <footer>
-        <div>
-            <p>This site outlines my professional and personal experiences in an interactive way.</p>
-        </div>
-    </footer>
-  `,
-    styleUrls: ['assets/css/app.component.css'],
+    templateUrl: 'app/components/app.component.html',
     directives: [ROUTER_DIRECTIVES],
     providers: [
         ROUTER_PROVIDERS,

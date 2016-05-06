@@ -48,8 +48,7 @@ System.register(['angular2/core', 'angular2/router', './overview/overview.compon
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'portfolio',
-                        template: "\n    <nav>\n      <a [routerLink]=\"['Overview']\">Overview</a>\n      <a [routerLink]=\"['Skills']\">Skills</a>\n      <a [routerLink]=\"['Experience']\">Experience</a>\n      <a [routerLink]=\"['Personal']\">Personal</a>\n    </nav>\n    <router-outlet></router-outlet>\n    <footer>\n        <div>\n            <p>This site outlines my professional and personal experiences in an interactive way.</p>\n        </div>\n    </footer>\n  ",
-                        styleUrls: ['assets/css/app.component.css'],
+                        templateUrl: 'app/components/app.component.html',
                         directives: [router_1.ROUTER_DIRECTIVES],
                         providers: [
                             router_1.ROUTER_PROVIDERS,
