@@ -1,9 +1,17 @@
-<h2>Skills</h2>
-<ul>
-    <li *ngFor="#skill of skills"
-        [class.selected]="skill === selectedSkill"
-        (click)="onSelect(skill)">
-        <span>{{skill.experience}}</span> {{skill.name}}
-    </li>
-</ul>
-<skill-detail [skill]="selectedSkill"></skill-detail>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <h2>Skills</h2>
+            <ul class="list-unstyled">
+                <li *ngFor="#skill of skills"
+                    [class.selected]="skill === selectedSkill"
+                    (click)="onSelect(skill)">
+                    <span>{{skill.experience}}</span> {{skill.name}}
+                </li>
+            </ul>
+        </div>
+        <div class="col-sm-8">
+            <skill-detail [skill]="selectedSkill"></skill-detail>
+        </div>
+    </div>
+</div>

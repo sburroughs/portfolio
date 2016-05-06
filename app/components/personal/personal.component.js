@@ -37,7 +37,6 @@ System.register(['angular2/core', '../util/data-provider.service.ts'], function(
                     core_1.Component({
                         selector: 'personal',
                         templateUrl: 'app/components/personal/personal.component.html',
-                        styleUrls: ['assets/css/skills.component.css']
                     }), 
                     __metadata('design:paramtypes', [data_provider_service_ts_1.DataProviderService])
                 ], PersonalComponent);

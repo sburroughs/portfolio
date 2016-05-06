@@ -6,7 +6,6 @@ import {DataProviderService} from '../util/data-provider.service.ts';
 @Component({
     selector: 'positions',
     templateUrl: 'app/components/experience/experience.component.html',
-    styleUrls: ['assets/css/skills.component.css']
 })
 export class ExperienceComponent implements OnInit {
     @Input()

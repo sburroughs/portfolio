@@ -7,7 +7,6 @@ import {SkillService} from './skill.service.ts';
 @Component({
     selector: 'skills',
     templateUrl: 'app/components/skills/skills.component.html',
-    styleUrls: ['assets/css/skills.component.css'],
     directives: [SkillDetailComponent]
 })
 export class SkillsComponent implements OnInit {

@@ -42,7 +42,6 @@ System.register(['angular2/core', './skill-detail.component.ts', './skill.servic
                     core_1.Component({
                         selector: 'skills',
                         templateUrl: 'app/components/skills/skills.component.html',
-                        styleUrls: ['assets/css/skills.component.css'],
                         directives: [skill_detail_component_ts_1.SkillDetailComponent]
                     }), 
                     __metadata('design:paramtypes', [skill_service_ts_1.SkillService])

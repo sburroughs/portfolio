@@ -12,7 +12,6 @@ import {DataProviderService} from "../util/data-provider.service";
 @Component({
     selector: 'overview',
     templateUrl: 'app/components/overview/overview.component.html',
-    styleUrls: ['assets/css/dashboard.component.css'],
     directives: [ExperienceComponent, PersonalComponent]
 })
 export class OverviewComponent implements OnInit {

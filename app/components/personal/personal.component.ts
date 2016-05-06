@@ -6,7 +6,6 @@ import {DataProviderService} from '../util/data-provider.service.ts';
 @Component({
     selector: 'personal',
     templateUrl: 'app/components/personal/personal.component.html',
-    styleUrls: ['assets/css/skills.component.css']
 })
 export class PersonalComponent implements OnInit {
 

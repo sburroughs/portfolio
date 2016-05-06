@@ -46,7 +46,6 @@ System.register(['angular2/core', 'angular2/router', './skill.service.ts'], func
                     core_1.Component({
                         selector: 'skill-detail',
                         templateUrl: 'app/components/skills/skill-detail.component.html',
-                        styleUrls: ['assets/css/skill-detail.component.css'],
                     }), 
                     __metadata('design:paramtypes', [skill_service_ts_1.SkillService, router_1.RouteParams])
                 ], SkillDetailComponent);
