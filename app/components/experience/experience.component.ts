@@ -13,8 +13,6 @@ export class ExperienceComponent implements OnInit {
     conferences:Experience[];
     educations:Experience[];
 
-
-
     constructor(private _experienceService:DataProviderService) {
         // NO-OP
     }
