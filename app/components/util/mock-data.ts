@@ -150,22 +150,12 @@ export var PERSONAL:Personal = {
     phone: "(240) 925-5055",
     links: [
         {
-            display: "Facebook",
+            display: "G",
             icon: "",
             hyperlink: "http://www.google.com"
         },
         {
-            display: "Github",
-            icon: "",
-            hyperlink: "http://www.google.com"
-        },
-        {
-            display: "Twitter",
-            icon: "",
-            hyperlink: "http://www.google.com"
-        },
-        {
-            display: "Linkedin",
+            display: "L",
             icon: "",
             hyperlink: "http://www.google.com"
         }
@@ -173,16 +163,16 @@ export var PERSONAL:Personal = {
     summary: "",
     hobbies: [
         {
-            name: "Pup Dad",
-            description: "Provider and enabler of a mildly spoiled Goldendoodle name \"Hoder\""
+            name: "Culinary Wizard",
+            description: "Cooking, fine dining, fast casual cuisine, whatever the circumstance, I want it."
         },
         {
             name: "Fantasy Football Champion",
             description: "Long time fantasy football player and league manager"
         },
         {
-            name: "Culinary Wizard",
-            description: "Cooking, fine dining, fast casual cuisine, whatever the circumstance, I want it."
+            name: "Pup Dad",
+            description: "Provider of a mildly spoiled Goldendoodle name \"Hoder\""
         },
         {
             name: "Musician",

@@ -1,14 +1,17 @@
-<personal></personal>
+<div class="container">
 
-<div>
-    <h4>Currently enjoying employment</h4>
-    <positions [experiences]="latestPositions"></positions>
-</div>
+    <personal class="row"></personal>
 
-<div>
-    <div *ngFor="#skill of skillSummary" (click)="gotoDetail(skill)" class="col-1-4">
-        <div class="module skill">
-            <h4>{{skill.name}}</h4>
+    <div class="row">
+        <h4>Currently enjoying employment</h4>
+        <positions [experiences]="latestPositions"></positions>
+    </div>
+
+    <div class="row">
+        <div *ngFor="#skill of skillSummary" (click)="gotoDetail(skill)" class="col-1-4">
+            <div class="module skill">
+                <h4>{{skill.name}}</h4>
+            </div>
         </div>
     </div>
 </div>

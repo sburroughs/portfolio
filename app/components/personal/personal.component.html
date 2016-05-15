@@ -1,23 +1,26 @@
 <div class="container" *ngIf="about">
     <div class="row">
-        <p>Name: {{about.name}}</p>
-        <p>Email: {{about.email}}</p>
-        <div class="social">
-            <ul>
-                <li *ngFor="#link of about.links">
-                    <h2><a href="{{link.hyperlink}}">{{link.display}}</a></h2>
+        <div class="col-sm-4">
+            <img class="img-rounded" src="../../../assets/img/headshot.jpg" alt="headshot">
+        </div>
+        <div class="col-sm-*">
+            <p>Name: {{about.name}}</p>
+            <p>Email: {{about.email}}</p>
+            <ul *ngFor="#link of about.links">
+                <li class="list-inline list-unstyled">
+                    <span><a href="{{link.hyperlink}}">{{link.display}}</a></span>
                 </li>
             </ul>
         </div>
     </div>
-    <!--<img src="../../../assets/img/headshot.jpg" class="img-circle" alt="headshot" width="300" height="256">-->
+
     <div class="row">
-        <h3>Hobbies</h3>
-        <ul>
-            <li *ngFor="#hobby of about.hobbies">
-                <p>{{hobby.name}}</p>
+        <ul *ngFor="#hobby of about.hobbies">
+            <li>
+                <h3>{{hobby.name}}</h3>
                 <p>{{hobby.description}}</p>
             </li>
         </ul>
     </div>
+
 </div>
