@@ -1,17 +1,20 @@
 <div class="container">
 
-    <personal class="row"></personal>
-
     <div class="row">
-        <h4>Currently enjoying employment</h4>
-        <positions [experiences]="latestPositions"></positions>
+        <h1>HEADSHOT COMPONENT HERE...</h1>
     </div>
 
     <div class="row">
-        <div *ngFor="#skill of skillSummary" (click)="gotoDetail(skill)" class="col-1-4">
+        <div *ngFor="#skill of skillSummary" (click)="gotoDetail(skill)" class="col-sm-3">
             <div class="module skill">
                 <h4>{{skill.name}}</h4>
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <h4>Currently enjoying employment</h4>
+        <p>MOST RECENT JOB HERE...</p>
+    </div>
+
 </div>

@@ -150,21 +150,21 @@ export var PERSONAL:Personal = {
     phone: "(240) 925-5055",
     links: [
         {
-            display: "G",
+            display: "Github",
             icon: "",
-            hyperlink: "http://www.google.com"
+            hyperlink: "https://github.com/sburroughs"
         },
         {
-            display: "L",
+            display: "LinkedIn",
             icon: "",
-            hyperlink: "http://www.google.com"
+            hyperlink: "https://www.linkedin.com/in/shaneburroughs"
         }
     ],
     summary: "",
     hobbies: [
         {
             name: "Culinary Wizard",
-            description: "Cooking, fine dining, fast casual cuisine, whatever the circumstance, I want it."
+            description: "Cooking has been one of my greatest passions for as long as I can remember"
         },
         {
             name: "Fantasy Football Champion",
@@ -176,7 +176,7 @@ export var PERSONAL:Personal = {
         },
         {
             name: "Musician",
-            description: "Guitar and the occasional piano, always enjoyable."
+            description: "Who doesn't love that guy who plays wonderwall at every party ever."
         },
         {
             name: "Washington Redskins Fan",

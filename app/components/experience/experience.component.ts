@@ -8,13 +8,11 @@ import {DataProviderService} from '../util/data-provider.service.ts';
     templateUrl: 'app/components/experience/experience.component.html',
 })
 export class ExperienceComponent implements OnInit {
-    @Input()
+
     experiences:Experience[];
     conferences:Experience[];
     educations:Experience[];
-
-
-
+    
     constructor(private _experienceService:DataProviderService) {
         // NO-OP
     }

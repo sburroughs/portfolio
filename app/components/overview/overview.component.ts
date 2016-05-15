@@ -17,7 +17,7 @@ import {DataProviderService} from "../util/data-provider.service";
 export class OverviewComponent implements OnInit {
 
     skillSummary:Skill[] = [];
-    latestPositions:Experience[] =[];
+    latestPosition:Experience;
 
     constructor(private _router:Router,
                 private _skillService:SkillService,
@@ -29,7 +29,7 @@ export class OverviewComponent implements OnInit {
             .then(skills => this.skillSummary = skills.slice(0, 4));
 
         this._dataProviderService.getPositions()
-            .then(experiences => this.latestPositions = experiences.slice(0,1));
+            .then(experiences => this.latestPosition = experiences[0]);
     }
 
     gotoDetail(skill:Skill) {

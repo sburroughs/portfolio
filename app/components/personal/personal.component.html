@@ -1,11 +1,11 @@
 <div class="container" *ngIf="about">
     <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-3">
             <img class="img-rounded" src="../../../assets/img/headshot.jpg" alt="headshot">
         </div>
-        <div class="col-sm-*">
-            <p>Name: {{about.name}}</p>
+        <div class="col-sm-8">
             <p>Email: {{about.email}}</p>
+            <p>Phone: {{about.phone}}</p>
             <ul *ngFor="#link of about.links">
                 <li class="list-inline list-unstyled">
                     <span><a href="{{link.hyperlink}}">{{link.display}}</a></span>
@@ -13,7 +13,6 @@
             </ul>
         </div>
     </div>
-
     <div class="row">
         <ul *ngFor="#hobby of about.hobbies">
             <li>
