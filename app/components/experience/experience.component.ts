@@ -1,24 +1,28 @@
-import {Component, OnInit, Input} from 'angular2/core';
+import {Component, OnInit} from 'angular2/core';
 
-import {Experience} from './experience';
+import {Experience, Position} from './experience';
 import {DataProviderService} from '../util/data-provider.service.ts';
+import {PositionComponent} from "./position.component";
+import {EducationComponent} from "./education.component";
+import {ConferenceComponent} from "./conference.component";
 
 @Component({
-    selector: 'positions',
+    selector: 'experience',
     templateUrl: 'app/components/experience/experience.component.html',
+    directives: [PositionComponent, EducationComponent, ConferenceComponent]
 })
 export class ExperienceComponent implements OnInit {
 
-    experiences:Experience[];
-    conferences:Experience[];
-    educations:Experience[];
-    
+    positions:Position[] = [];
+    conferences:Experience[] = [];
+    educations:Experience[] = [];
+
     constructor(private _experienceService:DataProviderService) {
         // NO-OP
     }
 
     get() {
-        this._experienceService.getPositions().then(experiences => this.experiences = experiences);
+        this._experienceService.getPositions().then(positions => this.positions = positions);
         this._experienceService.getConferences().then(conferences => this.conferences = conferences);
         this._experienceService.getEducation().then(educations => this.educations = educations);
     }

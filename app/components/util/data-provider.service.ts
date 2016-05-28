@@ -6,7 +6,7 @@ export class DataProviderService {
 
     /**
      *
-     * @returns {Promise<Experience[]>}
+     * @returns {Promise<Position[]>}
      */
     getPositions() {
         return Promise.resolve(POSITIONS);
@@ -14,7 +14,7 @@ export class DataProviderService {
 
     /**
      *
-     * @returns {Promise<Experience[]>}
+     * @returns {Promise<Education[]>}
      */
     getEducation() {
         return Promise.resolve(EDUCATION);
@@ -22,7 +22,7 @@ export class DataProviderService {
 
     /**
      *
-     * @returns {Promise<Experience[]>}
+     * @returns {Promise<Conference[]>}
      */
     getConferences() {
         return Promise.resolve(CONFERENCES);

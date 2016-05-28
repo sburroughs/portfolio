@@ -1,26 +1,26 @@
 import {Component, OnInit} from 'angular2/core';
-import {Router} from 'angular2/router';
 
 import {Skill} from './../skills/skill';
 import {SkillService} from './../skills/skill.service.ts';
 
-import {Experience} from './../experience/experience.ts';
-import {ExperienceComponent} from '../experience/experience.component.ts';
-import {PersonalComponent} from "../personal/personal.component";
+import {ContactComponent} from "../personal/contact.component";
 import {DataProviderService} from "../util/data-provider.service";
+
+import {Position} from '../experience/experience'
 
 @Component({
     selector: 'overview',
     templateUrl: 'app/components/overview/overview.component.html',
-    directives: [ExperienceComponent, PersonalComponent]
+    directives: [ContactComponent]
 })
 export class OverviewComponent implements OnInit {
 
+    tagline:string;
+    summary:string;
     skillSummary:Skill[] = [];
-    latestPosition:Experience;
+    latestPosition:Position;
 
-    constructor(private _router:Router,
-                private _skillService:SkillService,
+    constructor(private _skillService:SkillService,
                 private _dataProviderService:DataProviderService) {
     }
 
@@ -30,10 +30,12 @@ export class OverviewComponent implements OnInit {
 
         this._dataProviderService.getPositions()
             .then(experiences => this.latestPosition = experiences[0]);
+
+        this._dataProviderService.getPersonal()
+            .then(personal => {
+                this.tagline = personal.tagline;
+                this.summary = personal.summary;
+            });
     }
 
-    gotoDetail(skill:Skill) {
-        let link = ['SkillDetail', {name: skill.name}];
-        this._router.navigate(link);
-    }
 }

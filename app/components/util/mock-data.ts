@@ -1,5 +1,5 @@
 import {Skill} from './../skills/skill.ts';
-import {Experience} from './../experience/experience.ts';
+import {Education, Conference, Position} from './../experience/experience.ts';
 import {Personal} from './../personal/personal.ts';
 
 export var SKILLS:Skill[] = [
@@ -78,9 +78,10 @@ export var SKILLS:Skill[] = [
 
 ];
 
-export var POSITIONS:Experience[] = [
+export var POSITIONS:Position[] = [
     {
         "organization": "Proquest LLC",
+        "location": "Bethesda, MD (Currently Remote)",
         "title": "Software Engineer",
         "experience": 2,
         "description": "Full stack java software engineer working on a cloud based content editing system named ECMS.",
@@ -89,6 +90,7 @@ export var POSITIONS:Experience[] = [
     },
     {
         "organization": "Fermion Government Services",
+        "location": "Lexington Park, MD",
         "title": "Software Engineer",
         "experience": 2,
         "description": "Lead software engineer developing services and providing general software support for the Navy's Common Unmanned Controls Station..",
@@ -97,6 +99,7 @@ export var POSITIONS:Experience[] = [
     },
     {
         "organization": "Navy Department of Defense",
+        "location": "Lexington Park, MD",
         "title": "Software Development Technician",
         "experience": 2,
         "description": "Software development intern supporting the Navy P-3 and Navy EP-3 platform",
@@ -105,9 +108,10 @@ export var POSITIONS:Experience[] = [
     }
 ];
 
-export var EDUCATION:Experience[] = [
+export var EDUCATION:Education[] = [
     {
         "organization": "University of Maryland University College",
+        "location": "Chicago, IL",
         "title": "B.S. Computer Science, Minor in Computing",
         "experience": 2,
         "description": "Graduated w/degree",
@@ -116,9 +120,10 @@ export var EDUCATION:Experience[] = [
     }
 ];
 
-export var CONFERENCES:Experience[] = [
+export var CONFERENCES:Conference[] = [
     {
         "organization": "DevOps Days",
+        "location": "Chicago, IL",
         "title": "Attendee",
         "experience": 1,
         "description": "",
@@ -127,6 +132,7 @@ export var CONFERENCES:Experience[] = [
     },
     {
         "organization": "Random Hacks of Kindness",
+        "location": "Chicago, IL",
         "title": "Engineering Mentor",
         "experience": 1,
         "description": "",
@@ -135,6 +141,7 @@ export var CONFERENCES:Experience[] = [
     },
     {
         "organization": "AWS Summit",
+        "location": "Chicago, IL",
         "title": "Attendee",
         "experience": 1,
         "description": "",
@@ -146,21 +153,24 @@ export var CONFERENCES:Experience[] = [
 
 export var PERSONAL:Personal = {
     name: "Shane Burroughs",
-    email: "Shane.Burroughs@gmail.com",
-    phone: "(240) 925-5055",
-    links: [
-        {
-            display: "Github",
-            icon: "",
-            hyperlink: "https://github.com/sburroughs"
-        },
-        {
-            display: "LinkedIn",
-            icon: "",
-            hyperlink: "https://www.linkedin.com/in/shaneburroughs"
-        }
-    ],
-    summary: "",
+    contact: {
+        email: "Shane.Burroughs@gmail.com",
+        phone: "(240) 925-5055",
+        links: [
+            {
+                display: "Github",
+                icon: "",
+                hyperlink: "https://github.com/sburroughs"
+            },
+            {
+                display: "LinkedIn",
+                icon: "",
+                hyperlink: "https://www.linkedin.com/in/shaneburroughs"
+            }
+        ]
+    },
+    summary: "I have dedicated a large majority of life to pursuing technology as a passion. I will never \"work\" another day in my life because I have found this passion. I have had the opportunity to work on a breadth of projects covering various ranges of IT and software engineering field. I strive to learn and grow while not allowing myself to accept the technicalogical status quo.",
+    tagline: "I Listen, I Fix, I Build",
     hobbies: [
         {
             name: "Culinary Wizard",
@@ -184,4 +194,3 @@ export var PERSONAL:Personal = {
         }
     ]
 };
-
