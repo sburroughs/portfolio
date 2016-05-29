@@ -9,15 +9,16 @@
     <br>
 
     <div class="row">
-        <button class="col-sm-3 btn btn-default" *ngFor="#skill of skillSummary" (click)="setSelectedSkill(skill)">
-            {{skill.name}}
-        </button>
-        <skill-detail [skill]="selectedSkill"></skill-detail>
-    </div>
+        <div class="col-sm-6">
+            <button class="col-sm-3 btn btn-default" *ngFor="#skill of skillSummary" (click)="setSelectedSkill(skill)">
+                {{skill.name}}
+            </button>
+            <skill-detail class="" [skill]="selectedSkill"></skill-detail>
+        </div>
 
-    <div class="row">
-        <h2>Currently enjoying employment</h2>
-        <position [positions]="highlightPosition"></position>
+        <div class="col-sm-6">
+            <h2>Currently enjoying employment</h2>
+            <position [positions]="highlightPosition"></position>
+        </div>
     </div>
-
 </div>

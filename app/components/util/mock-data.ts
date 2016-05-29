@@ -6,10 +6,7 @@ export var SKILLS:Skill[] = [
     {
         "name": "Backend", "rating": 10,
         "focus": [
-            {"name": "Java", "experience": 10, "description": ""},
-            {"name": "JUnit", "experience": 10, "description": ""},
-            {"name": "EasyMock", "experience": 10, "description": ""},
-            {"name": "Selenium", "experience": 10, "description": ""},
+            {"name": "Java", "experience": 10, "description": "JDK8"},
             {"name": "JUnit", "experience": 10, "description": ""},
         ]
     },
@@ -176,7 +173,7 @@ export var PERSONAL:Personal = {
             }
         ]
     },
-    summary: "I have dedicated a large majority of life to pursuing technology as a passion. I will never \"work\" another day in my life because I have found this passion. I have had the opportunity to work on a breadth of projects covering various ranges of IT and software engineering field. I strive to learn and grow while not allowing myself to accept the technicalogical status quo.",
+    summary: "I have dedicated a large majority of life to pursuing technology as a passion. I consider myself an intelligent, humble individual striving to make real change in the world we live in.",
     tagline: "I Build, I Fix, I Solve Problems",
     hobbies: [
         {

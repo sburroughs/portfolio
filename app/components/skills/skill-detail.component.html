@@ -1,10 +1,11 @@
 <div *ngIf="skill">
-    <h2>{{skill.name}} Overview</h2>
+    <h3>{{skill.name}} Overview</h3>
     <div>
         <ul>
             <li *ngFor="#focus of skill.focus">
                 <label>{{focus.name}}</label>
-                <p>Experience: {{focus.experience}}</p>
+                <p *ngIf="focus.description">{{focus.description}}</p>
+                <p>{{focus.experience}}</p>
             </li>
         </ul>
     </div>
