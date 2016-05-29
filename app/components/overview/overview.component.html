@@ -1,40 +1,23 @@
 <div class="container">
-
-    <!--<div class="row">-->
-        <!--<div class="col-sm-3">-->
-            <!--<img class="img-rounded" src="../../../assets/img/headshot.jpg" alt="headshot">-->
-        <!--</div>-->
-        <!--<div class="col-sm-8">-->
-            <!--<p>Email: {{contact.email}}</p>-->
-            <!--<p>Phone: {{contact.phone}}</p>-->
-            <!--<ul *ngFor="#link of contact.links">-->
-                <!--<li class="list-inline list-unstyled">-->
-                    <!--<span><a href="{{link.hyperlink}}">{{link.display}}</a></span>-->
-                <!--</li>-->
-            <!--</ul>-->
-        <!--</div>-->
-    <!--</div>-->
+    <div class="jumbotron" *ngIf="personal">
+        <h1>{{personal.tagline}}</h1>
+        <h2>{{personal.summary}}</h2>
+    </div>
     <contact></contact>
 
-    <!--<div class="jumbotron" *ngIf="personal">-->
-        <!--<h1>yeah</h1>-->
-        <!--<h1>{{tagline}}</h1>-->
-        <!--<h2>{{summary}}</h2>-->
-    <!--</div>-->
+    <br>
+    <br>
 
-    <!--<div class="row">-->
-        <!--<div *ngFor="#skill of skillSummary" class="col-sm-3">-->
-            <!--<h4>{{skill.name}}</h4>-->
-        <!--</div>-->
-    <!--</div>-->
+    <div class="row">
+        <button class="col-sm-3 btn btn-default" *ngFor="#skill of skillSummary" (click)="setSelectedSkill(skill)">
+            {{skill.name}}
+        </button>
+        <skill-detail [skill]="selectedSkill"></skill-detail>
+    </div>
 
-    <!--<div class="row">-->
-        <!--<h4>Currently enjoying employment</h4>-->
-        <!--<div class="well">-->
-            <!--<h3>{{latestPosition.title}}</h3>-->
-            <!--<h4>{{latestPosition.organization}}</h4>-->
-            <!--<p>{{latestPosition.description}}</p>-->
-        <!--</div>-->
-    <!--</div>-->
+    <div class="row">
+        <h2>Currently enjoying employment</h2>
+        <position [positions]="highlightPosition"></position>
+    </div>
 
 </div>

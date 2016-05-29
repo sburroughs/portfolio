@@ -170,7 +170,7 @@ export var PERSONAL:Personal = {
         ]
     },
     summary: "I have dedicated a large majority of life to pursuing technology as a passion. I will never \"work\" another day in my life because I have found this passion. I have had the opportunity to work on a breadth of projects covering various ranges of IT and software engineering field. I strive to learn and grow while not allowing myself to accept the technicalogical status quo.",
-    tagline: "I Listen, I Fix, I Build",
+    tagline: "I Build, I Fix, I Solve Problems",
     hobbies: [
         {
             name: "Culinary Wizard",
