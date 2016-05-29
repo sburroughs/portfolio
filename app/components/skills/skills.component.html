@@ -1,16 +1,16 @@
 <div class="container">
     <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-2">
             <h2>Skills</h2>
-            <ul class="list-unstyled">
-                <li *ngFor="#skill of skills"
-                    [class.selected]="skill === selectedSkill"
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="#skill of skills"
+                    [class.active]="skill === selectedSkill"
                     (click)="onSelect(skill)">
                     <span>{{skill.experience}}</span> {{skill.name}}
                 </li>
             </ul>
         </div>
-        <div class="col-sm-8">
+        <div class="col-sm-6">
             <skill-detail [skill]="selectedSkill"></skill-detail>
         </div>
     </div>

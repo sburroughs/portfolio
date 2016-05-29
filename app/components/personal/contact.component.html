@@ -1,0 +1,16 @@
+<div class="container" *ngIf="contact">
+    <div class="row">
+        <div class="col-sm-3">
+            <img class="img-rounded" src="../../../assets/img/headshot.jpg" alt="headshot">
+        </div>
+        <div class="col-sm-8">
+            <p>Email: {{contact.email}}</p>
+            <p>Phone: {{contact.email}}</p>
+            <ul *ngFor="#link of contact.links">
+                <li class="list-inline list-unstyled">
+                    <span><a href="{{link.hyperlink}}">{{link.display}}</a></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

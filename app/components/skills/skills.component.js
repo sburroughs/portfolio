@@ -30,7 +30,10 @@ System.register(['angular2/core', './skill-detail.component.ts', './skill.servic
                 }
                 SkillsComponent.prototype.getSkills = function () {
                     var _this = this;
-                    this._skillService.getSkills().then(function (skills) { return _this.skills = skills; });
+                    this._skillService.getSkills().then(function (skills) {
+                        _this.skills = skills;
+                        _this.selectedSkill = skills[0];
+                    });
                 };
                 SkillsComponent.prototype.ngOnInit = function () {
                     this.getSkills();

@@ -1,24 +1,23 @@
 import {Component, OnInit} from 'angular2/core';
 import {Personal} from '../personal/personal.ts';
-import {ContactComponent} from './contact.component'
 
 import {DataProviderService} from '../util/data-provider.service.ts';
+import {ContactInformation} from "./contact";
 
 @Component({
-    selector: 'personal',
-    templateUrl: 'app/components/personal/personal.component.html',
-    directives: [ContactComponent]
+    selector: 'contact',
+    templateUrl: 'app/components/personal/contact.component.html',
 })
-export class PersonalComponent implements OnInit {
+export class ContactComponent implements OnInit {
 
-    about:Personal;
+    contact:ContactInformation;
 
     constructor(private _dataProvider:DataProviderService) {
         // NO-OP
     }
 
     get() {
-        this._dataProvider.getPersonal().then(about => this.about = about);
+        this._dataProvider.getPersonal().then(personal => this.contact = personal.contact);
     }
 
     ngOnInit() {

@@ -1,4 +1,4 @@
-System.register(['angular2/core', '../util/data-provider.service.ts'], function(exports_1, context_1) {
+System.register(['angular2/core', '../util/data-provider.service.ts', "./position.component", "./education.component", "./conference.component"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', '../util/data-provider.service.ts'], function(
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, data_provider_service_ts_1;
+    var core_1, data_provider_service_ts_1, position_component_1, education_component_1, conference_component_1;
     var ExperienceComponent;
     return {
         setters:[
@@ -19,30 +19,39 @@ System.register(['angular2/core', '../util/data-provider.service.ts'], function(
             },
             function (data_provider_service_ts_1_1) {
                 data_provider_service_ts_1 = data_provider_service_ts_1_1;
+            },
+            function (position_component_1_1) {
+                position_component_1 = position_component_1_1;
+            },
+            function (education_component_1_1) {
+                education_component_1 = education_component_1_1;
+            },
+            function (conference_component_1_1) {
+                conference_component_1 = conference_component_1_1;
             }],
         execute: function() {
             ExperienceComponent = (function () {
                 function ExperienceComponent(_experienceService) {
                     this._experienceService = _experienceService;
+                    this.positions = [];
+                    this.conferences = [];
+                    this.educations = [];
                     // NO-OP
                 }
                 ExperienceComponent.prototype.get = function () {
                     var _this = this;
-                    this._experienceService.getPositions().then(function (experiences) { return _this.experiences = experiences; });
+                    this._experienceService.getPositions().then(function (positions) { return _this.positions = positions; });
                     this._experienceService.getConferences().then(function (conferences) { return _this.conferences = conferences; });
                     this._experienceService.getEducation().then(function (educations) { return _this.educations = educations; });
                 };
                 ExperienceComponent.prototype.ngOnInit = function () {
                     this.get();
                 };
-                __decorate([
-                    core_1.Input(), 
-                    __metadata('design:type', Array)
-                ], ExperienceComponent.prototype, "experiences", void 0);
                 ExperienceComponent = __decorate([
                     core_1.Component({
-                        selector: 'positions',
+                        selector: 'experience',
                         templateUrl: 'app/components/experience/experience.component.html',
+                        directives: [position_component_1.PositionComponent, education_component_1.EducationComponent, conference_component_1.ConferenceComponent]
                     }), 
                     __metadata('design:paramtypes', [data_provider_service_ts_1.DataProviderService])
                 ], ExperienceComponent);

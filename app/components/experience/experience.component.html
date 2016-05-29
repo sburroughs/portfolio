@@ -1,46 +1,11 @@
-<div id="experience" class="container">
+<div class="container">
     <div class="row">
         <div class="col-sm-8 col-sm-push-4">
-            <div class="row panel panel-default">
-                <div class="panel-heading">Professional Experience</div>
-                <ul class="panel-body">
-                    <li class="list-unstyled" *ngFor="#experience of experiences">
-                        <div class="well">
-                            <h4>{{experience.title}}</h4>
-                            <h4>{{experience.organization}}</h4>
-                            <h5>{{experience.startDate}} - {{experience.endDate}}</h5>
-                            <p>{{experience.description}}</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+            <position [positions]="positions"></position>
         </div>
         <div class="col-sm-4 col-sm-pull-8">
-            <div class="row panel panel-default">
-                <div class="panel-heading">Education</div>
-                <ul class="panel-body">
-                    <li class="list-unstyled" *ngFor="#education of educations">
-                        <div class="well well-sm">
-                            <h4>{{education.organization}}</h4>
-                            <h4>{{education.title}}</h4>
-                            <h5>{{education.endDate}}</h5>
-                            <p>{{education.description}}</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="row panel panel-default">
-                <div class="panel-heading">Conferences</div>
-                <ul class="panel-body">
-                    <li class="list-unstyled" *ngFor="#conferences of conferences">
-                        <div class="well well-sm">
-                            <h4>{{conferences.organization}}</h4>
-                            <h5>{{conferences.startDate}}</h5>
-                            <p>{{conferences.description}}</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+            <education [educations]="educations"></education>
+            <conference [conferences]="conferences"></conference>
         </div>
     </div>
 </div>

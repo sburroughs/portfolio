@@ -1,0 +1,13 @@
+<div class="panel panel-default">
+    <div class="panel-heading">Professional Experience</div>
+    <ul class="panel-body">
+        <li class="list-unstyled" *ngFor="#position of positions">
+            <div class="well">
+                <h3>{{position.title}}</h3>
+                <h4>{{position.organization}}</h4>
+                <h5>{{position.startDate}} - {{position.endDate}}</h5>
+                <p>{{position.description}}</p>
+            </div>
+        </li>
+    </ul>
+</div>

@@ -1,14 +1,14 @@
-export interface Personal {
+import {ContactInformation} from './contact';
+
+export class Personal {
     name:string;
-    email:string;
-    phone:string;
+    contact:ContactInformation;
+    tagline:string;
     summary:string;
-    linkedin:string;
-    github:string;
     hobbies:Hobby[];
 }
 
-export interface Hobby {
+export class Hobby {
     name:string;
     description:string;
 }

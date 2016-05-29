@@ -17,7 +17,10 @@ export class SkillsComponent implements OnInit {
     }
 
     getSkills() {
-        this._skillService.getSkills().then(skills => this.skills = skills);
+        this._skillService.getSkills().then(skills => {
+            this.skills = skills;
+            this.selectedSkill = skills[0];
+        });
     }
 
     ngOnInit() {
@@ -27,5 +30,5 @@ export class SkillsComponent implements OnInit {
     onSelect(skill:Skill) {
         this.selectedSkill = skill;
     }
-    
+
 }
