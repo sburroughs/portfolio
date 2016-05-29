@@ -6,68 +6,68 @@ export var SKILLS:Skill[] = [
     {
         "name": "Backend", "rating": 10,
         "focus": [
-            {"name": "Java", "experience": 10},
-            {"name": "JUnit", "experience": 10},
-            {"name": "EasyMock", "experience": 10},
-            {"name": "Selenium", "experience": 10},
-            {"name": "JUnit", "experience": 10},
+            {"name": "Java", "experience": 10, "description": ""},
+            {"name": "JUnit", "experience": 10, "description": ""},
+            {"name": "EasyMock", "experience": 10, "description": ""},
+            {"name": "Selenium", "experience": 10, "description": ""},
+            {"name": "JUnit", "experience": 10, "description": ""},
         ]
     },
     {
         "name": "Frontend", "rating": 10,
         "focus": [
-            {"name": "Javascript", "experience": 10},
-            {"name": "AngularJS", "experience": 10},
-            {"name": "PHP", "experience": 10},
-            {"name": "TypeScript", "experience": 10},
-            {"name": "JQuery", "experience": 10},
-            {"name": "Karma Testing", "experience": 10},
+            {"name": "Javascript", "experience": 10, "description": ""},
+            {"name": "AngularJS", "experience": 10, "description": ""},
+            {"name": "PHP", "experience": 10, "description": ""},
+            {"name": "TypeScript", "experience": 10, "description": ""},
+            {"name": "JQuery", "experience": 10, "description": ""},
+            {"name": "Karma Testing", "experience": 10, "description": ""}
         ]
     },
     {
         "name": "Data", "rating": 7,
         "focus": [
-            {"name": "SOLR", "experience": 10},
-            {"name": "MongoDB", "experience": 10},
-            {"name": "MySQL", "experience": 10},
-            {"name": "REST", "experience": 10},
-            {"name": "Oracle SQL", "experience": 10},
-            {"name": "JMS", "experience": 10},
-            {"name": "XMPP", "experience": 10}
+            {"name": "SOLR", "experience": 10, "description": ""},
+            {"name": "MongoDB", "experience": 10, "description": ""},
+            {"name": "MySQL", "experience": 10, "description": ""},
+            {"name": "REST", "experience": 10, "description": ""},
+            {"name": "Oracle SQL", "experience": 10, "description": ""},
+            {"name": "JMS", "experience": 10, "description": ""},
+            {"name": "XMPP", "experience": 10, "description": ""}
         ]
     },
     {
         "name": "Tools", "rating": 7,
         "focus": [
-            {"name": "GIT ", "experience": 10},
-            {"name": "IntelliJ IDEA ", "experience": 10},
-            {"name": "SVN", "experience": 10},
-            {"name": "Jira", "experience": 10},
-            {"name": "Redmine", "experience": 10},
+            {"name": "GIT ", "experience": 10, "description": ""},
+            {"name": "IntelliJ IDEA ", "experience": 10, "description": ""},
+            {"name": "SVN", "experience": 10, "description": ""},
+            {"name": "Jira", "experience": 10, "description": ""},
+            {"name": "Redmine", "experience": 10, "description": ""},
         ]
     },
     {
         "name": "DevOps", "rating": 7,
         "focus": [
-            {"name": "MicroServices", "experience": 10},
-            {"name": "AWS", "experience": 10},
-            {"name": "Docker", "experience": 10},
-            {"name": "Jenkins", "experience": 10},
-            {"name": "Tomcat", "experience": 10},
+            {"name": "MicroServices", "experience": 10, "description": ""},
+            {"name": "AWS", "experience": 10, "description": ""},
+            {"name": "Docker", "experience": 10, "description": ""},
+            {"name": "Jenkins", "experience": 10, "description": ""},
+            {"name": "Tomcat", "experience": 10, "description": ""},
         ]
     },
     {
         "name": "Practices", "rating": 7,
         "focus": [
-            {"name": "Agile", "experience": 10},
-            {"name": "Scrum", "experience": 10},
+            {"name": "Agile", "experience": 10, "description": ""},
+            {"name": "Scrum", "experience": 10, "description": ""},
         ]
     },
     {
         "name": "IT", "rating": 7,
         "focus": [
-            {"name": "Windows", "experience": 10},
-            {"name": "Linux", "experience": 10},
+            {"name": "Windows", "experience": 10, "description": ""},
+            {"name": "Linux", "experience": 10, "description": ""},
         ]
     },
     {
@@ -84,6 +84,7 @@ export var POSITIONS:Position[] = [
         "location": "Bethesda, MD (Currently Remote)",
         "title": "Software Engineer",
         "experience": 2,
+        "responsibilities": [],
         "description": "Full stack java software engineer working on a cloud based content editing system named ECMS.",
         "startDate": "02/01/2014",
         "endDate": "PRESENT"
@@ -93,6 +94,7 @@ export var POSITIONS:Position[] = [
         "location": "Lexington Park, MD",
         "title": "Software Engineer",
         "experience": 2,
+        "responsibilities": [],
         "description": "Lead software engineer developing services and providing general software support for the Navy's Common Unmanned Controls Station..",
         "startDate": "11/01/2012",
         "endDate": "10/01/2014"
@@ -102,6 +104,7 @@ export var POSITIONS:Position[] = [
         "location": "Lexington Park, MD",
         "title": "Software Development Technician",
         "experience": 2,
+        "responsibilities": [],
         "description": "Software development intern supporting the Navy P-3 and Navy EP-3 platform",
         "startDate": "06/01/2010",
         "endDate": "11/01/2012"
@@ -114,6 +117,7 @@ export var EDUCATION:Education[] = [
         "location": "Chicago, IL",
         "title": "B.S. Computer Science, Minor in Computing",
         "experience": 2,
+        "responsibilities": [],
         "description": "Graduated w/degree",
         "startDate": "08/01/2009",
         "endDate": "12/01/2012"
@@ -126,6 +130,7 @@ export var CONFERENCES:Conference[] = [
         "location": "Chicago, IL",
         "title": "Attendee",
         "experience": 1,
+        "responsibilities": [],
         "description": "",
         "startDate": "",
         "endDate": ""
@@ -135,6 +140,7 @@ export var CONFERENCES:Conference[] = [
         "location": "Chicago, IL",
         "title": "Engineering Mentor",
         "experience": 1,
+        "responsibilities": [],
         "description": "",
         "startDate": "",
         "endDate": ""
@@ -144,6 +150,7 @@ export var CONFERENCES:Conference[] = [
         "location": "Chicago, IL",
         "title": "Attendee",
         "experience": 1,
+        "responsibilities": [],
         "description": "",
         "startDate": "",
         "endDate": ""

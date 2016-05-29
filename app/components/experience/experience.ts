@@ -14,6 +14,7 @@ export class Position implements Experience {
     location:string;
     title:string;
     experience:number;
+    responsibilities:string[];
     startDate:string;
     endDate:string;
     description:string;
@@ -24,6 +25,7 @@ export class Conference implements Experience {
     location:string;
     title:string;
     experience:number;
+    responsibilities:string[];
     startDate:string;
     endDate:string;
     description:string;
@@ -34,6 +36,7 @@ export class Education implements Experience {
     location:string;
     title:string;
     experience:number;
+    responsibilities:string[];
     startDate:string;
     endDate:string;
     description:string;
