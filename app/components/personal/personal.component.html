@@ -1,9 +1,9 @@
 <div class="container" *ngIf="about">
-
-    <contact></contact>
-
     <div class="row">
-        <ul *ngFor="#hobby of about.hobbies">
+        <div class="col-sm-3">
+            <contact></contact>
+        </div>
+        <ul class="col-sm-9 list-unstyled" *ngFor="#hobby of about.hobbies">
             <li>
                 <h3>{{hobby.name}}</h3>
                 <p>{{hobby.description}}</p>

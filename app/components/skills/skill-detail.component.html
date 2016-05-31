@@ -1,11 +1,13 @@
 <div *ngIf="skill">
     <h3>{{skill.name}} Overview</h3>
     <div>
-        <ul>
+        <ul class="list-unstyled">
             <li *ngFor="#focus of skill.focus">
-                <label>{{focus.name}}</label>
-                <p *ngIf="focus.description">{{focus.description}}</p>
-                <p>{{focus.experience}}</p>
+                <div class="well well-sm">
+                    <label>{{focus.name}}</label>
+                    <p *ngIf="focus.description">{{focus.description}}</p>
+                    <skill-chart [rating]="focus.experience"></skill-chart>
+                </div>
             </li>
         </ul>
     </div>

@@ -7,5 +7,4 @@ export class ContactInformation {
 export class Link {
     display:string;
     hyperlink:string;
-    icon:string;
 }

@@ -6,5 +6,6 @@ import {Position} from './experience';
     templateUrl: 'app/components/experience/position.component.html',
 })
 export class PositionComponent {
+    @Input() title:string = '';
     @Input() positions:Position[] = [];
 }

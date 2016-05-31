@@ -1,24 +1,23 @@
 <div class="container">
-    <div class="jumbotron" *ngIf="personal">
-        <h1>{{personal.tagline}}</h1>
-        <h2>{{personal.summary}}</h2>
+    <div class="row">
+        <div class="jumbotron col-sm-9" *ngIf="personal">
+            <h1>{{personal.tagline}}</h1>
+            <h2>{{personal.summary}}</h2>
+        </div>
+        <contact class="col-sm-3"></contact>
     </div>
-    <contact></contact>
-
-    <br>
-    <br>
 
     <div class="row">
         <div class="col-sm-6">
+            <position [style.ul]="'list-unstyled'"
+                      [title]="'Currently Enjoying Employment'"
+                      [positions]="highlightPosition"></position>
+        </div>
+        <div class="col-sm-6 well well-sm">
             <button class="col-sm-3 btn btn-default" *ngFor="#skill of skillSummary" (click)="setSelectedSkill(skill)">
                 {{skill.name}}
             </button>
             <skill-detail class="" [skill]="selectedSkill"></skill-detail>
-        </div>
-
-        <div class="col-sm-6">
-            <h2>Currently enjoying employment</h2>
-            <position [positions]="highlightPosition"></position>
         </div>
     </div>
 </div>
