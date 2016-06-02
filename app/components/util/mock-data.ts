@@ -6,10 +6,10 @@ export var SKILLS:Skill[] = [
     {
         "name": "Backend",
         "focus": [
-            {"name": "Java", "experience": 8, "description": "Primary Language. JDK8+"},
-            {"name": "JUnit", "experience": 8, "description": "TDD Unit testing"},
+            {"name": "Java", "experience": 8, "description": "JDK8+"},
             {"name": "Perl", "experience": 4, "description": ""},
-            {"name": "C#", "experience": 5, "description": ""},
+            {"name": "bash", "experience": 5, "description": ""},
+            {"name": "C#", "experience": 4, "description": ""},
             {"name": "C++", "experience": 3, "description": ""},
 
         ]
@@ -17,37 +17,41 @@ export var SKILLS:Skill[] = [
     {
         "name": "Frontend",
         "focus": [
-            {"name": "Javascript", "experience": 6, "description": "ES6+"},
-            {"name": "AngularJS", "experience": 6, "description": ""},
-            {"name": "Jasmine.js", "experience": 6, "description": ""},
-            {"name": "Bootstrap", "experience": 6, "description": ""},
-            {"name": "PHP", "experience": 4, "description": ""},
-            {"name": "TypeScript", "experience": 6, "description": ""},
+            {"name": "HTML", "experience": 6, "description": "HTML5"},
+            {"name": "Javascript", "experience": 6, "description": "ES6+, Typescript"},
+            {"name": "AngularJS", "experience": 6, "description": "AngularJS, Angular2"},
             {"name": "JQuery", "experience": 4, "description": ""},
+            {"name": "CSS", "experience": 4, "description": "Bootstrap, Less"},
+            {"name": "PHP", "experience": 3, "description": ""},
         ]
     },
     {
         "name": "Data",
         "focus": [
-            {"name": "SOLR", "experience": 6, "description": ""},
-            {"name": "MongoDB", "experience": 8, "description": ""},
-            {"name": "MySQL", "experience": 7, "description": ""},
+            {"name": "SOLR", "experience": 7, "description": ""},
+            {"name": "MongoDB", "experience": 6, "description": ""},
+            {"name": "SQL", "experience": 6, "description": "MySQL, Oracle SQL"},
             {"name": "REST", "experience": 8, "description": ""},
-            {"name": "Oracle SQL", "experience": 6, "description": ""},
-            {"name": "JMS", "experience": 5, "description": ""},
-            {"name": "XMPP", "experience": 4, "description": ""},
-            {"name": "Mule ESB", "experience": 4, "description": ""}
+            {"name": "Message Transport", "experience": 7, "description": "JMS, XMPP, Mule ESB"},
         ]
     },
     {
         "name": "DevOps",
         "focus": [
-            {"name": "MicroServices", "experience": 6, "description": ""},
-            {"name": "AWS", "experience": 6, "description": ""},
-            {"name": "Docker", "experience": 6, "description": ""},
+            {"name": "AWS", "experience": 5, "description": ""},
+            {"name": "MicroServices", "experience": 7, "description": ""},
             {"name": "Jenkins", "experience": 6, "description": ""},
+            {"name": "Docker", "experience": 5, "description": ""},
             {"name": "Tomcat", "experience": 6, "description": ""},
-            {"name": "GitHub", "experience": 6, "description": ""},
+            {"name": "VCS", "experience": 8, "description": "Git (GitHub), SVN"},
+        ]
+    },
+    {
+        "name": "Testing",
+        "focus": [
+            {"name": "Junit", "experience": 7, "description": "TDD, EasyMock, PowerMock"},
+            {"name": "Jasmine.js", "experience": 6, "description": "Karma"},
+            {"name": "Selenium", "experience": 4, "description": ""},
         ]
     },
     {
@@ -59,8 +63,17 @@ export var SKILLS:Skill[] = [
     {
         "name": "IT",
         "focus": [
-            {"name": "Windows", "experience": 10, "description": "Primary development environment"},
-            {"name": "Linux/Unix", "experience": 10, "description": "Primary server environment"},
+            {"name": "Windows", "experience": 7, "description": "Primary development environment"},
+            {"name": "Linux/Unix", "experience": 6, "description": "Primary server environment."},
+        ]
+    },
+    {
+        "name": "Misc",
+        "focus": [
+            {"name": "Cooking", "experience": 6, "description": "Line cook for 2 years"},
+            {"name": "Woodworking", "experience": 3, "description": "Made a trash bin cabinet"},
+            {"name": "Guitar", "experience": 4, "description": ""},
+
         ]
     }
 ];
@@ -149,7 +162,7 @@ export var PERSONAL:Personal = {
             }
         ]
     },
-    summary: "I am a humble individual who strives to make real changes using technology. I strive to surround myself with the most intelligent and friendly people possible grow as a person. I look forward to learning and growing ",
+    summary: "I am a humble individual who strives to make real change using technology. I strive to surround myself with the most intelligent and friendly people possible to best grow as a person.",
     tagline: "I am a Builder. I am a Fixer. I Solve Problems",
     hobbies: [
         {
