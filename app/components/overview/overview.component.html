@@ -17,7 +17,7 @@
             <button class="col-sm-3 btn btn-default" *ngFor="#skill of skillSummary" (click)="setSelectedSkill(skill)">
                 {{skill.name}}
             </button>
-            <skill-detail class="" [skill]="selectedSkill"></skill-detail>
+            <skill-detail [skill]="selectedSkill"></skill-detail>
         </div>
     </div>
 </div>
