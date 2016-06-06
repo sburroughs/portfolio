@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', './overview/overview.component.ts', './skills/skills.component.ts', './skills/skill-detail.component.ts', './experience/experience.component.ts', './personal/personal.component.ts', './skills/skill.service.ts', './util/data-provider.service.ts'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', './overview/overview.component.ts', './overview/resume.component', './skills/skills.component.ts', './skills/skill-detail.component.ts', './experience/experience.component.ts', './personal/personal.component.ts', './skills/skill.service.ts', './util/data-provider.service.ts'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', './overview/overview.compon
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, overview_component_ts_1, skills_component_ts_1, skill_detail_component_ts_1, experience_component_ts_1, personal_component_ts_1, skill_service_ts_1, data_provider_service_ts_1;
+    var core_1, router_1, overview_component_ts_1, resume_component_1, skills_component_ts_1, skill_detail_component_ts_1, experience_component_ts_1, personal_component_ts_1, skill_service_ts_1, data_provider_service_ts_1;
     var AppComponent;
     return {
         setters:[
@@ -22,6 +22,9 @@ System.register(['angular2/core', 'angular2/router', './overview/overview.compon
             },
             function (overview_component_ts_1_1) {
                 overview_component_ts_1 = overview_component_ts_1_1;
+            },
+            function (resume_component_1_1) {
+                resume_component_1 = resume_component_1_1;
             },
             function (skills_component_ts_1_1) {
                 skills_component_ts_1 = skills_component_ts_1_1;
@@ -82,6 +85,11 @@ System.register(['angular2/core', 'angular2/router', './overview/overview.compon
                             path: '/personal',
                             name: 'Personal',
                             component: personal_component_ts_1.PersonalComponent
+                        },
+                        {
+                            path: '/resume',
+                            name: 'Resume',
+                            component: resume_component_1.ResumeComponent
                         },
                     ]), 
                     __metadata('design:paramtypes', [])
