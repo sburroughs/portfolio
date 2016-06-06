@@ -184,7 +184,7 @@ export var PERSONAL:Personal = {
         },
         {
             name: "Pup Dad",
-            description: "His name is \"Hoder\" and he loves time with his people."
+            description: "His name is \"Hodor\" and he loves time with his people."
         },
         {
             name: "Musician",
