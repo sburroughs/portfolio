@@ -2,6 +2,7 @@ import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
 
 import {OverviewComponent} from './overview/overview.component.ts';
+import {ResumeComponent} from './overview/resume.component';
 import {SkillsComponent} from './skills/skills.component.ts';
 import {SkillDetailComponent} from './skills/skill-detail.component.ts';
 import {ExperienceComponent} from './experience/experience.component.ts';
@@ -47,7 +48,11 @@ import {DataProviderService} from './util/data-provider.service.ts';
         name: 'Personal',
         component: PersonalComponent
     },
-
+    {
+        path: '/resume',
+        name: 'Resume',
+        component: ResumeComponent
+    },
 ])
 export class AppComponent {
 

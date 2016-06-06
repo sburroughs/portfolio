@@ -1,0 +1,47 @@
+WEB: dsburroughs.com
+
+name: Shane Burroughs
+email: Shane.Burroughs@gmail.com
+phone: 240-925-5055
+
+-----
+Experience
+-----
+Software Engineer
+Proquest LLC
+02/01/2014 - PRESENT
+
+Full stack java software engineer working on a custom cloud based editorial content management system.
+
+* Lead the design, implementation, maintenance, and improvements of multiple RESTful microservices; Thus effectively reducing costs associated with complex legacy editorial systems.
+* Provided estimates and complexity analysis on cost effective solutions to improve editorial workflow
+* Assisted in various phases of a full infrastructure transition to AWS.
+
+-----
+Software Engineer
+Fermion Government Services
+11/01/2012 - 10/01/2014
+
+Project lead on contract providing software service development for US Navy's common unmanned control station (CUCS). Duties required leading the project management, software architecture, and IT infrastructure of a multi year government contract.
+
+* Lead the project development of multiple CUCS services through entire waterfall lifecycle.
+* Reduced company spending by better architecting IT infrastructure
+* Troubleshooting and operations of remote satellites/transmission equipment
+
+-----
+Software Development Technician
+Navy Department of Defense
+06/01/2010 - 11/01/2012
+
+Software development intern supporting the Navy P-3 and Navy EP-3 platform
+
+* Managed the cataloging, disposal, and transfer of classified content
+* Reduced system bug count through simple and innovative bug fixes
+* Analyzed and provided feedback on program wide asset management solutions
+
+-----
+Education
+-----
+University of Maryland University College
+B.S. Computer Science, Minor in Computing
+Graduated w/degree December 2012

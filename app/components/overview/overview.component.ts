@@ -11,7 +11,6 @@ import {Personal} from "../personal/personal";
 import {SkillDetailComponent} from "../skills/skill-detail.component";
 import {PositionComponent} from "../experience/position.component";
 
-
 @Component({
     selector: 'overview',
     templateUrl: 'app/components/overview/overview.component.html',
@@ -21,9 +20,7 @@ export class OverviewComponent implements OnInit {
 
     skillSummary:Skill[] = [];
     selectedSkill:Skill;
-
     highlightPosition:Position[] = [];
-
     personal:Personal;
 
     constructor(private _skillService:SkillService,

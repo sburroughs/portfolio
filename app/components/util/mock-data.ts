@@ -18,10 +18,10 @@ export var SKILLS:Skill[] = [
         "name": "Frontend",
         "focus": [
             {"name": "HTML", "experience": 6, "description": "HTML5"},
+            {"name": "CSS", "experience": 4, "description": "Bootstrap, Less"},
             {"name": "Javascript", "experience": 6, "description": "ES6+, Typescript"},
             {"name": "AngularJS", "experience": 6, "description": "AngularJS, Angular2"},
             {"name": "JQuery", "experience": 4, "description": ""},
-            {"name": "CSS", "experience": 4, "description": "Bootstrap, Less"},
             {"name": "PHP", "experience": 3, "description": ""},
         ]
     },
@@ -58,6 +58,7 @@ export var SKILLS:Skill[] = [
         "name": "Practices",
         "focus": [
             {"name": "Agile", "experience": 8, "description": "Scrum and Kanban trained"},
+            {"name": "Waterfall", "experience": 5, "description": ""},
         ]
     },
     {
@@ -73,7 +74,6 @@ export var SKILLS:Skill[] = [
             {"name": "Cooking", "experience": 6, "description": "Line cook for 2 years"},
             {"name": "Woodworking", "experience": 3, "description": "Made a trash bin cabinet"},
             {"name": "Guitar", "experience": 4, "description": ""},
-
         ]
     }
 ];
@@ -83,9 +83,11 @@ export var POSITIONS:Position[] = [
         "organization": "Proquest LLC",
         "location": "Bethesda, MD (Remote: Chicago, IL)",
         "title": "Software Engineer",
-        "description": "Full stack java software engineer working on a cloud based content editing system named ECMS.",
+        "description": "Full stack java software engineer working on a custom cloud based editorial content management system.",
         "highlights": [
-            "Lead the design, implementation, maintenance, and improvements on multiple restful microservices to reduce editorial costs."
+            "Lead the design, implementation, maintenance, and improvements of multiple RESTful microservices; Thus effectively reducing costs associated with complex legacy editorial systems.",
+            "Provided estimates and complexity analysis on cost effective solutions to improve editorial workflow",
+            "Assisted in various phases of a full infrastructure transition to AWS."
         ],
         "startDate": "02/01/2014",
         "endDate": "PRESENT"
@@ -94,8 +96,12 @@ export var POSITIONS:Position[] = [
         "organization": "Fermion Government Services",
         "location": "Lexington Park, MD",
         "title": "Software Engineer",
-        "highlights": [],
-        "description": "Lead software engineer developing services and providing general software support for the Navy's Common Unmanned Controls Station..",
+        "description": "Project lead on contract providing software service development for US Navy's common unmanned control station (CUCS). Duties required leading the project management, software architecture, and IT infrastructure of a multi year government contract. ",
+        "highlights": [
+            "Lead the project development of multiple CUCS services through entire waterfall lifecycle.",
+            "Reduced company spending by better architecting IT infrastructure",
+            "Troubleshooting and operations of remote satellites/transmission equipment"
+        ],
         "startDate": "11/01/2012",
         "endDate": "10/01/2014"
     },
@@ -103,8 +109,12 @@ export var POSITIONS:Position[] = [
         "organization": "Navy Department of Defense",
         "location": "Lexington Park, MD",
         "title": "Software Development Technician",
-        "highlights": [],
         "description": "Software development intern supporting the Navy P-3 and Navy EP-3 platform",
+        "highlights": [
+            "Managed the cataloging, disposal, and transfer of classified content",
+            "Reduced system bug count through simple and innovative bug fixes",
+            "Analyzed and provided feedback on program wide asset management solutions"
+        ],
         "startDate": "06/01/2010",
         "endDate": "11/01/2012"
     }
@@ -162,16 +172,15 @@ export var PERSONAL:Personal = {
             }
         ]
     },
-    summary: "I am a humble individual who strives to make real change using technology. I strive to surround myself with the most intelligent and friendly people possible to best grow as a person.",
-    tagline: "I am a Builder. I am a Fixer. I Solve Problems",
+    summary: "I am a humble, focused individual looking to make change using technology. I strive to surround myself with the most intelligent and friendly people possible to better grow as a person. I believe an engineer is as good as the tools he is given; I believe software is only as good as the engineers working on it",
     hobbies: [
         {
-            name: "Culinary Wizard",
-            description: "Cooking has been one of my greatest passions for as long as I can remember. Cooking allows me to transform simple ingredients with time and effort into something family and friends can enjoy. "
+            name: "Football Fanatic",
+            description: "Having grown up near the Washington DC metro area, I grew up admiring the Washington Redskins. I played five years of organized football and attend as many live games as possible."
         },
         {
-            name: "Fantasy Football Champion",
-            description: "Long time fantasy football player and league manager. "
+            name: "Culinary Wizard",
+            description: "Cooking is one of my greatest passions."
         },
         {
             name: "Pup Dad",
@@ -179,11 +188,15 @@ export var PERSONAL:Personal = {
         },
         {
             name: "Musician",
-            description: "On occasion, I enjoy breaking out a musical instrument and  "
+            description: "I do not consider myself a very talented musician however I find it relaxing to strum a chord or hit a beat."
         },
         {
-            name: "Washington Redskins Fan",
-            description: "#HTTR"
+            name: "Fantasy Football Champion",
+            description: "Long time fantasy football player and league manager."
+        },
+        {
+            name: "Gamer",
+            description: "Some of my fondest childhood memories were sitting criss-cross apple sauce on the floor with friends playing NES games. As an adult that same nostalgia was relived when my father and I custom built an emulator arcade cabinet from scratch."
         }
     ]
 };
