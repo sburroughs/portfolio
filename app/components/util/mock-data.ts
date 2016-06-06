@@ -83,7 +83,7 @@ export var POSITIONS:Position[] = [
         "organization": "Proquest LLC",
         "location": "Bethesda, MD (Remote: Chicago, IL)",
         "title": "Software Engineer",
-        "description": "Full stack java software engineer working on a custom cloud based editorial content management system",
+        "description": "Full stack java software engineer working on a custom cloud based editorial content management system.",
         "highlights": [
             "Lead the design, implementation, maintenance, and improvements of multiple RESTful microservices; Thus effectively reducing costs associated with complex legacy editorial systems.",
             "Provided estimates and complexity analysis on cost effective solutions to improve editorial workflow",
@@ -96,10 +96,10 @@ export var POSITIONS:Position[] = [
         "organization": "Fermion Government Services",
         "location": "Lexington Park, MD",
         "title": "Software Engineer",
-        "description": "Project lead on contract providing support for US Navy's common unmanned control station (CUCS).",
+        "description": "Project lead on contract providing software service development for US Navy's common unmanned control station (CUCS). Duties required leading the project management, software architecture, and IT infrastructure of a multi year government contract. ",
         "highlights": [
-            "Lead the concurrent project development of multiple CUCS services through entire waterfall lifecycle.",
-            "Reduced company spending by better aligning usage and components in existing IT infrastructure",
+            "Lead the project development of multiple CUCS services through entire waterfall lifecycle.",
+            "Reduced company spending by better architecting IT infrastructure",
             "Troubleshooting and operations of remote satellites/transmission equipment"
         ],
         "startDate": "11/01/2012",
@@ -172,7 +172,7 @@ export var PERSONAL:Personal = {
             }
         ]
     },
-    summary: "I am a humble, focused individual looking to make change using technology. I strive to surround myself with the most intelligent and friendly people possible to better grow as a person. I believe software is only as good as the people working on it.",
+    summary: "I am a humble, focused individual looking to make change using technology. I strive to surround myself with the most intelligent and friendly people possible to better grow as a person. I believe an engineer is as good as the tools he is given; I believe software is only as good as the engineers working on it",
     hobbies: [
         {
             name: "Football Fanatic",

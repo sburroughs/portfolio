@@ -11,7 +11,7 @@ Software Engineer
 Proquest LLC
 02/01/2014 - PRESENT
 
-Full stack java software engineer working on a custom cloud based editorial content management system
+Full stack java software engineer working on a custom cloud based editorial content management system.
 
 * Lead the design, implementation, maintenance, and improvements of multiple RESTful microservices; Thus effectively reducing costs associated with complex legacy editorial systems.
 * Provided estimates and complexity analysis on cost effective solutions to improve editorial workflow
@@ -22,10 +22,10 @@ Software Engineer
 Fermion Government Services
 11/01/2012 - 10/01/2014
 
-Project lead on contract providing support for US Navy's common unmanned control station (CUCS).
+Project lead on contract providing software service development for US Navy's common unmanned control station (CUCS). Duties required leading the project management, software architecture, and IT infrastructure of a multi year government contract.
 
-* Lead the concurrent project development of multiple CUCS services through entire waterfall lifecycle.
-* Reduced company spending by better aligning usage and components in existing IT infrastructure
+* Lead the project development of multiple CUCS services through entire waterfall lifecycle.
+* Reduced company spending by better architecting IT infrastructure
 * Troubleshooting and operations of remote satellites/transmission equipment
 
 -----
@@ -44,4 +44,4 @@ Education
 -----
 University of Maryland University College
 B.S. Computer Science, Minor in Computing
-Graduated w/degree December 2012"
+Graduated w/degree December 2012
