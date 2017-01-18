@@ -33,7 +33,7 @@ In your preferred browser, navigate to the url provided in the terminal window u
 
 e.g.
 ```
-localhost:3408
+localhost:3000
 ```
 
 ##Tech
