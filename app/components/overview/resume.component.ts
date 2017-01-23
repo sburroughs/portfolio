@@ -1,6 +1,6 @@
-import {Component, OnInit} from 'angular2/core';
+import {Component, OnInit} from '@angular/core';
 import {Skill} from './../skills/skill';
-import {SkillService} from './../skills/skill.service.ts';
+import {SkillService} from './../skills/skill.service';
 import {DataProviderService} from "../util/data-provider.service";
 import {Position, Education} from '../experience/experience'
 import {Personal} from "../personal/personal";
@@ -9,7 +9,6 @@ import {Personal} from "../personal/personal";
 @Component({
     selector: 'resume',
     templateUrl: 'app/components/overview/resume.component.html',
-    directives: []
 })
 export class ResumeComponent implements OnInit {
 

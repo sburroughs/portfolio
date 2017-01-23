@@ -1,13 +1,11 @@
-import {Component, OnInit} from 'angular2/core';
-import {Personal} from '../personal/personal.ts';
-import {ContactComponent} from './contact.component'
+import {Component, OnInit} from '@angular/core';
+import {Personal} from '../personal/personal';
 
-import {DataProviderService} from '../util/data-provider.service.ts';
+import {DataProviderService} from '../util/data-provider.service';
 
 @Component({
     selector: 'personal',
     templateUrl: 'app/components/personal/personal.component.html',
-    directives: [ContactComponent]
 })
 export class PersonalComponent implements OnInit {
 

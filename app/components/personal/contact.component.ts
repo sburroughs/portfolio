@@ -1,7 +1,7 @@
-import {Component, OnInit} from 'angular2/core';
-import {Personal} from '../personal/personal.ts';
+import {Component, OnInit} from '@angular/core';
+import {Personal} from '../personal/personal';
 
-import {DataProviderService} from '../util/data-provider.service.ts';
+import {DataProviderService} from '../util/data-provider.service';
 import {ContactInformation} from "./contact";
 
 @Component({

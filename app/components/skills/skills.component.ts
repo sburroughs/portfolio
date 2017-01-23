@@ -1,13 +1,11 @@
-import {Component, OnInit} from 'angular2/core';
+import {Component, OnInit} from '@angular/core';
 
 import {Skill} from './skill';
-import {SkillDetailComponent} from './skill-detail.component.ts';
-import {SkillService} from './skill.service.ts';
+import {SkillService} from './skill.service';
 
 @Component({
     selector: 'skills',
     templateUrl: 'app/components/skills/skills.component.html',
-    directives: [SkillDetailComponent]
 })
 export class SkillsComponent implements OnInit {
     skills:Skill[];

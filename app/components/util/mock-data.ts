@@ -1,14 +1,15 @@
-import {Skill} from './../skills/skill.ts';
-import {Education, Conference, Position} from './../experience/experience.ts';
-import {Personal} from './../personal/personal.ts';
+import {Skill} from './../skills/skill';
+import {Education, Conference, Position} from './../experience/experience';
+import {Personal} from './../personal/personal';
 
-export var SKILLS:Skill[] = [
+export var SKILLS: Skill[] = [
     {
         "name": "Backend",
+        "description": "The Tech that runs behind the scenes to efficiently support the computers and systems we adore.",
         "focus": [
-            {"name": "Java", "experience": 8, "description": "JDK8+"},
+            {"name": "Java", "experience": 8, "description": "JDK8+, Spring, Hibernate"},
             {"name": "Perl", "experience": 4, "description": ""},
-            {"name": "bash", "experience": 5, "description": ""},
+            {"name": "Unix Shell Scripting", "experience": 5, "description": "Bash, Csh"},
             {"name": "C#", "experience": 4, "description": ""},
             {"name": "C++", "experience": 3, "description": ""},
 
@@ -16,78 +17,86 @@ export var SKILLS:Skill[] = [
     },
     {
         "name": "Frontend",
+        "description": "The Tech that creates the user interfaces we use interact with",
         "focus": [
-            {"name": "HTML", "experience": 6, "description": "HTML5"},
+            {"name": "HTML", "experience": 7, "description": "HTML5"},
             {"name": "CSS", "experience": 4, "description": "Bootstrap, Less"},
-            {"name": "Javascript", "experience": 6, "description": "ES6+, Typescript"},
-            {"name": "AngularJS", "experience": 6, "description": "AngularJS, Angular2"},
-            {"name": "JQuery", "experience": 4, "description": ""},
+            {"name": "Javascript", "experience": 6, "description": "ES6+, Typescript, AngularJS, Angular2, JQuery"},
             {"name": "PHP", "experience": 3, "description": ""},
         ]
     },
     {
         "name": "Data",
+        "description": "The Tech that aids in creating dynamic robust data driven systems.",
         "focus": [
             {"name": "SOLR", "experience": 7, "description": ""},
             {"name": "MongoDB", "experience": 6, "description": ""},
-            {"name": "SQL", "experience": 6, "description": "MySQL, Oracle SQL"},
-            {"name": "REST", "experience": 8, "description": ""},
+            {"name": "SQL", "experience": 7, "description": "MySQL, Oracle SQL"},
+            {"name": "REST", "experience": 7, "description": ""},
             {"name": "Message Transport", "experience": 7, "description": "JMS, XMPP, Mule ESB"},
         ]
     },
     {
         "name": "DevOps",
+        "description": "The Tech, culture, and process that keeps the software we love up and running efficiently and cost effectively.",
         "focus": [
-            {"name": "AWS", "experience": 5, "description": ""},
-            {"name": "MicroServices", "experience": 7, "description": ""},
+            {"name": "AWS", "experience": 5, "description": "EC2, EBS, S3"},
+            {"name": "MicroServices", "experience": 7, "description": "Spring Boot"},
             {"name": "Jenkins", "experience": 6, "description": ""},
             {"name": "Docker", "experience": 5, "description": ""},
-            {"name": "Tomcat", "experience": 6, "description": ""},
             {"name": "VCS", "experience": 8, "description": "Git (GitHub), SVN"},
+            {"name": "Docker", "experience": 5, "description": ""},
         ]
     },
     {
         "name": "Testing",
+        "description": "The Tech and practices that assist in ensuring the quality and maintainability of a system.",
         "focus": [
-            {"name": "Junit", "experience": 7, "description": "TDD, EasyMock, PowerMock"},
-            {"name": "Jasmine.js", "experience": 6, "description": "Karma"},
-            {"name": "Selenium", "experience": 4, "description": ""},
+            {"name": "Unit Testing", "experience": 7, "description": "Junit, Jasmine.js"},
+            {"name": "Regression Testing", "experience": 7, "description": "Selenium"},
         ]
     },
     {
-        "name": "Practices",
+        "name": "Professional",
+        "description": "The Tech that isn't hardware or software related. Skills that keep our tech progressing forward.",
         "focus": [
-            {"name": "Agile", "experience": 8, "description": "Scrum and Kanban trained"},
-            {"name": "Waterfall", "experience": 5, "description": ""},
+            {"name": "Agile", "experience": 0, "description": "Scrum and Kanban Trained"},
+            {"name": "Leader", "experience": 0, "description": "Lead Developer, Team Lead, Solo Developer"},
+            {"name": "Passionate", "experience": 0, "description": "Technology is a hobby and my passion."},
+
         ]
     },
     {
-        "name": "IT",
+        "name": "IT Solutions",
+        "description": "The Tech that supports the tools and languages we use",
         "focus": [
             {"name": "Windows", "experience": 7, "description": "Primary development environment"},
-            {"name": "Linux/Unix", "experience": 6, "description": "Primary server environment."},
+            {"name": "Linux/Unix", "experience": 6, "description": "Primary server environment"},
+            {"name": "IntelliJ IDEA", "experience": 7, "description": "Primary IDE"},
         ]
     },
     {
-        "name": "Misc",
+        "name": "Personal",
+        "description": "Technologies that are typically used for server side / backend development",
         "focus": [
-            {"name": "Cooking", "experience": 6, "description": "Line cook for 2 years"},
-            {"name": "Woodworking", "experience": 3, "description": "Made a trash bin cabinet"},
+            {"name": "Cooking", "experience": 6, "description": "Line cook for 2 years, Home chef for life"},
+            {"name": "Woodworking", "experience": 3, "description": ""},
             {"name": "Guitar", "experience": 4, "description": ""},
         ]
     }
 ];
 
-export var POSITIONS:Position[] = [
+export var POSITIONS: Position[] = [
     {
         "organization": "Proquest LLC",
-        "location": "Bethesda, MD (Remote: Chicago, IL)",
+        "location": "Bethesda, MD (Working Remote from Chicago, IL)",
         "title": "Software Engineer",
-        "description": "Full stack java software engineer working on a custom cloud based editorial content management system.",
+        "description": "Architected and implemented enterprise solutions in Java for a cloud based editorial content management system. Engineered distributed system workflows aimed at automating editorial process. Supported migration of multi-million document legacy cms’ through development of a multi service restful software system.",
         "highlights": [
-            "Lead the design, implementation, maintenance, and improvements of multiple RESTful microservices; Thus effectively reducing costs associated with complex legacy editorial systems.",
-            "Provided estimates and complexity analysis on cost effective solutions to improve editorial workflow",
-            "Assisted in various phases of a full infrastructure transition to AWS."
+            "Lead the design, implementation, maintenance, and improvements of distributed Java services to concurrently batch edit system content.",
+            "Assisted in various phases of a full team tool and infrastructure transition to AWS using docker.",
+            "Provided frequent estimates and complexity analysis on cost effective solutions to improve editorial workflow",
+            "Implemented an admin tool to manage production content metadata using Spring",
         ],
         "startDate": "02/01/2014",
         "endDate": "PRESENT"
@@ -96,11 +105,11 @@ export var POSITIONS:Position[] = [
         "organization": "Fermion Government Services",
         "location": "Lexington Park, MD",
         "title": "Software Engineer",
-        "description": "Project lead on contract providing software service development for US Navy's common unmanned control station (CUCS). Duties required leading the project management, software architecture, and IT infrastructure of a multi year government contract. ",
+        "description": "Lead the release of multiple services for the US Navy common unmanned control station. Managed client relations and a small project team of software engineers. Interpreted technical specifications and assisted in translating them into Java services using supporting storage and bus technology. Maintained the company's internal IT infrastructure and assisted in modernizing its toolchain.",
         "highlights": [
-            "Lead the project development of multiple CUCS services through entire waterfall lifecycle.",
-            "Reduced company spending by better architecting IT infrastructure",
-            "Troubleshooting and operations of remote satellites/transmission equipment"
+            "Designed and redeveloped a data warehouse service for use with the common unmanned control station.",
+            "Tested and QA checked the release of a network time service for use with the common unmanned control station",
+            "Setup, operated, troubleshoot and maintained remote transmission equipment in support of gitmo trials"
         ],
         "startDate": "11/01/2012",
         "endDate": "10/01/2014"
@@ -109,18 +118,18 @@ export var POSITIONS:Position[] = [
         "organization": "Navy Department of Defense",
         "location": "Lexington Park, MD",
         "title": "Software Development Technician",
-        "description": "Software development intern supporting the Navy P-3 and Navy EP-3 platform",
+        "description": "Supported legacy codebases and infrastructure of the Navy P-3 platform. Assisted in platform software testing, deployments, code reviews and bug fixes.",
         "highlights": [
-            "Managed the cataloging, disposal, and transfer of classified content",
-            "Reduced system bug count through simple and innovative bug fixes",
-            "Analyzed and provided feedback on program wide asset management solutions"
+            "Managed the cataloging, transfer, and disposal of platform development systems and data.",
+            "Investigated and fixed errors in platform through simple and innovative bug fixes",
+            "Reported and presented analysis on asset management solutions for use program wide"
         ],
         "startDate": "06/01/2010",
         "endDate": "11/01/2012"
     }
 ];
 
-export var EDUCATION:Education[] = [
+export var EDUCATION: Education[] = [
     {
         "organization": "University of Maryland University College",
         "location": "Adelphi, MD",
@@ -131,7 +140,7 @@ export var EDUCATION:Education[] = [
     }
 ];
 
-export var CONFERENCES:Conference[] = [
+export var CONFERENCES: Conference[] = [
     {
         "organization": "DevOps Days",
         "location": "Chicago, IL",
@@ -156,7 +165,7 @@ export var CONFERENCES:Conference[] = [
 
 ];
 
-export var PERSONAL:Personal = {
+export var PERSONAL: Personal = {
     name: "Shane Burroughs",
     contact: {
         email: "Shane.Burroughs@gmail.com",
@@ -172,31 +181,31 @@ export var PERSONAL:Personal = {
             }
         ]
     },
-    summary: "I am a humble, focused individual looking to make change using technology. I strive to surround myself with the most intelligent and friendly people possible to better grow as a person. I believe an engineer is as good as the tools he is given; I believe software is only as good as the engineers working on it",
+    summary: "Lifetime technology enthusiast with over half a decade of professional software engineering experience. An expert at developing effective technical solutions and architecting great software",
     hobbies: [
         {
             name: "Football Fanatic",
-            description: "Having grown up near the Washington DC metro area, I grew up admiring the Washington Redskins. I played five years of organized football and attend as many live games as possible."
+            description: "Having grown up near the Washington DC metro area, I grew up admiring the Washington Redskins. I played five years of organized recreational football and attend as many live games as possible."
         },
         {
             name: "Culinary Wizard",
-            description: "Cooking is one of my greatest passions."
+            description: "Cooking is one of my greatest passions. It allows me to unwind at the end of the day and share something from scratch with my loved ones."
         },
         {
-            name: "Pup Dad",
-            description: "His name is \"Hodor\" and he loves time with his people."
+            name: "Doggy Dad",
+            description: "His name is \"Hodor\" and he enjoys spending time with his people."
         },
         {
-            name: "Musician",
-            description: "I do not consider myself a very talented musician however I find it relaxing to strum a chord or hit a beat."
+            name: "Mediocre Musician",
+            description: "I am not an incredibly talented musician however I enjoy playing various instruments casually."
         },
         {
-            name: "Fantasy Football Champion",
+            name: "Fantasy Sport Master",
             description: "Long time fantasy football player and league manager."
         },
         {
             name: "Gamer",
-            description: "Some of my fondest childhood memories were sitting criss-cross apple sauce on the floor with friends playing NES games. As an adult that same nostalgia was relived when my father and I custom built an emulator arcade cabinet from scratch."
+            description: "Frequently enjoy playing a variety of games; from the latest hardware intense PC releases to classic board/tabletop games. I even casually indulge in mobile game market."
         }
     ]
 };

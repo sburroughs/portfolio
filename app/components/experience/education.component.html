@@ -1,13 +1,16 @@
-<div class="panel panel-default">
-    <div class="panel-heading">Education</div>
-    <ul class="panel-body">
-        <li class="list-unstyled" *ngFor="#education of educations">
-            <div class="well well-sm">
-                <h3>{{education.organization}}</h3>
-                <h4>{{education.title}}</h4>
-                <h5>{{education.endDate}}</h5>
+<div>
+    <h2>Education</h2>
+    <div *ngFor="let education of educations">
+
+        <div class="card mb-2">
+            <h4 class="card-header">{{education.organization}}</h4>
+            <div class="card-block">
+                <p>{{education.title}}</p>
                 <p>{{education.description}}</p>
+                <p>{{education.endDate}}</p>
             </div>
-        </li>
-    </ul>
+
+        </div>
+
+    </div>
 </div>

@@ -1,10 +1,13 @@
 # IntelliJ project files
-.idea
+.idea/
 *.iml
 
-node_modulesd
+##Node
+node_modules/
+typings/
 
-/app/*.js
-/app/*.js.map
-/app/components/*/*.js
-/app/components/*/*.js.map
+##Typescript
+/app/**/*.js
+/app/**/*.js.map
+
+*.log

@@ -1,15 +1,11 @@
-import {Component, OnInit} from 'angular2/core';
+import {Component, OnInit} from '@angular/core';
 
 import {Position, Conference, Education} from './experience';
-import {DataProviderService} from '../util/data-provider.service.ts';
-import {PositionComponent} from "./position.component";
-import {EducationComponent} from "./education.component";
-import {ConferenceComponent} from "./conference.component";
+import {DataProviderService} from '../util/data-provider.service';
 
 @Component({
     selector: 'experience',
     templateUrl: 'app/components/experience/experience.component.html',
-    directives: [PositionComponent, EducationComponent, ConferenceComponent]
 })
 export class ExperienceComponent implements OnInit {
 

@@ -1,12 +1,11 @@
-<div class="panel panel-default">
-    <div class="panel-heading">Conferences</div>
-    <ul class="panel-body">
-        <li class="list-unstyled" *ngFor="#conference of conferences">
-            <div class="well well-sm">
-                <h4>{{conference.organization}}</h4>
-                <p>{{conference.location}}</p>
-                <p>{{conference.startDate}}</p>
-            </div>
-        </li>
-    </ul>
+<div>
+    <h2>Volunteering</h2>
+    <div *ngFor="let conference of conferences">
+
+        <div class="card mb-2">
+            <h4 class="card-header">{{conference.organization}}</h4>
+            <p class="card-text">{{conference.location}}</p>
+        </div>
+
+    </div>
 </div>

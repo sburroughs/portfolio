@@ -1,29 +1,36 @@
 <div class="container">
     <div class="row">
-        <div class="jumbotron col-sm-9" *ngIf="personal">
+        <div class="jumbotron" *ngIf="personal">
             <h1>{{personal.name}}</h1>
             <h2>{{personal.summary}}</h2>
         </div>
-        <contact class="col-sm-3"></contact>
     </div>
 
     <div class="row">
-        <div class="col-sm-6">
-            <position [style.ul]="'list-unstyled'"
-                      [title]="'Currently Enjoying Employment'"
-                      [positions]="highlightPosition"></position>
-            <div class="well well-sm">
-                <h3>Full Resume/Qualifications</h3>
-                <button type="button" class="btn btn-default">
-                    <a href="/assets/resume-burroughs-david-shane-June-2016.txt" download>Download</a>
-                </button>
+
+        <contact class="col-lg-3"></contact>
+
+        <position class="col-lg-8 offset-1"
+                  [style.ul]="'list-unstyled'"
+                  [title]="'Currently Enjoying Employment'"
+                  [positions]="highlightPosition"></position>
+    </div>
+
+    <div class="row">
+
+        <div class="card">
+            <div class="card-header">
+                        <span class="col-md-3" *ngFor="let skill of skillSummary">
+                            <button class="btn btn-default"
+                                    (click)="setSelectedSkill(skill)">
+                                {{skill.name}}
+                            </button>
+                        </span>
+            </div>
+            <div class="card-block">
+                <skill-detail [skill]="selectedSkill"></skill-detail>
             </div>
         </div>
-        <div class="col-sm-6 well well-sm">
-            <button class="col-sm-3 btn btn-default" *ngFor="#skill of skillSummary" (click)="setSelectedSkill(skill)">
-                {{skill.name}}
-            </button>
-            <skill-detail [skill]="selectedSkill"></skill-detail>
-        </div>
     </div>
+
 </div>

@@ -1,6 +1,11 @@
 import {POSITIONS, EDUCATION, CONFERENCES, PERSONAL} from './mock-data';
-import {Injectable} from 'angular2/core';
+import {Position, Education, Conference} from '../experience/experience';
+import {Personal} from '../personal/personal';
+import {Injectable} from '@angular/core';
 
+/**
+ * Generic service to provide mock data in a async way.
+ */
 @Injectable()
 export class DataProviderService {
 
@@ -8,7 +13,7 @@ export class DataProviderService {
      *
      * @returns {Promise<Position[]>}
      */
-    getPositions() {
+    getPositions(): Promise<Position[]> {
         return Promise.resolve(POSITIONS);
     }
 
@@ -16,7 +21,7 @@ export class DataProviderService {
      *
      * @returns {Promise<Education[]>}
      */
-    getEducation() {
+    getEducation(): Promise<Education[]> {
         return Promise.resolve(EDUCATION);
     }
 
@@ -24,7 +29,7 @@ export class DataProviderService {
      *
      * @returns {Promise<Conference[]>}
      */
-    getConferences() {
+    getConferences(): Promise<Conference[]> {
         return Promise.resolve(CONFERENCES);
     }
 
@@ -32,7 +37,7 @@ export class DataProviderService {
      *
      * @returns {Promise<Personal>}
      */
-    getPersonal() {
+    getPersonal(): Promise<Personal> {
         return Promise.resolve(PERSONAL);
     }
 

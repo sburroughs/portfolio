@@ -5,18 +5,18 @@
     <p>web: dsburroughs.com</p>
 
     <h2>Experience</h2>
-    <div *ngFor="#position of positions">
+    <div *ngFor="let position of positions">
         <p>{{position.title}}</p>
         <p>{{position.organization}}</p>
         <p>{{position.startDate}} - {{position.endDate}}</p>
         <p>{{position.description}}</p>
         <ul>
-            <li *ngFor="#highlight of position.highlights">{{highlight}}</li>
+            <li *ngFor="let highlight of position.highlights">{{highlight}}</li>
         </ul>
     </div>
 
     <h2>Education</h2>
-    <div *ngFor="#education of educations">
+    <div *ngFor="let education of educations">
         <h3>{{education.organization}}</h3>
         <h4>{{education.title}}</h4>
         <h5>{{education.endDate}}</h5>
