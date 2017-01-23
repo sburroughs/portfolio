@@ -1,4 +1,4 @@
-import {Component, Input} from 'angular2/core';
+import {Component, Input} from '@angular/core';
 
 /**
  * TODO: this is janky and only a temporary solution
@@ -8,7 +8,7 @@ import {Component, Input} from 'angular2/core';
     template: `
 <p>{{getClassification()}}</p>
 <ul class="list-inline list-unstyled">
-    <li class="skill-detail-reduced-margin" *ngFor="#i of getRating()"></li>
+    <li class="skill-detail-reduced-margin list-inline-item" *ngFor="let i of getRating()"></li>
 </ul>`,
 })
 export class SkillChartComponent {

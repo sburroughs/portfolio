@@ -1,4 +1,4 @@
-System.register(['../util/mock-data', 'angular2/core'], function(exports_1, context_1) {
+System.register(['../util/mock-data', '@angular/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -24,9 +24,18 @@ System.register(['../util/mock-data', 'angular2/core'], function(exports_1, cont
             SkillService = (function () {
                 function SkillService() {
                 }
+                /**
+                 *
+                 * @returns {Promise<Skill[]>}
+                 */
                 SkillService.prototype.getSkills = function () {
                     return Promise.resolve(mock_data_1.SKILLS);
                 };
+                /**
+                 *
+                 * @param name
+                 * @returns {Promise<TResult>}
+                 */
                 SkillService.prototype.getSkill = function (name) {
                     return Promise.resolve(mock_data_1.SKILLS).then(function (skills) { return skills.filter(function (skill) { return skill.name === name; })[0]; });
                 };

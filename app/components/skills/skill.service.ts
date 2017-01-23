@@ -1,15 +1,25 @@
-import { SKILLS } from '../util/mock-data';
-import { Injectable } from 'angular2/core';
+import {SKILLS} from '../util/mock-data';
+import {Injectable} from '@angular/core';
+import {Skill} from "./skill";
 
 @Injectable()
 export class SkillService {
-  getSkills() {
-    return Promise.resolve(SKILLS);
-  }
+    /**
+     *
+     * @returns {Promise<Skill[]>}
+     */
+    getSkills(): Promise<Skill[]> {
+        return Promise.resolve(SKILLS);
+    }
 
-  getSkill(name: string) {
-    return Promise.resolve(SKILLS).then(
-      skills => skills.filter(skill => skill.name === name)[0]
-    );
-  }
+    /**
+     *
+     * @param name
+     * @returns {Promise<TResult>}
+     */
+    getSkill(name: string): Promise<Skill> {
+        return Promise.resolve(SKILLS).then(
+            skills => skills.filter(skill => skill.name === name)[0]
+        );
+    }
 }

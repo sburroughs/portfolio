@@ -1,4 +1,4 @@
-System.register(['angular2/core', './skill-detail.component.ts', './skill.service.ts'], function(exports_1, context_1) {
+System.register(['@angular/core', './skill.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,18 +10,15 @@ System.register(['angular2/core', './skill-detail.component.ts', './skill.servic
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, skill_detail_component_ts_1, skill_service_ts_1;
+    var core_1, skill_service_1;
     var SkillsComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
-            function (skill_detail_component_ts_1_1) {
-                skill_detail_component_ts_1 = skill_detail_component_ts_1_1;
-            },
-            function (skill_service_ts_1_1) {
-                skill_service_ts_1 = skill_service_ts_1_1;
+            function (skill_service_1_1) {
+                skill_service_1 = skill_service_1_1;
             }],
         execute: function() {
             SkillsComponent = (function () {
@@ -45,9 +42,8 @@ System.register(['angular2/core', './skill-detail.component.ts', './skill.servic
                     core_1.Component({
                         selector: 'skills',
                         templateUrl: 'app/components/skills/skills.component.html',
-                        directives: [skill_detail_component_ts_1.SkillDetailComponent]
                     }), 
-                    __metadata('design:paramtypes', [skill_service_ts_1.SkillService])
+                    __metadata('design:paramtypes', [skill_service_1.SkillService])
                 ], SkillsComponent);
                 return SkillsComponent;
             }());

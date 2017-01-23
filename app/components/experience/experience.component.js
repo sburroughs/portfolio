@@ -1,4 +1,4 @@
-System.register(['angular2/core', '../util/data-provider.service.ts', "./position.component", "./education.component", "./conference.component"], function(exports_1, context_1) {
+System.register(['@angular/core', '../util/data-provider.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,24 +10,15 @@ System.register(['angular2/core', '../util/data-provider.service.ts', "./positio
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, data_provider_service_ts_1, position_component_1, education_component_1, conference_component_1;
+    var core_1, data_provider_service_1;
     var ExperienceComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
-            function (data_provider_service_ts_1_1) {
-                data_provider_service_ts_1 = data_provider_service_ts_1_1;
-            },
-            function (position_component_1_1) {
-                position_component_1 = position_component_1_1;
-            },
-            function (education_component_1_1) {
-                education_component_1 = education_component_1_1;
-            },
-            function (conference_component_1_1) {
-                conference_component_1 = conference_component_1_1;
+            function (data_provider_service_1_1) {
+                data_provider_service_1 = data_provider_service_1_1;
             }],
         execute: function() {
             ExperienceComponent = (function () {
@@ -51,9 +42,8 @@ System.register(['angular2/core', '../util/data-provider.service.ts', "./positio
                     core_1.Component({
                         selector: 'experience',
                         templateUrl: 'app/components/experience/experience.component.html',
-                        directives: [position_component_1.PositionComponent, education_component_1.EducationComponent, conference_component_1.ConferenceComponent]
                     }), 
-                    __metadata('design:paramtypes', [data_provider_service_ts_1.DataProviderService])
+                    __metadata('design:paramtypes', [data_provider_service_1.DataProviderService])
                 ], ExperienceComponent);
                 return ExperienceComponent;
             }());

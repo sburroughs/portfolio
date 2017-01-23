@@ -1,6 +1,6 @@
-import {Skill} from './../skills/skill.ts';
-import {Education, Conference, Position} from './../experience/experience.ts';
-import {Personal} from './../personal/personal.ts';
+import {Skill} from './../skills/skill';
+import {Education, Conference, Position} from './../experience/experience';
+import {Personal} from './../personal/personal';
 
 export var SKILLS: Skill[] = [
     {

@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', './overview/overview.component.ts', './overview/resume.component', './skills/skills.component.ts', './skills/skill-detail.component.ts', './experience/experience.component.ts', './personal/personal.component.ts', './skills/skill.service.ts', './util/data-provider.service.ts'], function(exports_1, context_1) {
+System.register(['@angular/core', './skills/skill.service', './util/data-provider.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,39 +10,18 @@ System.register(['angular2/core', 'angular2/router', './overview/overview.compon
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, overview_component_ts_1, resume_component_1, skills_component_ts_1, skill_detail_component_ts_1, experience_component_ts_1, personal_component_ts_1, skill_service_ts_1, data_provider_service_ts_1;
+    var core_1, skill_service_1, data_provider_service_1;
     var AppComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
-            function (router_1_1) {
-                router_1 = router_1_1;
+            function (skill_service_1_1) {
+                skill_service_1 = skill_service_1_1;
             },
-            function (overview_component_ts_1_1) {
-                overview_component_ts_1 = overview_component_ts_1_1;
-            },
-            function (resume_component_1_1) {
-                resume_component_1 = resume_component_1_1;
-            },
-            function (skills_component_ts_1_1) {
-                skills_component_ts_1 = skills_component_ts_1_1;
-            },
-            function (skill_detail_component_ts_1_1) {
-                skill_detail_component_ts_1 = skill_detail_component_ts_1_1;
-            },
-            function (experience_component_ts_1_1) {
-                experience_component_ts_1 = experience_component_ts_1_1;
-            },
-            function (personal_component_ts_1_1) {
-                personal_component_ts_1 = personal_component_ts_1_1;
-            },
-            function (skill_service_ts_1_1) {
-                skill_service_ts_1 = skill_service_ts_1_1;
-            },
-            function (data_provider_service_ts_1_1) {
-                data_provider_service_ts_1 = data_provider_service_ts_1_1;
+            function (data_provider_service_1_1) {
+                data_provider_service_1 = data_provider_service_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -52,46 +31,11 @@ System.register(['angular2/core', 'angular2/router', './overview/overview.compon
                     core_1.Component({
                         selector: 'portfolio',
                         templateUrl: 'app/components/app.component.html',
-                        directives: [router_1.ROUTER_DIRECTIVES],
                         providers: [
-                            router_1.ROUTER_PROVIDERS,
-                            skill_service_ts_1.SkillService,
-                            data_provider_service_ts_1.DataProviderService
+                            skill_service_1.SkillService,
+                            data_provider_service_1.DataProviderService
                         ]
-                    }),
-                    router_1.RouteConfig([
-                        {
-                            path: '/overview',
-                            name: 'Overview',
-                            component: overview_component_ts_1.OverviewComponent,
-                            useAsDefault: true
-                        },
-                        {
-                            path: '/skill/:name',
-                            name: 'SkillDetail',
-                            component: skill_detail_component_ts_1.SkillDetailComponent
-                        },
-                        {
-                            path: '/skills',
-                            name: 'Skills',
-                            component: skills_component_ts_1.SkillsComponent
-                        },
-                        {
-                            path: '/experience',
-                            name: 'Experience',
-                            component: experience_component_ts_1.ExperienceComponent
-                        },
-                        {
-                            path: '/personal',
-                            name: 'Personal',
-                            component: personal_component_ts_1.PersonalComponent
-                        },
-                        {
-                            path: '/resume',
-                            name: 'Resume',
-                            component: resume_component_1.ResumeComponent
-                        },
-                    ]), 
+                    }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
                 return AppComponent;
