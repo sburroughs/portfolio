@@ -8,10 +8,10 @@ export var SKILLS: Skill[] = [
         "description": "The Tech that runs behind the scenes to efficiently support the computers and systems we adore.",
         "focus": [
             {"name": "Java", "experience": 8, "description": "JDK8+, Spring, Hibernate"},
-            {"name": "Perl", "experience": 4, "description": ""},
+            {"name": "Perl", "experience": 4, "description": "Core"},
             {"name": "Unix Shell Scripting", "experience": 5, "description": "Bash, Csh"},
-            {"name": "C#", "experience": 4, "description": ""},
-            {"name": "C++", "experience": 3, "description": ""},
+            {"name": "C#", "experience": 4, "description": "Core"},
+            {"name": "C++", "experience": 3, "description": "Core"},
 
         ]
     },
@@ -22,7 +22,7 @@ export var SKILLS: Skill[] = [
             {"name": "HTML", "experience": 7, "description": "HTML5"},
             {"name": "CSS", "experience": 4, "description": "Bootstrap, Less"},
             {"name": "Javascript", "experience": 6, "description": "ES6+, Typescript, AngularJS, Angular2, JQuery"},
-            {"name": "PHP", "experience": 3, "description": ""},
+            {"name": "PHP", "experience": 3, "description": "Drupal 6"},
         ]
     },
     {
@@ -40,7 +40,7 @@ export var SKILLS: Skill[] = [
         "name": "DevOps",
         "description": "The Tech, culture, and process that keeps the software we love up and running efficiently and cost effectively.",
         "focus": [
-            {"name": "AWS", "experience": 5, "description": "EC2, EBS, S3"},
+            {"name": "AWS", "experience": 5, "description": "EC2, EBS, S3, etc"},
             {"name": "MicroServices", "experience": 7, "description": "Spring Boot"},
             {"name": "Jenkins", "experience": 6, "description": ""},
             {"name": "Docker", "experience": 5, "description": ""},
@@ -80,8 +80,8 @@ export var SKILLS: Skill[] = [
         "description": "Technologies that are typically used for server side / backend development",
         "focus": [
             {"name": "Cooking", "experience": 6, "description": "Line cook for 2 years, Home chef for life"},
-            {"name": "Woodworking", "experience": 3, "description": ""},
-            {"name": "Guitar", "experience": 4, "description": ""},
+            {"name": "Woodworking", "experience": 3, "description": "Rustic"},
+            {"name": "Guitar", "experience": 4, "description": "Acoustic"},
         ]
     }
 ];
