@@ -1,5 +1,5 @@
-import {POSITIONS, EDUCATION, CONFERENCES, PERSONAL} from './mock-data';
-import {Position, Education, Conference} from '../experience/experience';
+import {POSITIONS, EDUCATION, VOLUNTEER, PERSONAL} from './mock-data';
+import {Position, Education, Volunteer} from '../experience/experience';
 import {Personal} from '../personal/personal';
 import {Injectable} from '@angular/core';
 
@@ -27,10 +27,10 @@ export class DataProviderService {
 
     /**
      *
-     * @returns {Promise<Conference[]>}
+     * @returns {Promise<Volunteer[]>}
      */
-    getConferences(): Promise<Conference[]> {
-        return Promise.resolve(CONFERENCES);
+    getVolunteers(): Promise<Volunteer[]> {
+        return Promise.resolve(VOLUNTEER);
     }
 
     /**

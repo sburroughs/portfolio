@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 
-import {Position, Conference, Education} from './experience';
+import {Position, Volunteer, Education} from './experience';
 import {DataProviderService} from '../util/data-provider.service';
 
 @Component({
@@ -10,7 +10,7 @@ import {DataProviderService} from '../util/data-provider.service';
 export class ExperienceComponent implements OnInit {
 
     positions:Position[] = [];
-    conferences:Conference[] = [];
+    volunteers:Volunteer[] = [];
     educations:Education[] = [];
 
     constructor(private _experienceService:DataProviderService) {
@@ -19,7 +19,7 @@ export class ExperienceComponent implements OnInit {
 
     get() {
         this._experienceService.getPositions().then(positions => this.positions = positions);
-        this._experienceService.getConferences().then(conferences => this.conferences = conferences);
+        this._experienceService.getVolunteers().then(volunteers => this.volunteers = volunteers);
         this._experienceService.getEducation().then(educations => this.educations = educations);
     }
 

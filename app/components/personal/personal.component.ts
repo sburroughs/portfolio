@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Personal} from '../personal/personal';
+import {Personal, Hobby} from '../personal/personal';
 
 import {DataProviderService} from '../util/data-provider.service';
 
@@ -9,9 +9,10 @@ import {DataProviderService} from '../util/data-provider.service';
 })
 export class PersonalComponent implements OnInit {
 
-    about:Personal;
+    flipFlag = false;
+    about: Personal;
 
-    constructor(private _dataProvider:DataProviderService) {
+    constructor(private _dataProvider: DataProviderService) {
         // NO-OP
     }
 
@@ -21,6 +22,12 @@ export class PersonalComponent implements OnInit {
 
     ngOnInit() {
         this.get();
+    }
+
+    getHyperlink(h: Hobby): string {
+        this.flipFlag = !this.flipFlag;
+        return h.hyperlink;
+
     }
 
 

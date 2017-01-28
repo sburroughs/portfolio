@@ -24,6 +24,7 @@ System.register(['@angular/core', '../util/data-provider.service'], function(exp
             PersonalComponent = (function () {
                 function PersonalComponent(_dataProvider) {
                     this._dataProvider = _dataProvider;
+                    this.flipFlag = false;
                     // NO-OP
                 }
                 PersonalComponent.prototype.get = function () {
@@ -32,6 +33,10 @@ System.register(['@angular/core', '../util/data-provider.service'], function(exp
                 };
                 PersonalComponent.prototype.ngOnInit = function () {
                     this.get();
+                };
+                PersonalComponent.prototype.getHyperlink = function (h) {
+                    this.flipFlag = !this.flipFlag;
+                    return h.hyperlink;
                 };
                 PersonalComponent = __decorate([
                     core_1.Component({

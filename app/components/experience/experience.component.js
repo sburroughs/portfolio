@@ -25,14 +25,14 @@ System.register(['@angular/core', '../util/data-provider.service'], function(exp
                 function ExperienceComponent(_experienceService) {
                     this._experienceService = _experienceService;
                     this.positions = [];
-                    this.conferences = [];
+                    this.volunteers = [];
                     this.educations = [];
                     // NO-OP
                 }
                 ExperienceComponent.prototype.get = function () {
                     var _this = this;
                     this._experienceService.getPositions().then(function (positions) { return _this.positions = positions; });
-                    this._experienceService.getConferences().then(function (conferences) { return _this.conferences = conferences; });
+                    this._experienceService.getVolunteers().then(function (volunteers) { return _this.volunteers = volunteers; });
                     this._experienceService.getEducation().then(function (educations) { return _this.educations = educations; });
                 };
                 ExperienceComponent.prototype.ngOnInit = function () {

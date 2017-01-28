@@ -28,9 +28,9 @@
     "reflect-metadata": "^0.1.8",
     "systemjs": "0.19.39",
     "zone.js": "^0.6.26"
-
   },
   "devDependencies": {
+    "colors.css": "^3.0.0",
     "concurrently": "^2.0.0",
     "lite-server": "^2.1.0",
     "typescript": "^1.8.7",

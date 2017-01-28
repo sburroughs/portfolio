@@ -1,7 +1,7 @@
 System.register([], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
-    var Position, Conference, Education;
+    var Position, Volunteer, Education;
     return {
         setters:[],
         execute: function() {
@@ -11,12 +11,12 @@ System.register([], function(exports_1, context_1) {
                 return Position;
             }());
             exports_1("Position", Position);
-            Conference = (function () {
-                function Conference() {
+            Volunteer = (function () {
+                function Volunteer() {
                 }
-                return Conference;
+                return Volunteer;
             }());
-            exports_1("Conference", Conference);
+            exports_1("Volunteer", Volunteer);
             Education = (function () {
                 function Education() {
                 }

@@ -1,5 +1,5 @@
 import {Skill} from './../skills/skill';
-import {Education, Conference, Position} from './../experience/experience';
+import {Education, Volunteer, Position} from './../experience/experience';
 import {Personal} from './../personal/personal';
 
 export var SKILLS: Skill[] = [
@@ -140,13 +140,14 @@ export var EDUCATION: Education[] = [
     }
 ];
 
-export var CONFERENCES: Conference[] = [
+export var VOLUNTEER: Volunteer[] = [
     {
         "organization": "DevOps Days",
         "location": "Chicago, IL",
         "title": "Attendee",
         "description": "",
         "startDate": "",
+        "media":["http://placehold.it/400x300"]
     },
     {
         "organization": "Random Hacks of Kindness",
@@ -154,6 +155,7 @@ export var CONFERENCES: Conference[] = [
         "title": "Engineering Mentor",
         "description": "",
         "startDate": "",
+        "media":["https://c1.staticflickr.com/9/8616/16246660524_da2aaa7d29.jpg"]
     },
     {
         "organization": "AWS Summit",
@@ -161,6 +163,7 @@ export var CONFERENCES: Conference[] = [
         "title": "Attendee",
         "description": "",
         "startDate": "",
+        "media":["http://placehold.it/400x300"]
     }
 
 ];
@@ -185,27 +188,38 @@ export var PERSONAL: Personal = {
     hobbies: [
         {
             name: "Football Fanatic",
-            description: "Having grown up near the Washington DC metro area, I grew up admiring the Washington Redskins. I played five years of organized recreational football and attend as many live games as possible."
+            description: "Having grown up near the Washington DC metro area, I grew up admiring the Washington Redskins. I played five years of organized recreational football and attend as many live games as possible.",
+            hyperlink: "https://c2.staticflickr.com/6/5642/23310453103_ee9b3006d1_z.jpg"
         },
         {
             name: "Culinary Wizard",
-            description: "Cooking is one of my greatest passions. It allows me to unwind at the end of the day and share something from scratch with my loved ones."
+            description: "Cooking is one of my greatest passions. It allows me to unwind at the end of the day and share something from scratch with my loved ones.",
+            hyperlink: "https://c2.staticflickr.com/6/5642/23310453103_ee9b3006d1_z.jpg"
+
         },
         {
             name: "Doggy Dad",
-            description: "His name is \"Hodor\" and he enjoys spending time with his people."
+            description: "His name is \"Hodor\" and he is a loving goldendoodle who enjoys spending time with his people.",
+            hyperlink: "https://c1.staticflickr.com/9/8645/16264137466_2ee735db8e_c.jpg"
+
         },
         {
             name: "Mediocre Musician",
-            description: "I am not an incredibly talented musician however I enjoy playing various instruments casually."
+            description: "I am not an incredibly talented musician however I have always enjoyed casually playing various instruments.",
+            hyperlink: "https://c2.staticflickr.com/6/5642/23310453103_ee9b3006d1_z.jpg"
+
         },
         {
             name: "Fantasy Sport Master",
-            description: "Long time fantasy football player and league manager."
+            description: "Long time fantasy football player and league manager.",
+            hyperlink: "https://c2.staticflickr.com/6/5642/23310453103_ee9b3006d1_z.jpg"
+
         },
         {
             name: "Gamer",
-            description: "Frequently enjoy playing a variety of games; from the latest hardware intense PC releases to classic board/tabletop games. I even casually indulge in mobile game market."
+            description: "Frequently enjoy playing a variety of games; from the latest hardware intense PC releases to classic board/tabletop games. I even casually indulge in mobile game market.",
+            hyperlink: "https://c2.staticflickr.com/6/5642/23310453103_ee9b3006d1_z.jpg"
+
         }
     ]
 };

@@ -10,4 +10,5 @@ export class Personal {
 export class Hobby {
     name:string;
     description:string;
+    hyperlink:string;
 }

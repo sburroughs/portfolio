@@ -3,7 +3,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {FormsModule} from "@angular/forms";
 import {HttpModule} from "@angular/http";
 import {AppComponent}   from './components/app.component';
-import {ConferenceComponent} from "./components/experience/conference.component";
+import {VolunteerComponent} from "./components/experience/volunteer.component";
 import {EducationComponent} from "./components/experience/education.component";
 import {ExperienceComponent} from "./components/experience/experience.component";
 import {PositionComponent} from "./components/experience/position.component";
@@ -16,15 +16,16 @@ import {ResumeComponent} from "./components/overview/resume.component";
 import {ContactComponent} from "./components/personal/contact.component";
 import {SkillChartComponent} from "./components/skills/skill-chart.component";
 
+
 const appRoutes: Routes = [
-    {path: 'overview', component: OverviewComponent},
+    {path: '', component: OverviewComponent},
     {path: 'skills', component: SkillsComponent},
     {path: 'skills/:name', component: SkillDetailComponent},
     {path: 'experience', component: ExperienceComponent},
     {path: 'personal', component: PersonalComponent},
     {path: 'resume', component: ResumeComponent},
 
-    {path: '', redirectTo: '/overview', pathMatch: 'full'},
+    {path: '', redirectTo: '', pathMatch: 'full'},
     // {path: '**', component: OverviewComponent}
 ];
 
@@ -33,7 +34,7 @@ const appRoutes: Routes = [
     declarations: [
         AppComponent,
         ExperienceComponent,
-        ConferenceComponent,
+        VolunteerComponent,
         EducationComponent,
         PositionComponent,
         OverviewComponent,
