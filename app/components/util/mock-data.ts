@@ -144,10 +144,10 @@ export var VOLUNTEER: Volunteer[] = [
     {
         "organization": "DevOps Days",
         "location": "Chicago, IL",
-        "title": "Attendee",
+        "title": "Volunteer",
         "description": "",
         "startDate": "",
-        "media":["http://placehold.it/400x300"]
+        "media":["https://pbs.twimg.com/profile_images/489608162266202112/YXhat8lj_400x400.png"]
     },
     {
         "organization": "Random Hacks of Kindness",
@@ -163,7 +163,7 @@ export var VOLUNTEER: Volunteer[] = [
         "title": "Attendee",
         "description": "",
         "startDate": "",
-        "media":["http://placehold.it/400x300"]
+        "media":["https://s3.amazonaws.com/aws-website-dsburroughscom-p6r0b/app/assets/img/aws_summit.jpg"]
     }
 
 ];
@@ -194,7 +194,7 @@ export var PERSONAL: Personal = {
         {
             name: "Culinary Wizard",
             description: "Cooking is one of my greatest passions. It allows me to unwind at the end of the day and share something from scratch with my loved ones.",
-            hyperlink: "https://c2.staticflickr.com/6/5642/23310453103_ee9b3006d1_z.jpg"
+            hyperlink: "https://s3.amazonaws.com/aws-website-dsburroughscom-p6r0b/app/assets/img/cooking.jpg"
 
         },
         {
@@ -206,19 +206,19 @@ export var PERSONAL: Personal = {
         {
             name: "Mediocre Musician",
             description: "I am not an incredibly talented musician however I have always enjoyed casually playing various instruments.",
-            hyperlink: "https://c2.staticflickr.com/6/5642/23310453103_ee9b3006d1_z.jpg"
+            hyperlink: "https://s3.amazonaws.com/aws-website-dsburroughscom-p6r0b/app/assets/img/guitar.jpeg"
 
         },
         {
             name: "Fantasy Sport Master",
             description: "Long time fantasy football player and league manager.",
-            hyperlink: "https://c2.staticflickr.com/6/5642/23310453103_ee9b3006d1_z.jpg"
+            hyperlink: "https://s3.amazonaws.com/aws-website-dsburroughscom-p6r0b/app/assets/img/football.jpg"
 
         },
         {
             name: "Gamer",
-            description: "Frequently enjoy playing a variety of games; from the latest hardware intense PC releases to classic board/tabletop games. I even casually indulge in mobile game market.",
-            hyperlink: "https://c2.staticflickr.com/6/5642/23310453103_ee9b3006d1_z.jpg"
+            description: "Frequently enjoy playing a variety of games; from the latest hardware intense PC releases to classic board/tabletop games. I even casually indulge in the mobile game market.",
+            hyperlink: "https://s3.amazonaws.com/aws-website-dsburroughscom-p6r0b/app/assets/img/computer.jpeg"
 
         }
     ]

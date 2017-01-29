@@ -3,7 +3,7 @@
     <div *ngFor="let volunteer of volunteers">
 
         <div class="card mb-2">
-            <img class="card-img-top" src="{{volunteer.media[0]}}">
+            <img class="card-img-top" width="100%" height="auto" src="{{volunteer.media[0]}}">
             <h4 class="card-header">{{volunteer.organization}}</h4>
             <p class="card-text">{{volunteer.location}}</p>
         </div>
