@@ -1,4 +1,6 @@
-# Burroughs Portfolio
+# Dsbportfolio
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.2.
 
 ##Summary
 This project is a web based application implementation of a personal professional portfolio.
@@ -6,36 +8,26 @@ The portfolio highlights an individuals history of Skills, Experiences, and Pers
 This implementation is specific to David Shane Burroughs and highlights his history in the IT and software space.
 Visit http://dsburroughs.com for more information
 
+## Development server
 
-##Quick Start
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-###Requirements
-Ensure the following are installed to PATH:
-* Node.js
+## Code scaffolding
 
-###Configure
-Update the configuration located in the project under:
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-/app/components/util/mock-data.ts
+## Build
 
-###Install dependencies
-```
-npm install
-```
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-###Start the application
-```
-npm start
-```
+## Running unit tests
 
-###View
-In your preferred browser, navigate to the url provided in the terminal window upon application start
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-e.g.
-```
-localhost:3000
-```
+## Running end-to-end tests
 
-##Tech
-Angular2
-Bootstrap
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
