@@ -1,0 +1,18 @@
+<div>
+  <h2>{{title}}</h2>
+  <div *ngFor="let position of positions">
+    <div class="card mb-2">
+      <div class="card-header">
+        <h3 class="card-title">{{position.title}}</h3>
+        <h4 class="card-subtitle">{{position.organization}}</h4>
+        <p class="card-text">{{position.startDate}} - {{position.endDate}}</p>
+      </div>
+      <div class="card-block">
+        <p>{{position.description}}</p>
+        <ul>
+          <li *ngFor="let highlight of position.highlights">{{highlight}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

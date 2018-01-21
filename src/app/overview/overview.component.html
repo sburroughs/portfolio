@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="jumbotron text-center" *ngIf="personal">
+      <div class="overlay">
+        <h1 class="my-4">{{personal.name}}</h1>
+        <p class="lead p-lg-5 p-md-3">{{personal.summary}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mb-4">
+  <div class="row my-5">
+    <contact class="col-lg-3"></contact>
+
+    <position class="col-lg-8 offset-lg-1"
+              [style.ul]="'list-unstyled'"
+              [title]="'Currently Enjoying Employment'"
+              [positions]="highlightPosition"></position>
+  </div>
+
+  <div class="row my-5">
+    <div class="card w-100">
+      <div class="card-header">
+                        <span class="col-4" *ngFor="let skill of skillSummary">
+                            <button class="btn btn-default"
+                                    (click)="setSelectedSkill(skill)">
+                                {{skill.name}}
+                            </button>
+                        </span>
+      </div>
+      <div class="card-block">
+        <skill-detail [skill]="selectedSkill"></skill-detail>
+      </div>
+    </div>
+  </div>
+</div>
