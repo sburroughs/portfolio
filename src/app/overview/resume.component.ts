@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Skill} from './../skills/skill';
 import {SkillService} from './../skills/skill.service';
 import {DataProviderService} from '../util/data-provider.service';
-import {Position, Education} from '../experience/experience';
+import {Experience} from '../experience/experience';
 import {Personal} from '../personal/personal';
 
 
@@ -13,9 +13,9 @@ import {Personal} from '../personal/personal';
 export class ResumeComponent implements OnInit {
 
   personal: Personal;
-  positions: Position[] = [];
+  positions: Experience[] = [];
   skillSummary: Skill[] = [];
-  educations: Education[] = [];
+  educations: Experience[] = [];
 
   constructor(private _skillService: SkillService,
               private _dataProviderService: DataProviderService) {

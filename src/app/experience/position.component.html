@@ -1,10 +1,10 @@
-<div>
+<div class="e-position">
   <h2>{{title}}</h2>
   <div *ngFor="let position of positions">
     <div class="card mb-2">
       <div class="card-header">
-        <h3 class="card-title">{{position.title}}</h3>
-        <h4 class="card-subtitle">{{position.organization}}</h4>
+        <h3>{{position.title}}</h3>
+        <h4>{{position.organization}}</h4>
         <p class="card-text">{{position.startDate}} - {{position.endDate}}</p>
       </div>
       <div class="card-block">

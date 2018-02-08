@@ -5,7 +5,7 @@ import {SkillService} from './../skills/skill.service';
 
 import {DataProviderService} from '../util/data-provider.service';
 
-import {Position} from '../experience/experience';
+import {Experience} from '../experience/experience';
 import {Personal} from '../personal/personal';
 
 @Component({
@@ -16,7 +16,7 @@ export class OverviewComponent implements OnInit {
 
   skillSummary: Skill[] = [];
   selectedSkill: Skill;
-  highlightPosition: Position[] = [];
+  highlightPosition: Experience[] = [];
   personal: Personal;
 
   constructor(private _skillService: SkillService,

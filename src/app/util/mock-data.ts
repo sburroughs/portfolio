@@ -1,8 +1,65 @@
 import {Skill} from './../skills/skill';
-import {Education, Volunteer, Position} from './../experience/experience';
 import {Personal} from './../personal/personal';
+import {Experience} from '../experience/experience';
 
-export var SKILLS: Skill[] = [
+export const PERSONAL: Personal = {
+  name: 'Shane Burroughs',
+  contact: {
+    email: 'Shane.Burroughs@gmail.com',
+    phone: '240-925-5055',
+    links: [
+      {
+        display: 'Github',
+        hyperlink: 'https://github.com/sburroughs'
+      },
+      {
+        display: 'LinkedIn',
+        hyperlink: 'https://www.linkedin.com/in/shaneburroughs'
+      }
+    ]
+  },
+  summary: 'Lifetime technology enthusiast with over half a decade of professional software engineering experience. An expert at developing effective technical solutions and architecting great software',
+  hobbies: [
+    {
+      name: 'Football Fanatic',
+      description: 'Having grown up near the Washington DC metro area, I grew up admiring the Washington Redskins. I played five years of organized recreational football and attend as many live games as possible.',
+      hyperlink: 'https://c2.staticflickr.com/6/5642/23310453103_ee9b3006d1_z.jpg'
+    },
+    {
+      name: 'Culinary Wizard',
+      description: 'Cooking is one of my greatest passions. It allows me to unwind at the end of the day and share something from scratch with my loved ones.',
+      hyperlink: 'https://s3.amazonaws.com/aws-website-dsburroughscom-p6r0b/app/assets/img/cooking.jpg'
+
+    },
+    {
+      name: 'Doggy Dad',
+      description: 'His name is "Hodor" and he is a loving goldendoodle who enjoys spending time with his people.',
+      hyperlink: 'https://c1.staticflickr.com/9/8645/16264137466_2ee735db8e_c.jpg'
+
+    },
+    {
+      name: 'Mediocre Musician',
+      description: 'I am not an incredibly talented musician however I have always enjoyed casually playing various instruments.',
+      hyperlink: 'https://s3.amazonaws.com/aws-website-dsburroughscom-p6r0b/app/assets/img/guitar.jpeg'
+
+    },
+    {
+      name: 'Fantasy Sport Master',
+      description: 'Long time fantasy football player and league manager.',
+      hyperlink: 'https://s3.amazonaws.com/aws-website-dsburroughscom-p6r0b/app/assets/img/football.jpg'
+
+    },
+    {
+      name: 'Gamer',
+      description: 'Frequently enjoy playing a variety of games; from the latest hardware intense PC releases to classic board/tabletop games. I even casually indulge in the mobile game market.',
+      hyperlink: 'https://s3.amazonaws.com/aws-website-dsburroughscom-p6r0b/app/assets/img/computer.jpeg'
+
+    }
+  ]
+};
+
+
+export const SKILLS: Skill[] = [
   {
     'name': 'Backend',
     'description': 'The Tech that runs behind the scenes to efficiently support the computers and systems we adore.',
@@ -86,7 +143,7 @@ export var SKILLS: Skill[] = [
   }
 ];
 
-export var POSITIONS: Position[] = [
+export const POSITIONS: Experience[] = [
   {
     'organization': 'Proquest LLC',
     'location': 'Bethesda, MD (Working Remote from Chicago, IL)',
@@ -129,97 +186,15 @@ export var POSITIONS: Position[] = [
   }
 ];
 
-export var EDUCATION: Education[] = [
+export const EDUCATION: Experience[] = [
   {
     'organization': 'University of Maryland University College',
     'location': 'Adelphi, MD',
     'title': 'B.S. Computer Science, Minor in Computing',
     'description': 'Graduated w/degree',
     'startDate': '08/01/2009',
-    'endDate': '12/01/2012'
+    'endDate': '12/01/2012',
+    'highlights': []
   }
 ];
 
-export var VOLUNTEER: Volunteer[] = [
-  {
-    'organization': 'DevOps Days',
-    'location': 'Chicago, IL',
-    'title': 'Volunteer',
-    'description': '',
-    'startDate': '',
-    'media': ['https://pbs.twimg.com/profile_images/489608162266202112/YXhat8lj_400x400.png']
-  },
-  {
-    'organization': 'Random Hacks of Kindness',
-    'location': 'Chicago, IL',
-    'title': 'Engineering Mentor',
-    'description': '',
-    'startDate': '',
-    'media': ['https://c1.staticflickr.com/9/8616/16246660524_da2aaa7d29.jpg']
-  },
-  {
-    'organization': 'AWS Summit',
-    'location': 'Chicago, IL',
-    'title': 'Attendee',
-    'description': '',
-    'startDate': '',
-    'media': ['https://s3.amazonaws.com/aws-website-dsburroughscom-p6r0b/app/assets/img/aws_summit.jpg']
-  }
-
-];
-
-export var PERSONAL: Personal = {
-  name: 'Shane Burroughs',
-  contact: {
-    email: 'Shane.Burroughs@gmail.com',
-    phone: '240-925-5055',
-    links: [
-      {
-        display: 'Github',
-        hyperlink: 'https://github.com/sburroughs'
-      },
-      {
-        display: 'LinkedIn',
-        hyperlink: 'https://www.linkedin.com/in/shaneburroughs'
-      }
-    ]
-  },
-  summary: 'Lifetime technology enthusiast with over half a decade of professional software engineering experience. An expert at developing effective technical solutions and architecting great software',
-  hobbies: [
-    {
-      name: 'Football Fanatic',
-      description: 'Having grown up near the Washington DC metro area, I grew up admiring the Washington Redskins. I played five years of organized recreational football and attend as many live games as possible.',
-      hyperlink: 'https://c2.staticflickr.com/6/5642/23310453103_ee9b3006d1_z.jpg'
-    },
-    {
-      name: 'Culinary Wizard',
-      description: 'Cooking is one of my greatest passions. It allows me to unwind at the end of the day and share something from scratch with my loved ones.',
-      hyperlink: 'https://s3.amazonaws.com/aws-website-dsburroughscom-p6r0b/app/assets/img/cooking.jpg'
-
-    },
-    {
-      name: 'Doggy Dad',
-      description: 'His name is "Hodor" and he is a loving goldendoodle who enjoys spending time with his people.',
-      hyperlink: 'https://c1.staticflickr.com/9/8645/16264137466_2ee735db8e_c.jpg'
-
-    },
-    {
-      name: 'Mediocre Musician',
-      description: 'I am not an incredibly talented musician however I have always enjoyed casually playing various instruments.',
-      hyperlink: 'https://s3.amazonaws.com/aws-website-dsburroughscom-p6r0b/app/assets/img/guitar.jpeg'
-
-    },
-    {
-      name: 'Fantasy Sport Master',
-      description: 'Long time fantasy football player and league manager.',
-      hyperlink: 'https://s3.amazonaws.com/aws-website-dsburroughscom-p6r0b/app/assets/img/football.jpg'
-
-    },
-    {
-      name: 'Gamer',
-      description: 'Frequently enjoy playing a variety of games; from the latest hardware intense PC releases to classic board/tabletop games. I even casually indulge in the mobile game market.',
-      hyperlink: 'https://s3.amazonaws.com/aws-website-dsburroughscom-p6r0b/app/assets/img/computer.jpeg'
-
-    }
-  ]
-};
