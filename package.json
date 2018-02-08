@@ -24,7 +24,7 @@
     "core-js": "^2.4.1",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14",
-    "jquery":"3.3.1",
+    "jquery": "3.3.1",
     "popper.js": "^1.12.9",
     "@ng-bootstrap/ng-bootstrap": "^1.0.0-beta.9",
     "bootstrap": "^4.0.0"
