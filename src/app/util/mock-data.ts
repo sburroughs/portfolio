@@ -38,7 +38,7 @@ export const PERSONAL: Personal = {
 
     },
     {
-      name: 'Mediocre Musician',
+      name: 'Musician',
       description: 'I am not an incredibly talented musician however I have always enjoyed casually playing various instruments.',
       hyperlink: 'https://s3.amazonaws.com/aws-website-dsburroughscom-p6r0b/app/assets/img/guitar.jpeg'
 
@@ -94,7 +94,7 @@ export const SKILLS: Skill[] = [
     ]
   },
   {
-    'name': 'DevOps',
+    'name': 'Infrastructure',
     'description': 'The Tech, culture, and process that keeps the software we love up and running efficiently and cost effectively.',
     'focus': [
       {'name': 'AWS', 'experience': 5, 'description': 'EC2, EBS, S3, etc'},
@@ -114,7 +114,7 @@ export const SKILLS: Skill[] = [
     ]
   },
   {
-    'name': 'Professional',
+    'name': 'Project Management',
     'description': 'The Tech that isn\'t hardware or software related. Skills that keep our tech progressing forward.',
     'focus': [
       {'name': 'Agile', 'experience': 0, 'description': 'Scrum and Kanban Trained'},
@@ -145,8 +145,22 @@ export const SKILLS: Skill[] = [
 
 export const POSITIONS: Experience[] = [
   {
+    'organization': 'Gogo',
+    'location': 'Chicago, IL',
+    'title': 'Software Engineer',
+    'description': 'Engineer on the Edge/Inflight Servies team (IFS); responsible for inflight and air to ground purchase path software services at Gogo. As a member of the IFS software team we developed and maintained robust restful microservices capable of realtime alerting for close to 24/7/365 service uptime. ',
+    'highlights': [
+		'Service owner for the session management services, a series of microservices to manage session data created by a majority of Gogo equiped flights and passengers.',
+		'Implemented rapid POC java service code using cutting edge frameworks such as Spring, Akka, RxJava',
+		'Created near-realtime alerting dashboards using graphite highlighting key db, system, api, and scaling activities',
+		'Responsible for interpreting requirements, soultion design, project management, software implementation, testing, and production support.'
+    ],
+    'startDate': '03/01/2017',
+    'endDate': 'PRESENT'
+  },
+  {
     'organization': 'Proquest LLC',
-    'location': 'Bethesda, MD (Working Remote from Chicago, IL)',
+    'location': 'Bethesda, MD / Remote from Chicago, IL',
     'title': 'Software Engineer',
     'description': 'Architected and implemented enterprise solutions in Java for a cloud based editorial content management system. Engineered distributed system workflows aimed at automating editorial process. Supported migration of multi-million document legacy cms’ through development of a multi service restful software system.',
     'highlights': [
@@ -156,7 +170,7 @@ export const POSITIONS: Experience[] = [
       'Implemented an admin tool to manage production content metadata using Spring',
     ],
     'startDate': '02/01/2014',
-    'endDate': 'PRESENT'
+    'endDate': '03/01/2017'
   },
   {
     'organization': 'Fermion Government Services',
