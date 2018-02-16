@@ -1,14 +1,10 @@
 <div class="container" *ngIf="contact">
-  <div class="row">
-    <p>{{contact.email}}</p>
-    <p>{{contact.phone}}</p>
-  </div>
-  <div class="row">
-    <ul *ngFor="let link of contact.links">
-      <li class="list-unstyled">
-        <a target="_blank" href="{{link.hyperlink}}">{{link.display}}</a>
-      </li>
-    </ul>
-    <img class="img-rounded" src="https://c2.staticflickr.com/8/7687/17098805679_1b27020c26.jpg" alt="headshot">
-  </div>
+
+    <div class="row">
+        <figure class="figure">
+            <img src="../../assets/img/headshot.jpg" class="figure-img img-fluid rounded" alt="headshot">
+            <!--<figcaption class="figure-caption text-right">{{contact.additional}}</figcaption>-->
+        </figure>
+    </div>
+
 </div>

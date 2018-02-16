@@ -1,19 +1,29 @@
 li.skill-detail-reduced-margin {
-  background-color: lightblue;
-  width: 10%;
-  height: 10px;
+    background-color: lightblue;
+    width: 10%;
+    height: 10px;
 }
 
 .jumbotron {
-  background: #000 url("https://c1.staticflickr.com/1/487/19461509048_2a331ec62a_b.jpg") no-repeat center center;
-  background-size: cover;
-  color: #FFF;
+    background: #000 url("https://c1.staticflickr.com/1/487/19461509048_2a331ec62a_b.jpg") no-repeat center center;
+    background-size: cover;
+    color: #FFF;
 }
 
-.e-position{
+.e-position {
 
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.router-wrapper {
+    flex: 1;
+}
+
+.page-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }

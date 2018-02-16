@@ -2,12 +2,16 @@
   <h3 class="row">{{skill.name}} Overview</h3>
   <p class="row">{{skill.description}}</p>
   <div class="row">
-    <div class="col-md-6 mb-4" *ngFor="let focus of skill.focus">
+    <div class="col-md-6 mb-4" *ngFor="let focus of skill.focus | slice:0:4">
 
       <div class="card w-100">
         <h4 class="card-header">{{focus.name}}</h4>
         <p class="card-block">{{focus.description}}</p>
-        <skill-chart class="card-footer" [rating]="focus.experience"></skill-chart>
+        <div class="card-footer">
+          <skill-classifier [rating]="focus.experience"></skill-classifier>
+          <ngb-progressbar type="success" [value]="focus.experience * 10" ></ngb-progressbar>
+        </div>
+
       </div>
 
     </div>

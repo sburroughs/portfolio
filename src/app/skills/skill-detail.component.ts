@@ -3,7 +3,7 @@ import {Skill} from './skill';
 
 @Component({
   selector: 'skill-detail',
-  templateUrl: 'skill-detail.component.html',
+  templateUrl: 'skill-classifier.component.html',
 })
 export class SkillDetailComponent {
   @Input() skill: Skill;

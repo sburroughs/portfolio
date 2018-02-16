@@ -1,23 +1,7 @@
-<nav class="navbar navbar-expand navbar-dark bg-dark">
-  <a class="navbar-brand" routerLink="/">SB</a>
-  <div class="collapse navbar-collapse">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/skills" routerLinkActive="active">Skills</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/experience" routerLinkActive="active">Experience</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/personal" routerLinkActive="active">Personal</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<router-outlet></router-outlet>
-
-<footer class="p-2 bg-dark">
-    <p class="text-white">© 2018 dsburroughs.com ALL RIGHTS RESERVED</p>
-</footer>
-
+<div class="page-wrapper">
+    <app-header></app-header>
+    <div class="router-wrapper">
+        <router-outlet></router-outlet>
+    </div>
+    <app-footer></app-footer>
+</div>

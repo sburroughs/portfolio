@@ -1,54 +1,50 @@
 import {Component, Input} from '@angular/core';
 
-/**
- * TODO: this is janky and only a temporary solution
- */
 @Component({
-  selector: 'skill-chart',
-  template: `
-<p>{{getClassification()}}</p>
-<ul class="list-inline list-unstyled">
-    <li class="skill-detail-reduced-margin list-inline-item" *ngFor="let i of getRating()"></li>
-</ul>`,
+    selector: 'skill-classifier',
+    template: `<p>{{getClassification()}}</p>`,
 })
 export class SkillChartComponent {
-  @Input() rating: number;
+    @Input() rating: number;
 
-  getRating() {
-    return new Array(this.rating);
-  }
+    getClassification(): String {
 
-  getClassification() {
+        let classification: String;
+        switch (this.rating) {
+            case 1:
+                classification = 'Mediocre';
+            case 2:
+                classification = 'Beginner';
+                break;
+            case 3:
+                classification = 'Novice';
+                break;
+            case 4:
+            case 5:
+                classification = 'Experienced';
+                break;
+            case 6:
+                classification = 'Veteran';
+                break;
+            case 7:
+                classification = 'Expert';
+                break;
+            case 8:
+                classification = 'Exceptional';
+                break;
+            case 9:
+                classification = 'Elite';
+                break;
+            case 10:
+                classification = 'Master';
+                break;
+            default:
+                classification = 'Other';
+                break;
 
-    var classification;
-    switch (this.rating) {
-      case 1:
-      case 2:
-        classification = 'Novice';
-        break;
-      case 3:
-      case 4:
-        classification = 'Intermediate';
-        break;
-      case 5:
-      case 6:
-        classification = 'Advanced';
-        break;
-      case 7:
-      case 8:
-        classification = 'Expert';
-        break;
-      case 9:
-      case 10:
-        classification = 'Master';
-        break;
-      default:
-        classification = 'Other';
-        break;
-
+        }
+        return classification;
     }
-    return classification;
-  }
 }
 
 
