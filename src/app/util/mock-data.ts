@@ -398,8 +398,8 @@ export const EXPERIENCES: Experience[] = [
         description: 'Engineer on the Edge/Inflight Servies team (IFS); responsible for inflight and air to ground purchase path software services at Gogo. As a member of the IFS software team we developed and maintained robust restful microservices capable of realtime alerting for close to 24/7/365 service uptime. ',
         highlights: [
             'Service owner for the session management services, a series of microservices to manage session data created by Gogo equipped flights.',
-            'Implemented rapid POC java service code using cutting edge frameworks such as Spring, Akka, RxJava',
-            'Created dashboards capable of realtime monitoring and alerting highlighting key database, system hardware, api, and scaling activities',
+            'Implemented rapid POC java service code using cutting edge technologies such as Spring, Akka, Netflix APIs, reactive programming, and multi-region deployments. ',
+            'Created dashboards capable of realtime monitoring and alerting, highlighting key metrics for database, system hardware, load balancers and instance activity, and api throughput.',
             'Responsible for interpreting requirements, solution design, project management, software implementation, testing, and production support.'
         ],
         startDate: '03/01/2017',
@@ -410,9 +410,8 @@ export const EXPERIENCES: Experience[] = [
         organization: 'shaneburroughs.com',
         location: 'Chicago, IL',
         title: 'Software Engineering Consultant',
-        description: 'Performed a variety of software tasks as a freelance software consultant. Primarily a full stack engineer focused in high quality, high performance systems. Responsible for all client interactions from requirement gathering, to functionality demos. As a technical leader, I drove solutions from inception to completion while keeping budgetary constraints in mind.',
+        description: 'Primarily a full stack engineer and consultant focused in high quality, high performance systems. Responsible for all client interactions from requirement gathering, to functionality demos. As a technical leader, I drove solutions from inception to completion while keeping budgetary constraints in mind.',
         highlights: [
-            'Implemented proof of concept web application prototypes  ',
             'Created the interactive book companion site realestatedevelopmentmatrix.com to supplement some of the real estate courses at the Johns Hopkins Carey Business School.',
         ],
         startDate: '08/01/2016',
@@ -425,10 +424,10 @@ export const EXPERIENCES: Experience[] = [
         title: 'Software Engineer',
         description: 'Architected and implemented enterprise solutions in Java for a cloud based editorial content management system. Engineered distributed system workflows aimed at automating editorial process. Supported migration of multi-million document legacy cms’ through development of a multi service restful software system.',
         highlights: [
-            'Lead the design, implementation, maintenance, and improvements of distributed Java services to concurrently batch edit system content.',
-            'Assisted in various phases of a full team tool and infrastructure transition to AWS using docker.',
+            'Lead the design, implementation, maintenance, and improvements of distributed Java services to concurrently batch edit system MySQL and mongodb content.',
+            'Assisted in team tooling and infrastructure transition to the cloud with tools such as AWS and docker.',
             'Provided frequent estimates and complexity analysis on cost effective solutions to improve editorial workflow',
-            'Implemented an admin tool to manage production content metadata using Spring',
+            'Implemented an admin tool to assist in the data migration of multi million document legacy proquest database metadata using Spring',
         ],
         startDate: '02/01/2014',
         endDate: '03/01/2017'
