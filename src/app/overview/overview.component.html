@@ -1,33 +1,27 @@
-<div class="jumbotron text-center" *ngIf="personal">
-  <div class="overlay">
-    <h1 class="my-4">{{personal.name}}</h1>
-    <p class="lead p-lg-5 p-md-3">{{personal.summary}}</p>
-  </div>
+<div class="jumbotron w3-light-green" *ngIf="about">
+    <div class="text-center">
+        <h1 class="py-4">{{about.name}}</h1>
+        <p class="lead p-lg-5 p-md-3">{{about.tagline}}</p>
+    </div>
 </div>
 
-<div class="container mb-4">
-  <div class="row my-5">
-    <contact class="col-lg-4"></contact>
+<div class="my-5">
 
-    <position class="col-lg-8"
-              [style.ul]="'list-unstyled'"
-              [title]="'Currently Enjoying Employment'"
-              [positions]="highlightPosition"></position>
-  </div>
-
-  <div class="row my-5">
-    <div class="card w-100">
-      <div class="card-header">
-         <span class="col-4" *ngFor="let skill of skillSummary">
-             <button class="btn btn-default"
-                     (click)="setSelectedSkill(skill)">
-                 {{skill.name}}
-             </button>
-         </span>
-      </div>
-      <div class="card-block">
-        <skill-detail [skill]="selectedSkill"></skill-detail>
-      </div>
+    <div class="container-fluid py-5 w3-light-grey">
+        <about class="row"></about>
     </div>
-  </div>
+
+    <div class="container-fluid py-5 w3-blue-grey">
+        <experience class="row w3-text-black"></experience>
+    </div>
+
+    <div class="container-fluid py-5 w3-orange">
+        <h3>Skills</h3>
+        <div class="row w3-text-black">
+            <div class="col-lg-2 col-md-3 col-sm-4 pt-3" *ngFor="let skill of skillSummary">
+                <skill-detail [skill]='skill'></skill-detail>
+            </div>
+        </div>
+    </div>
+
 </div>

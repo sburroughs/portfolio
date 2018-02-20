@@ -1,0 +1,16 @@
+<div class="container mt-2" *ngIf="hobbies">
+
+    <div class="row">
+        <div class="col-md-6 col-lg-4" *ngFor="let hobby of hobbies">
+            <figure class="figure" >
+                <img src="{{getHyperlink(hobby)}}" class="figure-img img-fluid rounded"
+                     alt="A generic square placeholder image with rounded corners in a figure.">
+                <figcaption class="figure-caption">
+                    <h4>{{hobby.name}}</h4>
+                    {{hobby.description}}
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+
+</div>

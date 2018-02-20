@@ -1,4 +1,5 @@
-export class Experience {
+export interface Experience {
+  type: ExperienceType;
   organization: string;
   location: string;
   title: string;
@@ -6,4 +7,12 @@ export class Experience {
   highlights: string[];
   startDate: string;
   endDate: string;
+  // media: string;
+}
+
+
+export enum ExperienceType {
+    WORK,
+    EDUCATION,
+    VOLUNTEER,
 }

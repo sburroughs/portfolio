@@ -1,7 +1,6 @@
-import {Focus} from './focus';
-
 export interface Skill {
-  name: string;
-  description: string;
-  focus: Focus[];
+    type: string;
+    name: string;
+    description: string;
+    experience: number;
 }

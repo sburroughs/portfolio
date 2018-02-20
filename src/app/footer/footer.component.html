@@ -1,14 +1,13 @@
 <footer class="footer p-2 bg-dark">
     <div class="container">
         <div class="row text-white">
-            <div class="col-sm-6">
-                <dl>
-                    <dt>Email</dt>
-                    <dd><a href="mailto:{{contact.email}}">{{contact.email}}</a></dd>
-                    <dt>Phone</dt>
-                    <dd>{{contact.phone}}</dd>
-                </dl>
-                <ul class="list-inline">
+            <div class="col-sm-6" *ngIf="contact">
+                <i class="icon-mail" title="Email"></i>
+                <span class="text-warning"><a href="mailto:{{contact.email}}">{{contact.email}}</a></span>
+                <br class=py-1>
+                <i class="icon-phone" title="Phone"></i>
+                <span>{{contact.phone}}</span>
+                <ul class="list-inline" >
                     <li class="list-inline-item px-2" *ngFor="let link of contact.links">
                         <a target="_blank" href="{{link.hyperlink}}">{{link.display}}</a>
                     </li>

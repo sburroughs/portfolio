@@ -2,9 +2,9 @@ import {Component, Input} from '@angular/core';
 
 @Component({
     selector: 'skill-classifier',
-    template: `<p>{{getClassification()}}</p>`,
+    template: `<span>{{getClassification()}}</span>`,
 })
-export class SkillChartComponent {
+export class SkillClassifierComponent {
     @Input() rating: number;
 
     getClassification(): String {

@@ -1,10 +1,16 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Skill} from './skill';
 
 @Component({
-  selector: 'skill-detail',
-  templateUrl: 'skill-classifier.component.html',
+    selector: 'skill-detail',
+    templateUrl: 'skill-detail.component.html',
 })
-export class SkillDetailComponent {
-  @Input() skill: Skill;
+export class SkillDetailComponent implements OnInit {
+
+    @Input() skill: Skill;
+    starRating: number;
+
+    ngOnInit(): void {
+        this.starRating = this.skill.experience / 2;
+    }
 }

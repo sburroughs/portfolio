@@ -1,0 +1,9 @@
+.router-wrapper {
+    flex: 1;
+}
+
+.page-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}

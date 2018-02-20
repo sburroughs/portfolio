@@ -1,23 +1,23 @@
 import {Component, OnInit} from '@angular/core';
-import {Personal, Hobby} from '../personal/personal';
 
 import {DataProviderService} from '../util/data-provider.service';
+import {Hobby} from "./hobby";
 
 @Component({
-  selector: 'personal',
-  templateUrl: 'personal.component.html',
+  selector: 'hobbies',
+  templateUrl: 'hobby.component.html',
 })
-export class PersonalComponent implements OnInit {
+export class HobbyComponent implements OnInit {
 
   flipFlag = false;
-  about: Personal;
+  hobbies: Hobby[];
 
   constructor(private _dataProvider: DataProviderService) {
     // NO-OP
   }
 
   get() {
-    this._dataProvider.getPersonal().then(about => this.about = about);
+    this._dataProvider.getHobbies().then(hobbies => this.hobbies = hobbies);
   }
 
   ngOnInit() {

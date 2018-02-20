@@ -1,0 +1,10 @@
+<div class="card w-100" *ngIf="skill">
+    <p class="card-header">{{skill.name}}</p>
+    <div class="card-body">
+        <p class="card-text">{{skill.description}}</p>
+        <skill-classifier [rating]="skill.experience"></skill-classifier>
+        <br>
+        <ngb-rating [(rate)]='starRating' [max]=5 [readonly]="true"></ngb-rating>
+    </div>
+</div>
+

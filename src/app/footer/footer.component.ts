@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ContactInformation} from "../personal/contact";
+import {ContactInformation} from "../contact/contact";
 import {DataProviderService} from "../util/data-provider.service";
 
 @Component({
@@ -16,7 +16,7 @@ export class FooterComponent implements OnInit {
     }
 
     get() {
-        this._dataProvider.getPersonal().then(personal => this.contact = personal.contact);
+        this._dataProvider.getContact().then(contact => this.contact = contact);
     }
 
     ngOnInit() {

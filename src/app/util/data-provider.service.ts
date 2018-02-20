@@ -1,7 +1,10 @@
-import {POSITIONS, EDUCATION, PERSONAL} from './mock-data';
+import {ABOUT, CONTACT, EXPERIENCES, HOBBIES, SKILLS} from './mock-data';
 import {Experience} from '../experience/experience';
-import {Personal} from '../personal/personal';
 import {Injectable} from '@angular/core';
+import {About} from "../about/about";
+import {Skill} from "../skills/skill";
+import {Hobby} from "../hobby/hobby";
+import {ContactInformation} from "../contact/contact";
 
 /**
  * Generic service to provide mock data in a async way.
@@ -9,28 +12,25 @@ import {Injectable} from '@angular/core';
 @Injectable()
 export class DataProviderService {
 
-  /**
-   *
-   * @returns {Promise<Position[]>}
-   */
-  getPositions(): Promise<Experience[]> {
-    return Promise.resolve(POSITIONS);
-  }
 
-  /**
-   *
-   * @returns {Promise<Education[]>}
-   */
-  getEducation(): Promise<Experience[]> {
-    return Promise.resolve(EDUCATION);
-  }
+    getExperiences(): Promise<Experience[]> {
+        return Promise.resolve(EXPERIENCES);
+    }
 
-  /**
-   *
-   * @returns {Promise<Personal>}
-   */
-  getPersonal(): Promise<Personal> {
-    return Promise.resolve(PERSONAL);
-  }
+    getContact(): Promise<ContactInformation> {
+        return Promise.resolve(CONTACT);
+    }
+
+    getAbout(): Promise<About> {
+        return Promise.resolve(ABOUT);
+    }
+
+    getHobbies(): Promise<Hobby[]> {
+        return Promise.resolve(HOBBIES);
+    }
+
+    getSkills(): Promise<Skill[]> {
+        return Promise.resolve(SKILLS);
+    }
 
 }
