@@ -395,12 +395,13 @@ export const EXPERIENCES: Experience[] = [
         organization: 'Gogo',
         location: 'Chicago, IL',
         title: 'Software Engineer',
-        description: 'Engineer on the Edge/Inflight Servies team (IFS); responsible for inflight and air to ground purchase path software services at Gogo. As a member of the IFS software team we developed and maintained robust restful microservices capable of realtime alerting for close to 24/7/365 service uptime. ',
+        description: 'Engineer on the Edge/Inflight Servies team (IFS); responsible for inflight and air to ground purchase path software services at Gogo. As a member of the IFS software team we developed and maintained robust restful microservices capable of realtime alerting targeting 100% service uptime. ',
         highlights: [
             'Service owner for the session management services, a series of microservices to manage session data created by Gogo equipped flights.',
-            'Implemented rapid POC java service code using cutting edge technologies such as Spring, Akka, Netflix APIs, reactive programming, and multi-region deployments. ',
-            'Created dashboards capable of realtime monitoring and alerting, highlighting key metrics for database, system hardware, load balancers and instance activity, and api throughput.',
-            'Responsible for interpreting requirements, solution design, project management, software implementation, testing, and production support.'
+            'Implemented rapid POC java service code using cutting edge technologies such as Spring, Akka, Netflix OSS APIs, reactive programming, and multi-region deployments. ',
+            'Created dashboards capable of realtime monitoring and alerting, highlighting key metrics for database, system hardware, load balancers and instance activity, and api throughput metrics.',
+            'Responsible for interpreting requirements, solution design, project management, software implementation, testing, and production support.',
+            'Maintained the legacy version of session management including bug fixes, investigations, and feature improvements. The current service is horizontally scalable and maintains roughly 1 million weekly api requests.'
         ],
         startDate: '03/01/2017',
         endDate: 'PRESENT'
@@ -409,10 +410,10 @@ export const EXPERIENCES: Experience[] = [
         type: ExperienceType.WORK,
         organization: 'shaneburroughs.com',
         location: 'Chicago, IL',
-        title: 'Software Engineering Consultant',
-        description: 'Primarily a full stack engineer and consultant focused in high quality, high performance systems. Responsible for all client interactions from requirement gathering, to functionality demos. As a technical leader, I drove solutions from inception to completion while keeping budgetary constraints in mind.',
+        title: 'Principal',
+        description: 'Technology consultant and engineer focused on end to end business interactions, specializing in high quality, high performance software. Responsible for all client interactions from requirement gathering, to functionality demos. As a technical leader, I drove solutions from inception to completion while keeping budgetary constraints in mind.',
         highlights: [
-            'Created the interactive book companion site realestatedevelopmentmatrix.com to supplement some of the real estate courses at the Johns Hopkins Carey Business School.',
+            'Created the interactive book companion site realestatedevelopmentmatrix.com to supplement some of the real estate courses at the Johns Hopkins Carey Business School.'
         ],
         startDate: '08/01/2016',
         endDate: 'PRESENT'
