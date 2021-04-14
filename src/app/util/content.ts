@@ -21,8 +21,14 @@ export const CONTACT: ContactInformation = {
 
 export const ABOUT: About = {
   name: 'Shane Burroughs',
-  tagline: 'Lifetime technology enthusiast with over half a decade of professional software engineering experience. An expert at developing effective technical solutions and architecting great software',
-  summary: 'I have professionally performed almost every role, in some capacity, in the software development lifecycle. I specialize in high availability, high performance, data driven enterprise software solutions. I like to spend my day writing high quality, well documented, performant code in the language best suited for the job at hand. I typically like to think through problems multiple times before tackling them. I can be organised and driven when motivated with the right task at hand. I enjoy learning, but I also like to teach. I strive to always improve my craft, and be among top talent in the software community.',
+  tagline: 'Lifetime technology enthusiast with over a decade of professional software engineering experience.',
+  summary: 'I have professionally performed almost every role, in some capacity, in the software development lifecycle.' +
+    ' I specialize in high availability, high performance, data driven enterprise software solutions.' +
+    ' I like to spend my day writing high quality, well documented, performant code in the language best suited for the job at hand.' +
+    ' I typically like to think through problems multiple times before tackling them.' +
+    ' I can be organised and driven when motivated with the right task at hand.' +
+    ' I enjoy learning, but I also like to teach.' +
+    ' I strive to always improve my craft, and be among top talent in the software community.',
 };
 
 export const HOBBIES: Hobby[] = [

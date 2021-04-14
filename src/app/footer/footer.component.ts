@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {ContactInformation} from "../contact/contact";
-import {DataProviderService} from "../util/data-provider.service";
+import {ContactInformation} from '../contact/contact';
+import {ContentManagementService} from '../util/content-management.service';
+
 
 @Component({
   selector: 'app-footer',
@@ -11,15 +12,15 @@ export class FooterComponent implements OnInit {
 
     contact: ContactInformation;
 
-    constructor(private _dataProvider: DataProviderService) {
+    constructor(private cms: ContentManagementService) {
         // NO-OP
     }
 
-    get() {
-        this._dataProvider.getContact().then(contact => this.contact = contact);
+    get(): void {
+        this.cms.getContact().then(contact => this.contact = contact);
     }
 
-    ngOnInit() {
+    ngOnInit(): void {
         this.get();
     }
 

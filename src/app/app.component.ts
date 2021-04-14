@@ -1,11 +1,11 @@
 import {Component} from '@angular/core';
-import {DataProviderService} from './util/data-provider.service';
+import {ContentManagementService} from './util/content-management.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   providers: [
-    DataProviderService
+    ContentManagementService
   ]
 })
 export class AppComponent {

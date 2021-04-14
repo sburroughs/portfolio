@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-
-import {DataProviderService} from '../util/data-provider.service';
-import {Hobby} from "./hobby";
+import {Hobby} from './hobby';
+import {ContentManagementService} from '../util/content-management.service';
 
 @Component({
   selector: 'hobbies',
@@ -12,15 +11,15 @@ export class HobbyComponent implements OnInit {
   flipFlag = false;
   hobbies: Hobby[];
 
-  constructor(private _dataProvider: DataProviderService) {
+  constructor(private cms: ContentManagementService) {
     // NO-OP
   }
 
-  get() {
-    this._dataProvider.getHobbies().then(hobbies => this.hobbies = hobbies);
+  get(): void {
+    this.cms.getHobbies().then(hobbies => this.hobbies = hobbies);
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.get();
   }
 

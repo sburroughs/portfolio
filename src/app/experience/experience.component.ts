@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Experience} from './experience';
-import {DataProviderService} from "../util/data-provider.service";
-import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {ContentManagementService} from '../util/content-management.service';
 
 @Component({
     selector: 'experience',
@@ -10,13 +10,12 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 export class ExperienceComponent implements OnInit {
     public experiences: Experience[] = [];
 
-
-    constructor(private _experienceService: DataProviderService,
+    constructor(private cms: ContentManagementService,
                 private modalService: NgbModal) {
         // NO-OP
     }
 
-    open(content) {
+    open(content): void {
         this.modalService.open(content).result.then((result) => {
 
         }, (reason) => {
@@ -24,12 +23,11 @@ export class ExperienceComponent implements OnInit {
         });
     }
 
-
-    load() {
-        this._experienceService.getExperiences().then(experiences => this.experiences = experiences);
+    load(): void {
+        this.cms.getExperiences().then(experiences => this.experiences = experiences);
     }
 
-    ngOnInit() {
+    ngOnInit(): void {
         this.load();
     }
 

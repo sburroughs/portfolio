@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 
 import {Skill} from './skill';
-import {DataProviderService} from '../util/data-provider.service';
 import {CloudData, CloudOptions} from 'angular-tag-cloud-module';
 import {breakpointsProvider, defaultBreakpoints, BreakpointsService, BreakpointEvent} from 'angular-breakpoints';
+import {ContentManagementService} from '../util/content-management.service';
 
 @Component({
   selector: 'skills',
@@ -16,14 +16,14 @@ export class SkillOverviewComponent implements OnInit {
   options: CloudOptions = this.setOptions(0, 0);
   skillNames: CloudData[] = [];
 
-  constructor(private _skillService: DataProviderService,
-              private _breakpointsService: BreakpointsService) {
+  constructor(private cms: ContentManagementService,
+              private breakpointsService: BreakpointsService) {
   }
 
 
   load(): void {
 
-    this._skillService.getSkills().then(skills => {
+    this.cms.getSkills().then(skills => {
       this.skills = skills;
       this.selectedSkills = skills;
       this.skillNames = skills.map(skill => {
@@ -87,7 +87,7 @@ export class SkillOverviewComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this._breakpointsService.changes.subscribe(t => this.onBreakpoint(t));
+    this.breakpointsService.changes.subscribe(t => this.onBreakpoint(t));
     this.load();
   }
 

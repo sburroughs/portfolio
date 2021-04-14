@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
-import {DataProviderService} from '../util/data-provider.service';
 import {About} from './about';
+import {ContentManagementService} from '../util/content-management.service';
 
 @Component({
   selector: 'about',
@@ -11,12 +11,12 @@ export class AboutComponent implements OnInit {
 
   about: About;
 
-  constructor(private _dataProvider: DataProviderService) {
+  constructor(private cms: ContentManagementService) {
     // NO-OP
   }
 
   get(): void {
-    this._dataProvider.getAbout().then(about => this.about = about);
+    this.cms.getAbout().then(about => this.about = about);
   }
 
   ngOnInit(): void {
