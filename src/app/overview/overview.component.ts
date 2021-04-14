@@ -4,7 +4,7 @@ import {Skill} from './../skills/skill';
 import {DataProviderService} from '../util/data-provider.service';
 
 import {Experience} from '../experience/experience';
-import {About} from "../about/about";
+import {About} from '../about/about';
 
 @Component({
     selector: 'overview',
@@ -19,7 +19,7 @@ export class OverviewComponent implements OnInit {
     constructor(private _dataProviderService: DataProviderService) {
     }
 
-    ngOnInit() {
+    ngOnInit(): void {
         this._dataProviderService.getSkills()
             .then(skills => {
                 this.skillSummary = skills.filter(skill => {

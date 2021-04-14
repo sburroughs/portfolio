@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
 import {DataProviderService} from '../util/data-provider.service';
-import {About} from "./about";
+import {About} from './about';
 
 @Component({
   selector: 'about',
@@ -15,11 +15,11 @@ export class AboutComponent implements OnInit {
     // NO-OP
   }
 
-  get() {
+  get(): void {
     this._dataProvider.getAbout().then(about => this.about = about);
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.get();
   }
 

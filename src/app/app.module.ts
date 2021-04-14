@@ -13,50 +13,45 @@ import {HttpClientModule} from '@angular/common/http';
 import {FooterComponent} from './footer/footer.component';
 import {HeaderComponent} from './header/header.component';
 import {ExperienceComponent} from './experience/experience.component';
-import {ResumeComponent} from "./resume/resume.component";
-import {SkillDetailComponent} from "./skills/skill-detail.component";
+import {SkillDetailComponent} from './skills/skill-detail.component';
 import {TagCloudModule} from 'angular-tag-cloud-module';
-import { Angulartics2Module } from 'angulartics2';
-import {Angulartics2GoogleTagManager} from "angulartics2/gtm";
 
 
 const appRoutes: Routes = [
-    {path: '', component: OverviewComponent},
-    {path: 'skills', component: SkillOverviewComponent},
-    {path: 'skills/:name', component: SkillOverviewComponent},
-    {path: 'history', component: ExperienceComponent},
-    {path: 'hobbies', component: HobbyComponent},
-    {path: 'resume', component: ResumeComponent},
+  {path: '', component: OverviewComponent},
+  {path: 'skills', component: SkillOverviewComponent},
+  {path: 'skills/:name', component: SkillOverviewComponent},
+  {path: 'history', component: ExperienceComponent},
+  {path: 'hobbies', component: HobbyComponent},
 
-    {path: '', redirectTo: '', pathMatch: 'full'},
-    // {path: '**', component: OverviewComponent}
+  {path: '', redirectTo: '', pathMatch: 'full'},
+  {path: '**', component: OverviewComponent}
 ];
 
 @NgModule({
-    imports: [
-        BrowserModule,
-        FormsModule,
-        HttpClientModule,
-        TagCloudModule,
-        NgbModule.forRoot(),
-        Angulartics2Module.forRoot([Angulartics2GoogleTagManager]),
-        RouterModule.forRoot(appRoutes)],
-    declarations: [
-        AppComponent,
-        ResumeComponent,
-        OverviewComponent,
-        SkillOverviewComponent,
-        SkillClassifierComponent,
-        SkillDetailComponent,
-        OverviewComponent,
-        HobbyComponent,
-        ResumeComponent,
-        AboutComponent,
-        FooterComponent,
-        HeaderComponent,
-        ExperienceComponent
-    ],
-    bootstrap: [AppComponent]
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    TagCloudModule,
+    NgbModule,
+    RouterModule.forRoot(appRoutes),
+    NgbModule],
+  declarations: [
+    AppComponent,
+    OverviewComponent,
+    SkillOverviewComponent,
+    SkillClassifierComponent,
+    SkillDetailComponent,
+    OverviewComponent,
+    HobbyComponent,
+    AboutComponent,
+    AboutComponent,
+    FooterComponent,
+    HeaderComponent,
+    ExperienceComponent
+  ],
+  bootstrap: [AppComponent]
 })
 export class AppModule {
 }

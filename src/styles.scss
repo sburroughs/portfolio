@@ -1,0 +1,16 @@
+@import '~bootstrap/scss/bootstrap';
+
+.jumbotron {
+  background-color: $green;
+}
+
+.card-header, .card-footer {
+  background-color: $green;
+}
+
+.center-cropped {
+  width: 100%;
+  height: 250px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

@@ -1,27 +1,31 @@
-<div class="jumbotron w3-light-green" *ngIf="about">
-    <div class="text-center">
-        <h1 class="py-4">{{about.name}}</h1>
-        <p class="lead p-lg-5 p-md-3">{{about.tagline}}</p>
-    </div>
-</div>
+<div>
 
-<div class="my-5">
+  <div class="jumbotron w3-light-green" *ngIf="about">
+    <div class="text-center">
+      <h1 class="py-4">{{about.name}}</h1>
+      <p class="lead p-lg-5 p-md-3">{{about.tagline}}</p>
+    </div>
+  </div>
+
+  <div class="my-5">
 
     <div class="container-fluid py-5 w3-light-grey">
-        <about class="row"></about>
+      <about class="row"></about>
     </div>
 
     <div class="container-fluid py-5 w3-blue-grey">
-        <experience class="row w3-text-black"></experience>
+      <experience class="row w3-text-black"></experience>
     </div>
 
     <div class="container-fluid py-5 w3-orange">
-        <h3>Skills</h3>
-        <div class="row w3-text-black">
-            <div class="col-lg-2 col-md-3 col-sm-4 pt-3" *ngFor="let skill of skillSummary">
-                <skill-detail [skill]='skill'></skill-detail>
-            </div>
+      <h3>Skills</h3>
+      <div class="row w3-text-black">
+        <div class="col-lg-2 col-md-3 col-sm-4 pt-3" *ngFor="let skill of skillSummary">
+          <skill-detail [skill]='skill'></skill-detail>
         </div>
+      </div>
     </div>
+
+  </div>
 
 </div>
