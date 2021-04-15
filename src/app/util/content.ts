@@ -381,13 +381,13 @@ export const SKILLS: Skill[] = [
   },
 
   {
-    type: 'Project Management',
+    type: 'PM',
     name: 'JIRA',
     description: '',
     experience: 7
   },
   {
-    type: 'Project Management',
+    type: 'PM',
     name: 'Agile Scrum',
     description: '',
     experience: 5

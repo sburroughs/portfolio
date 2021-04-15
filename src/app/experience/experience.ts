@@ -10,7 +10,6 @@ export interface Experience {
   // media: string;
 }
 
-
 export enum ExperienceType {
     WORK,
     EDUCATION,

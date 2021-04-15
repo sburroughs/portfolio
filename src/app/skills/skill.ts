@@ -4,3 +4,12 @@ export interface Skill {
     description: string;
     experience: number;
 }
+
+export enum ExperienceType {
+  BACKEND,
+  FRONTEND,
+  DATA,
+  INFRASTRUCTURE,
+  TESTING,
+  PM
+}
