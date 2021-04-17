@@ -31,15 +31,11 @@ export class SkillOverviewComponent implements OnInit {
     });
   }
 
-  load(): void {
+  ngOnInit(): void {
+    this.breakpointsService.changes.subscribe(e => this.isVerticalFilter = e.name === 'xs');
     this.cms.getSkills().then(skills => {
       this.skills = skills;
     });
-  }
-
-  ngOnInit(): void {
-    this.breakpointsService.changes.subscribe(e => this.isVerticalFilter = e.name === 'xs');
-    this.load();
   }
 
 }

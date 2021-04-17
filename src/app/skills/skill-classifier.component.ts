@@ -7,9 +7,9 @@ import {Component, Input} from '@angular/core';
 export class SkillClassifierComponent {
     @Input() rating: number;
 
-    getClassification(): String {
+    getClassification(): string {
 
-        let classification: String;
+        let classification: string;
         switch (this.rating) {
             case 1:
                 classification = 'Mediocre';

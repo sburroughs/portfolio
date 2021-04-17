@@ -1,6 +1,6 @@
 <div>
 
-  <div class="jumbotron w3-light-green" *ngIf="about">
+  <div class="jumbotron" *ngIf="about">
     <div class="text-center">
       <h1 class="py-4">{{about.name}}</h1>
       <p class="lead p-lg-5 p-md-3">{{about.tagline}}</p>
@@ -9,23 +9,36 @@
 
   <div class="my-5">
 
-    <div class="container-fluid py-5 w3-light-grey">
+    <div class="container-fluid py-5">
       <about class="row"></about>
     </div>
 
-    <div class="container-fluid py-5 w3-blue-grey">
-      <experience class="row w3-text-black"></experience>
-      <button type="button" class="btn btn-outline-dark"><a href="/history">View All</a></button>
-    </div>
+    <div class="container py-5">
+      <div class="row">
 
-    <div class="container-fluid py-5 w3-orange">
-      <h3>Skills</h3>
-      <div class="row w3-text-black">
-        <div class="col-lg-2 col-md-3 col-sm-4 pt-3" *ngFor="let skill of skillSummary">
-          <skill-detail [skill]='skill'></skill-detail>
+        <div class="col-xl-6 py-5">
+          <div class="container-fluid row">
+            <h2 class="col">Experiences</h2>
+            <button type="button" class="col btn btn-outline-dark "><a href="/history">All Experiences</a></button>
+          </div>
+          <experience [experience]="experienceHighlight"></experience>
+        </div>
+
+        <div class="col-xl-6 py-5">
+          <div class="container-fluid row">
+            <h2 class="col">Skills</h2>
+            <button type="button" class="col btn btn-outline-dark"><a href="/skills">All Skills</a></button>
+          </div>
+          <div class="container-fluid row">
+            <div class="col-xl-6 col-md-4" *ngFor="let skill of skillHighlights">
+              <skill-detail [skill]='skill'></skill-detail>
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
+
 
   </div>
 

@@ -12,6 +12,7 @@ import {SkillClassifierComponent} from './skills/skill-classifier.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FooterComponent} from './footer/footer.component';
 import {HeaderComponent} from './header/header.component';
+import {ExperienceOverviewComponent} from './experience/experience-overview.component';
 import {ExperienceComponent} from './experience/experience.component';
 import {SkillDetailComponent} from './skills/skill-detail.component';
 import {TagCloudModule} from 'angular-tag-cloud-module';
@@ -20,8 +21,7 @@ import {TagCloudModule} from 'angular-tag-cloud-module';
 const appRoutes: Routes = [
   {path: '', component: OverviewComponent},
   {path: 'skills', component: SkillOverviewComponent},
-  {path: 'skills/:name', component: SkillOverviewComponent},
-  {path: 'history', component: ExperienceComponent},
+  {path: 'history', component: ExperienceOverviewComponent},
   {path: 'hobbies', component: HobbyComponent},
 
   {path: '', redirectTo: '', pathMatch: 'full'},
@@ -46,9 +46,9 @@ const appRoutes: Routes = [
     OverviewComponent,
     HobbyComponent,
     AboutComponent,
-    AboutComponent,
     FooterComponent,
     HeaderComponent,
+    ExperienceOverviewComponent,
     ExperienceComponent
   ],
   bootstrap: [AppComponent]
