@@ -1,10 +1,10 @@
 <div class="container mt-5">
   <div class="btn-group btn-group-toggle" [ngClass]="{'btn-group-vertical d-flex': isVerticalFilter}" ngbRadioGroup
        name="typeFilter" [(ngModel)]="selectedFilter">
-    <label ngbButtonLabel class="btn-primary">
+    <label ngbButtonLabel class="btn">
       <input ngbButton type="radio" value="ALL"> All
     </label>
-    <label ngbButtonLabel class="btn-primary" *ngFor="let type of types">
+    <label ngbButtonLabel class="btn" *ngFor="let type of types">
       <input ngbButton type="radio" value="{{type}}"> {{type}}
     </label>
   </div>

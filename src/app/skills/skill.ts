@@ -1,11 +1,11 @@
 export interface Skill {
-    type: string;
+    type: SkillType;
     name: string;
     description: string;
     experience: number;
 }
 
-export enum ExperienceType {
+export enum SkillType {
   BACKEND,
   FRONTEND,
   DATA,

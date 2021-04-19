@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 
-import {ExperienceType, Skill} from './../skills/skill';
+import {Skill} from './../skills/skill';
 import {ContentManagementService} from '../util/content-management.service';
 
 import {Experience} from '../experience/experience';

@@ -1,13 +1,15 @@
+import {Skill} from '../skills/skill';
+
 export interface Experience {
   type: ExperienceType;
   organization: string;
   location: string;
   title: string;
   description: string;
+  skills: Skill[];
   highlights: string[];
   startDate: string;
   endDate: string;
-  // media: string;
 }
 
 export enum ExperienceType {

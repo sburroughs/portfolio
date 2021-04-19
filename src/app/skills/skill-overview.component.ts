@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 
-import {ExperienceType, Skill} from './skill';
+import {SkillType, Skill} from './skill';
 import {breakpointsProvider, BreakpointsService} from 'angular-breakpoints';
 import {ContentManagementService} from '../util/content-management.service';
 
@@ -11,7 +11,7 @@ import {ContentManagementService} from '../util/content-management.service';
 })
 export class SkillOverviewComponent implements OnInit {
   skills: Skill[] = [];
-  types = Object.keys(ExperienceType).filter(k => isNaN(Number(k)));
+  types = Object.keys(SkillType).filter(k => isNaN(Number(k)));
   baseFilter = 'ALL';
   selectedFilter = this.baseFilter;
   isVerticalFilter: boolean;
@@ -27,7 +27,7 @@ export class SkillOverviewComponent implements OnInit {
         return true;
       }
       // Filter by selected Filter
-      return this.selectedFilter === s.type.toUpperCase();
+      return this.selectedFilter === SkillType[s.type].toUpperCase();
     });
   }
 

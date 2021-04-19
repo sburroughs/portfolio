@@ -1,4 +1,4 @@
-import {Skill} from './../skills/skill';
+import {Skill, SkillType} from './../skills/skill';
 import {Experience, ExperienceType} from '../experience/experience';
 import {ContactInformation} from '../contact/contact';
 import {About} from '../about/about';
@@ -15,6 +15,10 @@ export const CONTACT: ContactInformation = {
     {
       display: 'LinkedIn',
       hyperlink: 'https://www.linkedin.com/in/shaneburroughs'
+    },
+    {
+      display: 'StackOverflow',
+      hyperlink: 'https://stackoverflow.com/users/3569171/shane-burroughs'
     }
   ]
 };
@@ -40,13 +44,13 @@ export const HOBBIES: Hobby[] = [
   {
     name: 'Culinary Wizard',
     description: 'Cooking is one of my greatest passions. It allows me to unwind at the end of the day and share something from scratch with my loved ones.',
-    hyperlink: 'https://s3.amazonaws.com/aws-website-dsburroughscom-p6r0b/app/assets/img/cooking.jpg'
+    hyperlink: '../../assets/img/pizza.jpg'
 
   },
   {
     name: 'Doggy Dad',
     description: 'His name is "Hodor" and he is a loving goldendoodle who enjoys spending time with his people.',
-    hyperlink: 'https://c1.staticflickr.com/9/8645/16264137466_2ee735db8e_c.jpg'
+    hyperlink: '../../assets/img/hodor.jpg'
 
   },
   {
@@ -64,31 +68,33 @@ export const HOBBIES: Hobby[] = [
   {
     name: 'Fixer Upper',
     description: 'Owning an 100 plus year old home will quickly test your handiness.',
-    hyperlink: 'http://via.placeholder.com/350x250'
+    hyperlink: '../../assets/img/home.jpg'
 
   },
   {
-    name: 'Cryptomarket Investor',
-    description: 'I invested in my first bitcoin in 2015 and several years later, my interest in the crypto market has continued to explode.',
-    hyperlink: 'http://via.placeholder.com/350x250'
-
+    name: 'Soap Maker',
+    description: 'Cold process soap',
+    hyperlink: '../../assets/img/soap.jpg'
   },
   {
     name: 'Candle Maker',
     description: 'I occasionally make scented candles as a way to experiment with the compatibility of scented oil mixtures.',
-    hyperlink: 'http://via.placeholder.com/350x250'
-
+    hyperlink: '../../assets/img/candle.jpg'
+  },
+  {
+    name: 'Photography Assistant',
+    description: 'Reaping the benefits of my wife\'s photography skills comes at a cost of carrying the gear.',
+    hyperlink: '../../assets/img/photography.jpg'
   },
   {
     name: 'Brew Master',
     description: 'Avid home brewer with long term aspirations working towards becoming a beer competition tasting judge.',
-    hyperlink: 'http://via.placeholder.com/350x250'
-
+    hyperlink: '../../assets/img/beer.jpg'
   },
   {
     name: 'Occasional Bowler',
     description: 'I grew up playing in a saturday bowling league that turned into a lifelong love of the sport.',
-    hyperlink: 'http://via.placeholder.com/350x250'
+    hyperlink: '../../assets/img/bowling.jpg'
   },
   {
     name: 'Gamer',
@@ -100,294 +106,294 @@ export const HOBBIES: Hobby[] = [
 
 export const SKILLS: Skill[] = [
   {
-    type: 'Backend',
+    type: SkillType.BACKEND,
     name: 'Java',
     description: 'JDK8',
     experience: 8
   },
   {
-    type: 'Backend',
+    type: SkillType.BACKEND,
     name: 'Spring',
     description: '',
     experience: 7
   },
   {
-    type: 'Backend',
+    type: SkillType.BACKEND,
     name: 'Hibernate',
     description: '',
     experience: 6
   },
   {
-    type: 'Backend',
+    type: SkillType.BACKEND,
     name: 'RXJava',
     description: '',
     experience: 6
   },
   {
-    type: 'Backend',
+    type: SkillType.BACKEND,
     name: 'Netflix Hystrix',
     description: '',
     experience: 6
   },
   {
-    type: 'Backend',
+    type: SkillType.BACKEND,
     name: 'AKKA',
     description: '',
     experience: 5
   },
   {
-    type: 'Backend',
+    type: SkillType.BACKEND,
     name: 'Netflix Archaius',
     description: '',
     experience: 6
   },
   {
-    type: 'Backend',
+    type: SkillType.BACKEND,
     name: 'Perl',
     description: '',
     experience: 4
   },
   {
-    type: 'Backend',
+    type: SkillType.BACKEND,
     name: 'Bash',
     description: '',
     experience: 4
   },
   {
-    type: 'Backend',
+    type: SkillType.BACKEND,
     name: 'Csh',
     description: '',
     experience: 4
   },
   {
-    type: 'Backend',
+    type: SkillType.BACKEND,
     name: 'C#',
     description: '',
     experience: 4
   },
   {
-    type: 'Backend',
+    type: SkillType.BACKEND,
     name: 'C++',
     description: '',
     experience: 3
   },
 
   {
-    type: 'Frontend',
+    type: SkillType.FRONTEND,
     name: 'HTML',
     description: 'HTML5',
     experience: 6
   },
   {
-    type: 'Frontend',
+    type: SkillType.FRONTEND,
     name: 'CSS',
     description: 'LESS',
     experience: 5
   },
   {
-    type: 'Frontend',
+    type: SkillType.FRONTEND,
     name: 'Bootstrap',
     description: 'Bootstrap 4',
     experience: 7
   },
   {
-    type: 'Frontend',
+    type: SkillType.FRONTEND,
     name: 'Javascript',
     description: 'ES6+',
     experience: 7
   },
   {
-    type: 'Frontend',
+    type: SkillType.FRONTEND,
     name: 'Typescript',
     description: '',
     experience: 6
   },
   {
-    type: 'Frontend',
+    type: SkillType.FRONTEND,
     name: 'AngularJS',
     description: 'Angular1 - Angular 5+',
     experience: 7
   },
   {
-    type: 'Frontend',
+    type: SkillType.FRONTEND,
     name: 'JQuery',
     description: '',
     experience: 5
   },
   {
-    type: 'Frontend',
+    type: SkillType.FRONTEND,
     name: 'PHP',
     description: '',
     experience: 3
   },
   {
-    type: 'Frontend',
+    type: SkillType.FRONTEND,
     name: 'Drupal',
     description: '',
     experience: 2
   },
 
   {
-    type: 'Data',
+    type: SkillType.DATA,
     name: 'Solr',
     description: '',
     experience: 6
   },
   {
-    type: 'Data',
+    type: SkillType.DATA,
     name: 'Elastic Cache',
     description: '',
     experience: 5
   },
   {
-    type: 'Data',
+    type: SkillType.DATA,
     name: 'Redis',
     description: '',
     experience: 6
   },
   {
-    type: 'Data',
+    type: SkillType.DATA,
     name: 'Memcached',
     description: '',
     experience: 5
   },
   {
-    type: 'Data',
+    type: SkillType.DATA,
     name: 'DynamoDB',
     description: '',
     experience: 6
   },
   {
-    type: 'Data',
+    type: SkillType.DATA,
     name: 'MongoDB',
     description: '',
     experience: 4
   },
   {
-    type: 'Data',
+    type: SkillType.DATA,
     name: 'MySQL',
     description: 'RDS Aurora',
     experience: 7
   },
   {
-    type: 'Data',
+    type: SkillType.DATA,
     name: 'Oracle SQL',
     description: '',
     experience: 5
   },
   {
-    type: 'Data',
+    type: SkillType.DATA,
     name: 'Sumologic',
     description: '',
     experience: 6
   },
   {
-    type: 'Data',
+    type: SkillType.DATA,
     name: 'JMS',
     description: '',
     experience: 4
   },
   {
-    type: 'Data',
+    type: SkillType.DATA,
     name: 'XMPP',
     description: '',
     experience: 3
   },
   {
-    type: 'Data',
+    type: SkillType.DATA,
     name: 'SQS',
     description: '',
     experience: 5
   },
   {
-    type: 'Data',
+    type: SkillType.DATA,
     name: 'SNS',
     description: '',
     experience: 6
   },
   {
-    type: 'Data',
+    type: SkillType.DATA,
     name: 'Mule ESB',
     description: '',
     experience: 4
   },
 
   {
-    type: 'Infrastructure',
+    type: SkillType.INFRASTRUCTURE,
     name: 'S3',
     description: '',
     experience: 5
   },
   {
-    type: 'Infrastructure',
+    type: SkillType.INFRASTRUCTURE,
     name: 'EC2',
     description: '',
     experience: 4
   },
   {
-    type: 'Infrastructure',
+    type: SkillType.INFRASTRUCTURE,
     name: 'Jenkins',
     description: '',
     experience: 4
   },
   {
-    type: 'Infrastructure',
+    type: SkillType.INFRASTRUCTURE,
     name: 'Docker',
     description: '',
     experience: 3
   },
   {
-    type: 'Infrastructure',
+    type: SkillType.INFRASTRUCTURE,
     name: 'Git',
     description: '',
     experience: 8
   },
   {
-    type: 'Infrastructure',
+    type: SkillType.INFRASTRUCTURE,
     name: 'SVN',
     description: '',
     experience: 4
   },
 
   {
-    type: 'Testing',
+    type: SkillType.TESTING,
     name: 'Integration Testing',
     description: '',
     experience: 7
   },
   {
-    type: 'Testing',
+    type: SkillType.TESTING,
     name: 'JMeter',
     description: '',
     experience: 6
   },
   {
-    type: 'Testing',
+    type: SkillType.TESTING,
     name: 'Junit',
     description: '',
     experience: 8
   },
   {
-    type: 'Testing',
+    type: SkillType.TESTING,
     name: 'Jasmine.js',
     description: '',
     experience: 4
   },
   {
-    type: 'Testing',
+    type: SkillType.TESTING,
     name: 'Selenium',
     description: '',
     experience: 5
   },
 
   {
-    type: 'PM',
+    type: SkillType.PM,
     name: 'JIRA',
     description: '',
     experience: 7
   },
   {
-    type: 'PM',
+    type: SkillType.PM,
     name: 'Agile Scrum',
     description: '',
     experience: 5
@@ -408,6 +414,7 @@ export const EXPERIENCES: Experience[] = [
       'Responsible for interpreting requirements, solution design, project management, software implementation, testing, and production support.',
       'Maintained the legacy version of session management including bug fixes, investigations, and feature improvements. The current service is horizontally scalable and maintains roughly 1 million weekly api requests.'
     ],
+    skills: [],
     startDate: '03/01/2017',
     endDate: 'PRESENT'
   },
@@ -420,6 +427,7 @@ export const EXPERIENCES: Experience[] = [
     highlights: [
       'Created the interactive book companion site realestatedevelopmentmatrix.com to supplement some of the real estate courses at the Johns Hopkins Carey Business School.'
     ],
+    skills: [],
     startDate: '08/01/2016',
     endDate: 'PRESENT'
   },
@@ -435,6 +443,7 @@ export const EXPERIENCES: Experience[] = [
       'Provided frequent estimates and complexity analysis on cost effective solutions to improve editorial workflow',
       'Implemented an admin tool to assist in the data migration of multi million document legacy proquest database metadata using Spring',
     ],
+    skills: [],
     startDate: '02/01/2014',
     endDate: '03/01/2017'
   },
@@ -449,6 +458,7 @@ export const EXPERIENCES: Experience[] = [
       'Tested and QA checked the release of a network time service for use with the common unmanned control station',
       'Setup, operated, troubleshoot and maintained remote transmission equipment in support of gitmo trials'
     ],
+    skills: [],
     startDate: '11/01/2012',
     endDate: '10/01/2014'
   },
@@ -463,6 +473,7 @@ export const EXPERIENCES: Experience[] = [
       'Investigated and fixed errors in platform through simple and innovative bug fixes',
       'Reported and presented analysis on asset management solutions for use program wide'
     ],
+    skills: [],
     startDate: '06/01/2010',
     endDate: '11/01/2012'
   },
@@ -473,6 +484,7 @@ export const EXPERIENCES: Experience[] = [
     title: 'B.S. Computer Science, Minor in Computing',
     description: 'Graduated w/degree',
     highlights: [],
+    skills: [],
     startDate: '08/01/2009',
     endDate: '12/01/2012'
   },
@@ -483,6 +495,7 @@ export const EXPERIENCES: Experience[] = [
     title: 'Volunteer',
     description: '',
     highlights: [],
+    skills: [],
     startDate: '',
     endDate: ''
     // 'media': ['https://pbs.twimg.com/profile_images/489608162266202112/YXhat8lj_400x400.png']
@@ -493,6 +506,7 @@ export const EXPERIENCES: Experience[] = [
     location: 'Chicago, IL',
     title: 'Engineering Mentor',
     highlights: [],
+    skills: [],
     description: '',
     startDate: '',
     endDate: ''

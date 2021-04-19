@@ -1,3 +1,5 @@
+$green: #5bc86f !default;
+
 @import '~bootstrap/scss/bootstrap';
 
 .jumbotron {
@@ -6,6 +8,18 @@
 
 .card-header, .card-footer {
   background-color: $green;
+}
+
+.btn-group{
+  background-color: $green;
+}
+
+a {
+  color: $green;
+}
+
+a:hover, a:focus{
+  color: lighten($green, 15.0);
 }
 
 .center-cropped {
