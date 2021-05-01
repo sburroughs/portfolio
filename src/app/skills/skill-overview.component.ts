@@ -34,7 +34,7 @@ export class SkillOverviewComponent implements OnInit {
   ngOnInit(): void {
     this.breakpointsService.changes.subscribe(e => this.isVerticalFilter = e.name === 'xs');
     this.cms.getSkills().then(skills => {
-      this.skills = skills;
+      this.skills = skills.sort((s1, s2) => (s1.experience < s2.experience) ? 1 : -1);
     });
   }
 

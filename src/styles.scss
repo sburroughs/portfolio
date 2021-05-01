@@ -1,25 +1,34 @@
 $green: #5bc86f !default;
+$light-green: lighten($green, 15.0);
+$dark-green: darken($green, 20.0);
+
 
 @import '~bootstrap/scss/bootstrap';
 
 .jumbotron {
-  background-color: $green;
+  background-color: $light-green;
 }
 
 .card-header, .card-footer {
-  background-color: $green;
+  background-color: $light-green;
+  border-color: $green;
+  border-width: thick;
 }
 
-.btn-group{
-  background-color: $green;
+.btn-group {
+  background-color: $light-green;
+}
+
+.figure-caption h4 {
+  color: $dark-green;
 }
 
 a {
-  color: $green;
+  color: $dark-green;
 }
 
-a:hover, a:focus{
-  color: lighten($green, 15.0);
+a:hover, a:focus {
+  color: $light-green;
 }
 
 .center-cropped {
@@ -27,4 +36,13 @@ a:hover, a:focus{
   height: 250px;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.accordion-skills {
+  line-height: 1px;
+  font-size: small;
+}
+
+.accordion-header {
+  min-height: 75px;
 }

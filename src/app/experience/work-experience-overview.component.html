@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row py-5">
+    <div class="col-sm-12" >
+      <ngb-accordion #a="ngbAccordion" activeIds="custom-panel-1">
+        <ngb-panel *ngFor="let ex of experiences">
+          <ng-template class="container" ngbPanelHeader>
+            <button ngbPanelToggle class="btn btn-sm btn-block">
+              <div class="row accordion-header align-items-end">
+                <div class="col-sm-7">
+                  <h5 class="float-left">{{ex.title}}</h5>
+                </div>
+                <div class="col-sm-3">
+                  <ul class="list-inline">
+                    <li class="list-inline-item accordion-skills" *ngFor="let skill of ex.skills">{{skill}}</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <p class="float-right">{{ex.organization}}</p>
+                </div>
+              </div>
+            </button>
+          </ng-template>
+          <ng-template ngbPanelContent>
+            {{ex.description}}
+          </ng-template>
+        </ngb-panel>
+      </ngb-accordion>
+    </div>
+  </div>
+</div>

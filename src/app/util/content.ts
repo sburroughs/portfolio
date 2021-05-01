@@ -3,6 +3,7 @@ import {Experience, ExperienceType} from '../experience/experience';
 import {ContactInformation} from '../contact/contact';
 import {About} from '../about/about';
 import {Hobby} from '../hobby/hobby';
+import {WorkExperience} from '../experience/work-experience';
 
 export const CONTACT: ContactInformation = {
   email: 'Shane.Burroughs@gmail.com',
@@ -42,39 +43,34 @@ export const HOBBIES: Hobby[] = [
     hyperlink: 'https://c2.staticflickr.com/6/5642/23310453103_ee9b3006d1_z.jpg'
   },
   {
-    name: 'Culinary Wizard',
-    description: 'Cooking is one of my greatest passions. It allows me to unwind at the end of the day and share something from scratch with my loved ones.',
-    hyperlink: '../../assets/img/pizza.jpg'
-
+    name: 'Brew Master',
+    description: 'Avid home brewer with long term aspirations working towards becoming a beer competition tasting judge.',
+    hyperlink: '../../assets/img/beer.jpg'
   },
   {
     name: 'Doggy Dad',
     description: 'His name is "Hodor" and he is a loving goldendoodle who enjoys spending time with his people.',
     hyperlink: '../../assets/img/hodor.jpg'
-
   },
   {
     name: 'Musician',
     description: 'From playing piano in elementary school, to guitar in high school, to drums in post college, I would consider myself a well rounded, albeit under practiced musician.',
     hyperlink: 'https://s3.amazonaws.com/aws-website-dsburroughscom-p6r0b/app/assets/img/guitar.jpeg'
-
   },
   {
     name: 'Fantasy Football Champion',
     description: 'Long time fantasy football player and league manager.',
     hyperlink: 'https://s3.amazonaws.com/aws-website-dsburroughscom-p6r0b/app/assets/img/football.jpg'
-
-  },
-  {
-    name: 'Fixer Upper',
-    description: 'Owning an 100 plus year old home will quickly test your handiness.',
-    hyperlink: '../../assets/img/home.jpg'
-
   },
   {
     name: 'Soap Maker',
     description: 'Cold process soap',
     hyperlink: '../../assets/img/soap.jpg'
+  },
+  {
+    name: 'Fixer Upper',
+    description: 'Owning an 100 plus year old home will quickly test your handiness.',
+    hyperlink: '../../assets/img/home.jpg'
   },
   {
     name: 'Candle Maker',
@@ -87,9 +83,9 @@ export const HOBBIES: Hobby[] = [
     hyperlink: '../../assets/img/photography.jpg'
   },
   {
-    name: 'Brew Master',
-    description: 'Avid home brewer with long term aspirations working towards becoming a beer competition tasting judge.',
-    hyperlink: '../../assets/img/beer.jpg'
+    name: 'Culinary Wizard',
+    description: 'Cooking is one of my greatest passions. It allows me to unwind at the end of the day and share something from scratch with my loved ones.',
+    hyperlink: '../../assets/img/pizza.jpg'
   },
   {
     name: 'Occasional Bowler',
@@ -100,7 +96,6 @@ export const HOBBIES: Hobby[] = [
     name: 'Gamer',
     description: 'Frequently enjoy playing a variety of games; from the latest hardware intense PC releases to classic board/tabletop games. I even casually indulge in the mobile game market.',
     hyperlink: 'https://s3.amazonaws.com/aws-website-dsburroughscom-p6r0b/app/assets/img/computer.jpeg'
-
   }
 ];
 
@@ -400,6 +395,88 @@ export const SKILLS: Skill[] = [
   },
 ];
 
+
+export const WORK_EXPERIENCES: WorkExperience[] = [
+  {
+    organization: 'Gogo',
+    location: 'Chicago, IL',
+    title: 'Inflight Connectivity and Purchasing Platform',
+    description: 'Lead the design, development, testing, release, and support of multi environment server-side APIs in AWS across twenty plus microservices supporting Gogo/Intelsat\'s inflight connectivity and purchasing platform.',
+    skills: ['Java', 'Spring Boot', 'Redis', 'RDS', 'DynamoDB', 'Netflix OSS'],
+  },
+  {
+    organization: 'Gogo',
+    location: 'Chicago, IL',
+    title: 'Improved Elastic Search log ingestion',
+    description: 'Improved the performance of production Elastic search log ingestion by roughly 99% (from multiple minutes to millisecond latency) by architecting an improved ingestion approach to leverage structured logging and streamlined GROK parsing.',
+    skills: ['Elastic Search', 'GROK', 'Kibana', 'Log Stash'],
+  },
+  {
+    organization: 'Gogo',
+    location: 'Chicago, IL',
+    title: 'Partner Sponsored Authentication and Activation Capability',
+    description: 'Designed and implemented a capability for streamlining sponsored partner authentication and benefit activation in the airborne portal. Launched several key revenue generating implementations using the capability such as airline seat manifest enabled benefits (VOZ, CPA), partner account integrations (Tmobile, Boingo, Sprint), and loyalty reward redemption (ACA).',
+    skills: ['Java', 'Spring Boot', 'JPA'],
+  },
+  {
+    organization: 'Gogo',
+    location: 'Chicago, IL',
+    title: 'Production On Call Rotation Leader',
+    description: 'Supported a production on call rotation through proactive monitoring and improvement of tooling related to alerting and dashboards (Grafana, Kibana, ELK APM, Sumologic, Dynatrace, Watcher).',
+    skills: ['Java', 'Spring Boot', 'JPA'],
+  },
+  {
+    organization: 'Gogo',
+    location: 'Chicago, IL',
+    title: 'Hackathon Winner (Portal Dark Mode)',
+    description: 'Won first place in Gogo/Intelsat\'s hackathon for assisting in the development of a dark mode integration for the inflight multi-tenant web portal. Unassisted, I wrote an API to leverage a Gogo equipped aircraft\'s live latitude and longitude to dynamically calculate sunrise and sunset times for the aircraft which acted as triggers enabling and disabling the dark mode',
+    skills: ['Javascript', 'React'],
+  },
+  {
+    organization: 'Gogo',
+    location: 'Chicago, IL',
+    title: 'Session Management',
+    description: 'Developed and maintained functionality for an application responsible for storing and retrieving data supporting the purchase and activation of all Gogo inflight internet sessions.',
+    skills: ['Spring Boot', 'RXJava', 'DynamoDB', 'RDS', 'AWS Lambda'],
+  },
+  {
+    organization: 'Gogo',
+    location: 'Chicago, IL',
+    title: 'Business Analytic Dashboards',
+    description: 'Developed hundreds of business and service level dashboards/visualizations across several data platforms to support the health and reliability of Gogo/Intelsat\'s purchase and activation platform.',
+    skills: ['SumoLogic', 'Kibana', 'Dynatrace', 'Grafana'],
+  },
+
+  {
+    organization: 'Proquest',
+    location: 'Bethesda, MD',
+    title: 'Editorial Content Management System (ECMS)',
+    description: 'Built an AWS cloud native content editing web application (AngularJS) to support content editors in the migration of many legacy content schemas.',
+    skills: ['AngularJS'],
+  },
+  {
+    organization: 'Proquest',
+    location: 'Bethesda, MD',
+    title: 'Distributed Content Management System (ECMS)',
+    description: 'Designed and developed a REST based distributed system using (Java, Spring Boot, MongoDB, Solr) to support the content editing, content migration and, retirement of three legacy multi million document custom content management systems.',
+    skills: ['Java', 'Spring Boot', 'JPA', 'MongoDB', 'Solr'],
+  },
+  {
+    organization: 'Proquest',
+    location: 'Bethesda, MD',
+    title: 'Content Migration Framework (Optimus)',
+    description: 'Developed several API implementations to support the retirement of three legacy multi million document custom content management systems.',
+    skills: ['Java', 'Spring Boot', 'JPA', 'MongoDB', 'Solr'],
+  },
+  {
+    organization: 'Proquest',
+    location: 'Bethesda, MD',
+    title: 'Bulk Edit Capability',
+    description: 'Developed an event driven API to control editing content hundreds of documents at a time based on a series of content editor defined conditions.',
+    skills: ['Java', 'SQS', 'MongoDB', 'Solr'],
+  }
+];
+
 export const EXPERIENCES: Experience[] = [
   {
     type: ExperienceType.WORK,
@@ -514,6 +591,3 @@ export const EXPERIENCES: Experience[] = [
   },
 
 ];
-
-export const EDUCATION: Experience[] = [];
-

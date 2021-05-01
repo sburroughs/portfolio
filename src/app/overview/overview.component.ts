@@ -28,7 +28,7 @@ export class OverviewComponent implements OnInit {
           .filter(skill => {
             return skill.experience >= 6;
           })
-          .splice(0, 4);
+          .splice(0, 6);
       });
 
     this.cms.getExperiences()

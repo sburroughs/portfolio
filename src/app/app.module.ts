@@ -16,12 +16,13 @@ import {ExperienceOverviewComponent} from './experience/experience-overview.comp
 import {ExperienceComponent} from './experience/experience.component';
 import {SkillDetailComponent} from './skills/skill-detail.component';
 import {TagCloudModule} from 'angular-tag-cloud-module';
+import {WorkExperienceOverviewComponent} from './experience/work-experience-overview.component';
 
 
 const appRoutes: Routes = [
   {path: '', component: OverviewComponent},
   {path: 'skills', component: SkillOverviewComponent},
-  {path: 'history', component: ExperienceOverviewComponent},
+  {path: 'experiences', component: WorkExperienceOverviewComponent},
   {path: 'hobbies', component: HobbyComponent},
 
   {path: '', redirectTo: '', pathMatch: 'full'},
@@ -49,7 +50,8 @@ const appRoutes: Routes = [
     FooterComponent,
     HeaderComponent,
     ExperienceOverviewComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    WorkExperienceOverviewComponent
   ],
   bootstrap: [AppComponent]
 })
