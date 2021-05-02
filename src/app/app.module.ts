@@ -36,7 +36,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     TagCloudModule,
     NgbModule,
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(appRoutes, {scrollPositionRestoration: 'enabled'}),
     NgbModule],
   declarations: [
     AppComponent,

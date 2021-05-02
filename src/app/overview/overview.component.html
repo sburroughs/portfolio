@@ -14,7 +14,8 @@
         <div class="col-md-6 py-5">
           <div class="container-fluid row pb-3">
             <h2 class="col-sm-12">Experiences</h2>
-            <button type="button" class="col-sm-12 btn btn-outline-dark "><a href="/experiences">All Experiences</a>
+            <button type="button" class="col-sm-12 btn btn-outline-dark" [routerLink]="['/experiences']">
+              All Experiences
             </button>
           </div>
           <experience [experience]="experienceHighlight"></experience>
@@ -22,7 +23,9 @@
         <div class="col-md-6 py-5">
           <div class="container-fluid row pb-3">
             <h2 class="col-sm-12">Skills</h2>
-            <button type="button" class="col-sm-12 btn btn-outline-dark"><a href="/skills">All Skills</a></button>
+            <button type="button" class="col-sm-12 btn btn-outline-dark" [routerLink]="['/skills']">
+              All Skills
+            </button>
           </div>
           <div class="container-fluid row">
             <div class="col-sm-6 pb-4" *ngFor="let skill of skillHighlights">
