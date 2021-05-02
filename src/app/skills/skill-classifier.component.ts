@@ -2,7 +2,7 @@ import {Component, Input} from '@angular/core';
 
 @Component({
     selector: 'skill-classifier',
-    template: `<span>{{getClassification()}}</span>`,
+    template: `<span style="font-size: small">{{getClassification()}}</span>`,
 })
 export class SkillClassifierComponent {
     @Input() rating: number;

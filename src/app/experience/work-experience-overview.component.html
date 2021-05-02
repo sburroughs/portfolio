@@ -1,27 +1,31 @@
 <div class="container">
   <div class="row py-5">
-    <div class="col-sm-12" >
-      <ngb-accordion #a="ngbAccordion" activeIds="custom-panel-1">
-        <ngb-panel *ngFor="let ex of experiences">
+    <div class="col-sm-12">
+      <ngb-accordion #a="ngbAccordion" activeIds="panel-0">
+        <ngb-panel id="panel-{{idx}}" *ngFor="let ex of experiences; let idx = index">
           <ng-template class="container" ngbPanelHeader>
-            <button ngbPanelToggle class="btn btn-sm btn-block">
-              <div class="row accordion-header align-items-end">
-                <div class="col-sm-7">
-                  <h5 class="float-left">{{ex.title}}</h5>
-                </div>
-                <div class="col-sm-3">
-                  <ul class="list-inline">
-                    <li class="list-inline-item accordion-skills" *ngFor="let skill of ex.skills">{{skill}}</li>
-                  </ul>
+            <button ngbPanelToggle class="btn btn-block">
+              <div class="row accordion-header align-items-center">
+                <div class="col-sm-10">
+                  <h4 class="text-left font-weight-bold">{{ex.title}}</h4>
                 </div>
                 <div class="col-sm-2">
-                  <p class="float-right">{{ex.organization}}</p>
+                  <p class="text-right">{{ex.organization}}</p>
                 </div>
               </div>
             </button>
           </ng-template>
           <ng-template ngbPanelContent>
-            {{ex.description}}
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-3">
+                  <ul class="list-unstyled">
+                    <li class="accordion-skills" *ngFor="let skill of ex.skills">{{skill}}</li>
+                  </ul>
+                </div>
+                <p class="accordion-description col-lg-8">{{ex.description}}</p>
+              </div>
+            </div>
           </ng-template>
         </ngb-panel>
       </ngb-accordion>
